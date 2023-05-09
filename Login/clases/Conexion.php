@@ -4,7 +4,6 @@ class Conexion
 {
     private $host;
     private $userName;
-    private $port;
     private $password;
     private $db;
     protected $conn;
@@ -26,11 +25,10 @@ class Conexion
         if (!feof($configFile)) {
             $connData = fgetcsv($configFile);
             $this->host = $connData[0];
-            $this->port = $connData[1];
-            $this->userName = $connData[2];
-            $this->password = $connData[3];
-            $this->db = $connData[4];
-            $this->conn = new mysqli($this->host,$this->port, $this->userName, $this->password, $this->db);
+            $this->userName = $connData[1];
+            $this->password = $connData[2];
+            $this->db = $connData[3];
+            $this->conn = new mysqli($this->host, $this->userName, $this->password, $this->db);
             if ($this->conn->connect_error) {
                 die("Connection failed: " . $this->conn->connect_error);
             }
