@@ -4,3 +4,11 @@ h2{
 nav{
     background-color:#013C6A;
 }
+footer{
+    height: 50px; 
+  width:100%; 
+  position:absolute; 
+  bottom:0; 
+  left:0;
+  background-color: #4D6E9B;
+}
