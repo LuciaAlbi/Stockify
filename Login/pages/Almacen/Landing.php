@@ -12,35 +12,28 @@ require_once "../../vendor/autoloader.php";
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Landing almacen</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 
 
 <body>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 	<header>
 		<h1>Almacenamiento de Productos</h1>
-		<table>
-			<table class="default">
+		<table class="default">
 
-				<tr>
-					<td>
-						<section>
-							<div class="cuadros">
-								<a href="product.php">
-									<div class="cuadro producto">
-										<h2>Producto</h2>
-									</div>
-								</a>
-							</div>
-						</section>
-					</td>
-				</tr>
-			</table>
-			<table class="default">
+			<tr>
+				<td>
+					<section>
+						<div class="cuadros">
+							<a href="product.php">
+								<div class="cuadro producto">
+									<h2>Producto</h2>
+								</div>
+							</a>
+						</div>
+					</section>
+				</td>
 				<td>
 					<section>
 						<div class="cuadros">
@@ -52,8 +45,8 @@ require_once "../../vendor/autoloader.php";
 						</div>
 					</section>
 				</td>
-				</tr>
-			</table>
+			</tr>
+		</table>
 	</header>
 	<div class="container">
 		<div class="row">
