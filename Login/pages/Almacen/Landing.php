@@ -1,6 +1,6 @@
 <?php
 
-require_once "../../Login/autoloader.php";
+require_once "../../vendor/autoloader.php";
 
 ?>
 
