@@ -30,14 +30,14 @@ require_once "../../vendor/autoloader.php";
                         <img src="../../assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
                     </a>
                     <h2 class="col-9 text-center">La casa del electrodomestico</h2>
-                    <div class="dropdown col-5">
+                    <div class="dropdown col-1">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                            Dropdown button
+                            Incidencia/Entrada/Saldia
                         </button>
-                        <ul class=" dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Poner nombre</a></li>
-                            <li><a class="dropdown-item" href="#">Poner nombre</a></li>
-                            <li><a class="dropdown-item" href="#">Poner nombre</a></li>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Incidence.php">Incidencia</a></li>
+                            <li><a class="dropdown-item" href="entrance.php">Entrada productos</a></li>
+                            <li><a class="dropdown-item" href="sending">Salida productos</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -45,12 +45,6 @@ require_once "../../vendor/autoloader.php";
         </div>
     </header>
 
-    <div class="container-fluid">
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
-</div>
 <div class="container-fluid">
   <form class="form-inline">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -58,7 +52,7 @@ require_once "../../vendor/autoloader.php";
   </form>
 </div>
 
-
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>

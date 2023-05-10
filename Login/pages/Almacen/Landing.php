@@ -31,7 +31,7 @@ require_once "../../vendor/autoloader.php";
                         <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
                             Incidencia/Entrada/Saldia
                         </button>
-                        <ul class=" dropdown-menu">
+                        <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="Incidence.php">Incidencia</a></li>
                             <li><a class="dropdown-item" href="entrance.php">Entrada productos</a></li>
                             <li><a class="dropdown-item" href="sending">Salida productos</a></li>
