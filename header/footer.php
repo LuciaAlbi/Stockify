@@ -4,7 +4,7 @@
 				<div class="navbar navbar-fixed-bottom">
                 <div class="col-12 text-center">
 				<p>Derechos reservados &copy; 2023</p>
-                <p><a href="../../assets/privacity/privacityPolitic.pdf">Politica de privacidad</a></p>
+                <p><a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad</a></p>
                 </div>
 				</div>
             </div>

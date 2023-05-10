@@ -1,7 +1,7 @@
 <?php
-require_once "/vendor/autoloader.php";
+/*require_once "/vendor/autoloader.php";
 $security = new Security();
-$loginMessage = $security->doLogin();
+$loginMessage = $security->doLogin();*/
 ?>
 <!DOCTYPE html>
 <head>
@@ -12,7 +12,18 @@ $loginMessage = $security->doLogin();
 
 </head>
 <body id="main_body" >
-
+<header>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-sm navbar-dark">
+                    <a class="navbar-brand col-1" href="login.php">
+                        <img src="assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
+                    </a>
+                    <h2 class="col-10 text-center">La casa del electrodomestico</h2>
+                </nav>
+            </div>
+        </div>
+    </header>
 	<img id="top" src="form/top.png" alt="">
 	<div id="form_container">
 
@@ -48,4 +59,16 @@ $loginMessage = $security->doLogin();
 	</div>
 	<img id="bottom" src="form/bottom.png" alt="">
 	</body>
+	<footer>
+        <div class="container-fluid" style="background-color: #4D6E9B; margin-top:100px;position:fixed;">
+            <div class="row">
+				<div class="navbar navbar-fixed-bottom">
+                <div class="col-12 text-center">
+				<p>Derechos reservados &copy; 2023</p>
+                <p><a href="assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad</a></p>
+                </div>
+				</div>
+            </div>
+        </div>
+    </footer>
 </html>

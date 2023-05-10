@@ -20,7 +20,7 @@
             <div class="row">
                 <nav class="navbar navbar-expand-sm navbar-dark">
                     <a class="navbar-brand col-1" href="Landing.php">
-                        <img src="assets/images/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
+                        <img src="assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
                     </a>
                     <h2 class="col-10 text-center">La casa del electrodomestico</h2>
                 </nav>
