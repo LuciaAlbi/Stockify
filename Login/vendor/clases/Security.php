@@ -1,5 +1,5 @@
 <?php
-class Security extends Conexion
+class Security extends Connection
 {
     private $loginPage = "login.php";
     private $homePage = "index.php";

@@ -1,6 +1,6 @@
 <?php
 
-class Conexion
+class Connection
 {
     private $host;
     private $userName;
