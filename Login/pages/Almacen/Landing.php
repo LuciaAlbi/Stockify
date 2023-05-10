@@ -62,7 +62,7 @@ require_once "../../vendor/autoloader.php";
             <div class="row">
                 <div class="col-12 text-center">
 				<p>Derechos reservados &copy; 2023
-				<a href="../../assets/privacity/privacityPolitic">Politica de privacidad</a></p>
+				<a href="../../assets/privacity/privacityPolitic.pdf">Politica de privacidad</a></p>
                 </div>
 				</div>
             </div>
