@@ -1,0 +1,81 @@
+body {
+    background: #000063;
+    text-align: right;
+ }
+
+body, div, fieldset{
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+ }
+
+
+ .cajabuscar {
+     float: none;
+     width: 100%;
+     max-width: 453px;
+     margin-bottom: 25px;
+     margin-top: 29px;
+     margin-left: auto;
+     margin-right: auto;
+     display: inline-block;
+     text-align: left;
+ }
+
+ #buscarform {
+     padding: 0;
+     float: left;
+     clear: both;
+     width: 100%;
+     position: relative;
+ }
+ #buscarform fieldset { float: left }
+
+ #buscarform .search {
+     font-size: 20px;
+     top: 0px;
+     color: #FFF;
+     background: #33BCF2;
+     position: absolute;
+     right: 0;
+     top: 0;
+     padding: 9px;
+     height: 24px;
+     width: 24px;
+     text-align: center;
+ }
+ #buscarform fieldset { width: 100% }
+
+ #s {
+     width: 100%;
+     background-color: #fff;
+     float: left;
+     padding: 8px 0;
+     text-indent: 10px;
+     color: #555555;
+     border: 1px solid #fff; 
+     box-sizing: border-box;
+     height: 42px;
+ }
+
+ .button{
+     right: 0;
+     top: 0;
+     padding: 9px 0;
+     float: right;
+     border: 0;
+     width: 42px;
+     height: 42px;
+     cursor: pointer;
+     text-align: center;
+     padding-top: 10px;
+     color: #a4a4a4;
+     transition: all 0.25s linear;
+     background: transparent;
+     z-index: 10;
+     position: absolute;
+     border: 0;
+     vertical-align: top;
+ }
