@@ -19,28 +19,28 @@ require_once "../../vendor/autoloader.php";
 
 
 <body>
-<header>
-        <div class="container-fluid">
-            <div class="row">
-                <nav class="navbar navbar-expand-sm navbar-dark">
-                    <a class="navbar-brand col-1" href="landing.php">
-                        <img src="../../assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
-                    </a>
-                    <h2 class="col-9 text-center">La casa del electrodomestico</h2>
-                    <div class="dropdown col-1">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                            Incidencia/Entrada/Saldia
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Incidence.php">Incidencia</a></li>
-                            <li><a class="dropdown-item" href="entrance.php">Entrada productos</a></li>
-                            <li><a class="dropdown-item" href="sending">Salida productos</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="navbar navbar-expand-sm navbar-dark">
+					<a class="navbar-brand col-1" href="landing.php">
+						<img src="../../assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
+					</a>
+					<h2 class="col-8 offset-1 text-center">La casa del electrodomestico</h2>
+					<div class="dropdown col-1">
+						<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+							Incidencia/Entrada/Saldia
+						</button>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="Incidence.php">Incidencia</a></li>
+							<li><a class="dropdown-item" href="entrance.php">Entrada productos</a></li>
+							<li><a class="dropdown-item" href="sending.php">Salida productos</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
 	<div class="container">
 		<div class="row">
 			<div class="card offset-2 col-4" style="width:400px; margin-top:100px;">
@@ -58,16 +58,14 @@ require_once "../../vendor/autoloader.php";
 		</div>
 	</div>
 	<footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 text-center">
-				<p>Derechos reservados &copy; 2023 
-				<a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad</a></p>
-                </div>
+		<div class="container-fluid">
+			<div class="row align-item-center">
+				<div class="col-6 offset-5 ">
+					Derechos reservados &copy; 2023 <a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad</a>
 				</div>
-            </div>
-        </div>
-    </footer>
+			</div>
+		</div>
+	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
