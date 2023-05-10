@@ -37,7 +37,7 @@ require_once "../../vendor/autoloader.php";
 				<td>
 					<section>
 						<div class="cuadros">
-							<a href="movement.php">
+							<a href="new_movement.php">
 								<div class="cuadro almacen">
 									<h2>Pedido</h2>
 								</div>
