@@ -22,7 +22,17 @@
                     <a class="navbar-brand col-1" href="header.php">
                         <img src="assests/images/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
                     </a>
-                    <h2 class="col-10 text-center">La casa del electrodomestico</h2>
+                    <h2 class="col-9 text-center">La casa del electrodomestico</h2>
+                    <div class="dropdown col-5">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                            Dropdown button
+                        </button>
+                        <ul class=" dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Poner nombre</a></li>
+                            <li><a class="dropdown-item" href="#">Poner nombre</a></li>
+                            <li><a class="dropdown-item" href="#">Poner nombre</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
