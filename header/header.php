@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <nav class="navbar navbar-expand-sm navbar-dark">
                     <a class="navbar-brand col-1" href="header.php">
