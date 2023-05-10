@@ -61,7 +61,8 @@ require_once "../../vendor/autoloader.php";
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center">
-				<p>Derechos reservados &copy; 2023</p>
+				<p>Derechos reservados &copy; 2023
+				<a href="../../assets/privacity/privacityPolitic">Politica de privacidad</a></p>
                 </div>
 				</div>
             </div>
