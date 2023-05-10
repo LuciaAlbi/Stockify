@@ -23,21 +23,35 @@ require_once "../../vendor/autoloader.php";
 		crossorigin="anonymous"></script>
 	<header>
 		<h1>Almacenamiento de Productos</h1>
-	</header>
-	<section>
-		<div class="cuadros"><a href="product.php">
-				<div class="cuadro producto">
-					<h2>Producto</h2>
-				</div>
-			</a>
-			<a href="movement.php">
-				<div class="cuadro almacen">
-					<h2>Pedido</h2>
-				</div>
-			</a>
+		<table class="default">
 
-		</div>
-	</section>
+			<tr>
+				<td>
+					<section>
+						<div class="cuadros">
+							<a href="product.php">
+								<div class="cuadro producto">
+									<h2>Producto</h2>
+								</div>
+							</a>
+				</td>
+				</td>
+				<td>
+					<section>
+						<div class="cuadros">
+							<a href="movement.php">
+								<div class="cuadro almacen">
+									<h2>Pedido</h2>
+								</div>
+							</a>
+
+						</div>
+					</section>
+				</td>
+
+			</tr>
+
+	</header>
 	<footer>
 		<p>Derechos reservados &copy; 2023</p>
 	</footer>
