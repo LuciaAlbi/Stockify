@@ -25,12 +25,12 @@
                     <h2 class="col-9 text-center">La casa del electrodomestico</h2>
                     <div class="dropdown col-1">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                            Dropdown button
+                            Incidencia/Entrada/Saldia
                         </button>
-                        <ul class=" dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Poner nombre</a></li>
-                            <li><a class="dropdown-item" href="#">Poner nombre</a></li>
-                            <li><a class="dropdown-item" href="#">Poner nombre</a></li>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Incidence.php">Incidencia</a></li>
+                            <li><a class="dropdown-item" href="entrance.php">Entrada productos</a></li>
+                            <li><a class="dropdown-item" href="sending.php">Salida productos</a></li>
                         </ul>
                     </div>
                 </nav>

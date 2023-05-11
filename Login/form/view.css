@@ -536,10 +536,7 @@ form .required
 }
 
 /**** Guidelines and Error Highlight ****/
-form li.highlighted
-{
-	background-color:#fff7c0;
-}
+
 
 form .guidelines
 {

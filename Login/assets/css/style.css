@@ -4,6 +4,12 @@ h2{
 nav{
     background-color:#013C6A;
 }
+#form_container{
+  background-color:#013C6A;
+  margin-top:150px;
+  border-style: groove;
+  border:1px solid black;
+}
 footer{
   height: 50px; 
   width:100%; 
@@ -15,7 +21,9 @@ footer{
 form{
   margin-top:50px;
 }
+body{
+  background-image: url(../img/fondo.png)
+}
 .form-group{
-  
   margin-bottom: 10px;
 }

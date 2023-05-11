@@ -12,17 +12,13 @@ require_once "../../vendor/autoloader.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link rel="stylesheet" href="../../assets/css/style.css">
-        <link rel="icon" href="../../assets/img/image-removebg-preview.png" type="imagen/png">
-    <title>Buscar</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="icon" href="../../assets/img/image-removebg-preview.png" type="imagen/png">
 </head>
 
-
 <body>
-<header>
+    <header>
         <div class="container-fluid">
             <div class="row">
                 <nav class="navbar navbar-expand-sm navbar-dark">
@@ -37,7 +33,7 @@ require_once "../../vendor/autoloader.php";
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="Incidence.php">Incidencia</a></li>
                             <li><a class="dropdown-item" href="entrance.php">Entrada productos</a></li>
-                            <li><a class="dropdown-item" href="sending">Salida productos</a></li>
+                            <li><a class="dropdown-item" href="sending.php">Salida productos</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -45,27 +41,28 @@ require_once "../../vendor/autoloader.php";
         </div>
     </header>
 
-<div class="container-fluid">
-  <form class="form-inline">
-    <div class="input-group">
-  <input ID="txtPassword" type="Password" class="form-control" placeholder="Search">
-  <span class="input-group-btn">
-    <button id="show_password" class="btn btn-primary" type="button"> 
-      Search<span class="fa fa-eye-slash icon"></span>
-    </button>
-  </span>
-</div>
-<footer>
-		<div class="container-fluid">
-			<div class="row align-item-center">
-				<div class="col-6 offset-5">
-					<p> Derechos reservados &copy; 2023
-                        <a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad</p></a>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <div class="container-fluid">
+        <form class="form-inline">
+            <div class="input-group">
+                <input ID="txtPassword" type="Password" class="form-control" placeholder="Search">
+                <span class="input-group-btn">
+                    <button id="show_password" class="btn btn-primary" type="button">
+                        Search<span class="fa fa-eye-slash icon"></span>
+                    </button>
+                </span>
+            </div>
+            <footer>
+                <div class="container-fluid">
+                    <div class="row align-item-center">
+                        <div class="col-6 offset-5">
+                            <p> Derechos reservados &copy; 2023
+                                <a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad
+                            </p></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>
