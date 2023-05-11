@@ -25,18 +25,18 @@ require_once "../../vendor/autoloader.php";
         <div class="container-fluid">
             <div class="row">
                 <nav class="navbar navbar-expand-sm navbar-dark">
-                    <a class="navbar-brand col-1" href="Landing.php">
+                    <a class="navbar-brand col-1" href="warehouse.php">
                         <img src="../../assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
                     </a>
                     <h2 class="col-9 text-center">La casa del electrodomestico</h2>
                     <div class="dropdown col-5">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                            Dropdown button
+                            Incidencia/Pedir/Pedidos
                         </button>
                         <ul class=" dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Poner nombre</a></li>
-                            <li><a class="dropdown-item" href="#">Poner nombre</a></li>
-                            <li><a class="dropdown-item" href="#">Poner nombre</a></li>
+                            <li><a class="dropdown-item" href="warehouseIncidence.php">Incidencia</a></li>
+                            <li><a class="dropdown-item" href="warehouseNewOrder.php">Pedir</a></li>
+                            <li><a class="dropdown-item" href="">Pedidos</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -50,13 +50,20 @@ require_once "../../vendor/autoloader.php";
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
 </div>
-<div class="container-fluid">
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
-</div>
 
+
+<footer>
+        <div class="container-fluid" style="background-color: #4D6E9B; margin-top:100px;position:fixed;">
+            <div class="row">
+				<div class="navbar navbar-fixed-bottom">
+                <div class="col-12 text-center">
+				<p>Derechos reservados &copy; 2023</p>
+                <p><a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad</a></p>
+                </div>
+				</div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
