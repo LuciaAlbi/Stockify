@@ -1,4 +1,4 @@
-
+USE stockify;
 INSERT INTO empleado (userId, userPwd, securePwd, nombre, almacen_id)
 VALUES (001, '1234', '$2y$10$hHcBvCH5nC2.S3pVECuJre5bftuengicz7LFAGn/KO/shHzasvNQy', 'Fulgencio RodrÃ­guez', 1);
 
