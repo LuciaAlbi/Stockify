@@ -24,7 +24,7 @@ FOREIGN KEY (id_almacen) references almacen(id_almacen)
 
 CREATE TABLE empleado (
 userId INT PRIMARY KEY, 
-securePwd VARCHAR(50),
+securePwd VARCHAR(100),
 userPwd VARCHAR(20),
 nombre VARCHAR(30),
 almacen_id INT,
