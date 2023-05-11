@@ -1,5 +1,5 @@
 <?php
-require_once "/vendor/autoloader.php";
+require_once "vendor/autoloader.php";
 $security = new Security();
 
 ?>

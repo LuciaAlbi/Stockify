@@ -47,11 +47,24 @@ require_once "../../vendor/autoloader.php";
 
 <div class="container-fluid">
   <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
+    <div class="input-group">
+  <input ID="txtPassword" type="Password" class="form-control" placeholder="Search">
+  <span class="input-group-btn">
+    <button id="show_password" class="btn btn-primary" type="button"> 
+      Search<span class="fa fa-eye-slash icon"></span>
+    </button>
+  </span>
 </div>
-
+<footer>
+		<div class="container-fluid">
+			<div class="row align-item-center">
+				<div class="col-6 offset-5">
+					<p> Derechos reservados &copy; 2023
+                        <a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad</p></a>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
