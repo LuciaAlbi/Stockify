@@ -12,3 +12,10 @@ footer{
   left:0;
   background-color: #4D6E9B;
 }
+form{
+  margin-top:50px;
+}
+.form-group{
+  
+  margin-bottom: 10px;
+}
