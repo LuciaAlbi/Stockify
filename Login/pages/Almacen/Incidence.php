@@ -39,24 +39,32 @@ require_once "../../vendor/autoloader.php";
             </div>
         </div>
     </header>
-    <form>
-        <div class="container">
-            <div class="row justify-content-center" style="width:400px">
-                <div class="form-group">
-                    <label for="titulo">Fecha</label>
-                    <input type="text" class="form-control" id="titulo" placeholder="" readonly>
-                </div>
-                <div class="form-group">
-                    <label for="descripcion">Descripción</label>
-                    <textarea class="form-control" id="descripcion" rows="3" placeholder="" readonly></textarea>
-                </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="prueba col-4 align-self-center">
+                <div class="row justify-content-center"><!-- Se tiene que copiar desde aqui -->
+                    <div class=" prueba1 col-4 align-self-center">
+                        <form id="inci">
+                            <div class="form-group">
+                                <label for="titulo">Fecha</label>
+                                <input type="text" class="form-control" id="titulo" placeholder="Aqui va la fecha" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="descripcion">Descripción</label>
+                                <textarea class="form-control" id="descripcion" rows="3" placeholder="Aqui va la descripcion" readonly></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- Hasta aqui para mostrar otra incidencia -->
             </div>
         </div>
-    </form>
+    </div>
+
     <footer>
         <div class="container-fluid">
-            <div class="row align-item-center">
-                <div class="col-6 offset-5">
+            <div class="row">
+                <div class="col-12 text-center">
                     <p> Derechos reservados &copy; 2023
                         <a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad
                     </p></a>
@@ -65,6 +73,6 @@ require_once "../../vendor/autoloader.php";
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!doctype html>
 </body>
-
-</html>
+<html>

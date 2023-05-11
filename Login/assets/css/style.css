@@ -1,3 +1,9 @@
+body{
+  background-image: url(../img/fondo.png);
+  position: relative;
+  padding-bottom:4em;
+  min-height: 100vh;
+}
 h2{
     color:white
 }
@@ -11,22 +17,37 @@ nav{
   border:1px solid black;
 }
 footer{
-  height: 50px; 
   width:100%; 
   position:absolute; 
-  bottom:0; 
-  left:0;
+  bottom:0;
   background-color: #4D6E9B;
+ 
 }
 form{
   margin-top:50px;
-}
-body{
-  background-image: url(../img/fondo.png)
 }
 .form-group{
   margin-bottom: 10px;
 }
 label{
   color:white;
+}
+div.prueba{
+  border: solid #013C6A 1px; 
+  -moz-border-radius: 20px; 
+  -webkit-border-radius: 20px; 
+  border-radius: 20px; 
+  background-color: #4D6E9B;
+  margin-top:50px;
+  width: 600px;
+  height: auto;
+}
+div.prueba1{ 
+  background-color: #013C6A;
+  width: 400px;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+#inci{
+  margin-top:10px;
 }
