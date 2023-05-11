@@ -1,3 +1,4 @@
+USE stockify;
 INSERT INTO esta (ref, almacen_id, id_ubi) 
 VALUES ('00001',1,1);
 INSERT INTO esta (ref, almacen_id, id_ubi) 

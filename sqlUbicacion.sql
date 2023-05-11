@@ -1,3 +1,4 @@
+USE stockify;
 INSERT INTO Ubicacion (zona, pasillo, estanteria, altura, id_almacen) VALUES ('A', '001', '001', '1', '1');
 INSERT INTO Ubicacion (zona, pasillo, estanteria, altura, id_almacen) VALUES ('A', '001', '001', '1', '1');
 INSERT INTO Ubicacion (zona, pasillo, estanteria, altura, id_almacen) VALUES ('A', '001', '001', '1', '1');

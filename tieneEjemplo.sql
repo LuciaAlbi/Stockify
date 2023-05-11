@@ -1,3 +1,4 @@
+USE stockify;
 INSERT INTO tiene (cant, almacen_id, ref) 
 VALUES (10,1,'00010');
 INSERT INTO tiene (cant, almacen_id, ref) 

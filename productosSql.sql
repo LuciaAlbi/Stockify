@@ -1,3 +1,4 @@
+USE stockify;
 INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
 VALUES ('00001', 200, 350, 'LG', 'FrigorÃ­fico A+++ No Frost', 80, 'Bajo', 600, 'ACME Inc.', 'Acero inoxidable');
 
