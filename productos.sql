@@ -1,4 +1,16 @@
 INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
+VALUES ('00001', 200, 350, 'LG', 'Frigorífico A+++ No Frost', 80, 'Bajo', '1850 x 600 x 640 mm', 'ACME Inc.', 'Acero inoxidable');
+
+INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
+VALUES ('00002', 180, 320, 'Samsung', 'Lavadora EcoBubble 8 Kg', 65, 'Bajo', '600 x 550 x 850 mm', 'BetaCorp', 'Blanco');
+
+INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
+VALUES ('00003', 250, 480, 'Bosch', 'Lavavajillas SilencePlus 48dB', 45, 'Medio', '815 x 598 x 550 mm', 'Gamma Inc.', 'Plateado');
+
+INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
+VALUES ('00004', 400, 699, 'Sony', 'TV LED 4K 55"', 15, 'Alto', '1230 x 710 x 78 mm', 'ACME Inc.', 'Negro');
+
+INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
 VALUES ('00005', 60, 120, 'Orbegozo', 'Microondas 700W', 10, 'Alto', '450 x 345 x 260 mm', 'BetaCorp', 'Blanco');
 
 INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
