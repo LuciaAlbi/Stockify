@@ -1,3 +1,7 @@
+<?php
+require_once "../../vendor/autoloader.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,17 +17,17 @@
 </head>
 
 <body>
-<header>
+    <header>
         <div class="container-fluid">
             <div class="row">
                 <nav class="navbar navbar-expand-sm navbar-dark">
-                    <a class="navbar-brand col-1" href="header.php">
+                    <a class="navbar-brand col-1" href="landing.php">
                         <img src="../../assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
                     </a>
                     <h2 class="col-8 offset-1 text-center">La casa del electrodomestico</h2>
                     <div class="dropdown col-1">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                        <span>Crear incidencia/Entrada/Salida</span>
+                            <span>Crear incidencia/Entrada/Salida</span>
                         </button>
                         <ul class=" dropdown-menu">
                             <li><a class="dropdown-item" href="createIncidence.php">Crear incidencia</a></li>
@@ -35,17 +39,32 @@
             </div>
         </div>
     </header>
-	<footer>
-		<div class="container-fluid">
-			<div class="row align-item-center">
-				<div class="col-6 offset-5">
-					<p> Derechos reservados &copy; 2023
-                        <a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad</p></a>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <form>
+        <div class="container">
+            <div class="row justify-content-center" style="width:400px">
+                <div class="form-group">
+                    <label for="titulo">Fecha</label>
+                    <input type="text" class="form-control" id="titulo" placeholder="" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <textarea class="form-control" id="descripcion" rows="3" placeholder="" readonly></textarea>
+                </div>
+            </div>
+        </div>
+    </form>
+    <footer>
+        <div class="container-fluid">
+            <div class="row align-item-center">
+                <div class="col-6 offset-5">
+                    <p> Derechos reservados &copy; 2023
+                        <a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad
+                    </p></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>
