@@ -27,3 +27,6 @@ body{
 .form-group{
   margin-bottom: 10px;
 }
+label{
+  color:white;
+}
