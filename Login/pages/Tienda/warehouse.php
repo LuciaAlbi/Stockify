@@ -30,12 +30,12 @@ $product->verProductTienda();
                     <h2 class="col-9 text-center">La casa del electrodomestico</h2>
                     <div class="dropdown col-1">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                            Incidencia/Entrada/Saldia
+                            Incidencia/Pedir/Pedidos
                         </button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="warehouseIncidence.php">Incidencia</a></li>
-                            <li><a class="dropdown-item" href="entrance.php">Entrada productos</a></li>
-                            <li><a class="dropdown-item" href="sending.php">Salida productos</a></li>
+                            <li><a class="dropdown-item" href="warehouseNewOrder.php">Pedir</a></li>
+                            <li><a class="dropdown-item" href="warehouseTiendaConcreta.php">Pedidos</a></li>
                         </ul>
                     </div>
                 </nav>
