@@ -56,6 +56,22 @@ $unaIncidencia = $incidencia->mostInci(1);
                                 <textarea class="form-control" id="descripcion" rows="3" placeholder="<?= $unaIncidencia["descripcion"] ?>" readonly></textarea>
                             </div>
                         </form>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="row">
+                                            <h1 class="titulo">Fecha y hora</h1>
+                                            <div class="mostrar"><?= $unaIncidencia["fecha_hora"] ?></div>
+                                        </div>
+                                        <div class="row">
+                                            <h1 class="titulo">Descripcion</h1>
+                                            <div class="mostrar"><?= $unaIncidencia["descripcion"] ?></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div><!-- Hasta aqui para mostrar otra incidencia -->
             </div>

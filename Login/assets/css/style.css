@@ -32,6 +32,7 @@ form{
 .form-inline{
  margin-top:10px
 }
+
 label{
   color:white;
 }
@@ -53,4 +54,13 @@ div.prueba1{
 }
 #inci{
   margin-top:10px;
+}
+div.mostrar{
+  color:white;
+  border: solid 1px #4D6E9B;
+  background-color: #4D6E9B;
+}
+h1.titulo{
+  color:white;
+
 }
