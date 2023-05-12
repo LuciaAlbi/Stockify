@@ -38,12 +38,12 @@ $loginMessage = $security->doLogin();*/
 					<ul>
 						<li id="li_1">
 							<div>
-								<input name="userName" class="element text medium" type="text" maxlength="255" value="" placeholder="Nombre de Usuario" style="width:250px;height:30px;"/>
+								<input name="userName" class="element text medium rounded-pill" type="text" maxlength="255" value="" placeholder="Nombre de Usuario" style="width:250px;height:30px;"/>
 							</div>
 						</li>
 						<li id="li_2">
 							<div>
-								<input name="userPassword" class="element text medium" type="password" maxlength="255" value="" placeholder="Contraseña" style="width:250px;height:30px;"/>
+								<input name="userPassword" class="element text medium rounded-pill" type="password" maxlength="255" value="" placeholder="Contraseña" style="width:250px;height:30px;"/>
 							</div>
 						</li>
 						<li class="buttons">
