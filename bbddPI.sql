@@ -18,7 +18,8 @@ pasillo VARCHAR(3),
 estanteria VARCHAR(3),
 altura VARCHAR(1),
 id_almacen INT,
-FOREIGN KEY (id_almacen) references almacen(id_almacen)
+FOREIGN KEY (id_almacen) references almacen(id_almacen),
+Unique (zona, pasillo, estanteria, altura,id_almacen)
 );
 
 
