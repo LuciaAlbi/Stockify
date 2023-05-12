@@ -22,7 +22,7 @@ $loginMessage = $security->doLogin();
 		<div class="container-fluid">
 			<div class="row">
 				<nav class="navbar navbar-expand-sm navbar-dark">
-					<a class="navbar-brand col-1" href="login.php">
+					<a class="navbar-brand col-1" href="pages/almacen/Landing.php">
 						<img src="assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
 					</a>
 					<h2 class="col-10 text-center">La casa del electrodomestico</h2>
@@ -33,6 +33,7 @@ $loginMessage = $security->doLogin();
 	<section>
 		<div id="form_container" style="text-align:center; width:300px">
 			<img src="assets/img/perfil_blanco.png" alt="Avatar Logo" style="width:150px;">
+			<p><?=$loginMessage?></p>
 			<form class="appnitro" method="post" action="">
 				<div class="form_description">
 					<ul>

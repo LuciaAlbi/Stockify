@@ -4,7 +4,7 @@ body{
   padding-bottom:4em;
   min-height: 100vh;
 }
-h2{
+h2,p{
     color:white
 }
 nav{
