@@ -70,6 +70,7 @@ CREATE TABLE mueve(
     cant INT,
     id_almacen INT,
     idProducto VARCHAR (40),
+    realizado bool,
     FOREIGN KEY (id_almacen) REFERENCES almacen (id_almacen),
     FOREIGN KEY (idProducto) REFERENCES productos (ref)
 );
