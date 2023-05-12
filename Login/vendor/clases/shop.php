@@ -2,9 +2,9 @@
 
 // ver listado de todo el almacen desde base de datos
 
-class Warehouse extends Connection
+class Shop extends Connection
 {
-    public function verWarehouse()
+    public function verShop()
     {
         $sql = "SELECT * FROM almacen";
         $result = $this->conn->query($sql);
