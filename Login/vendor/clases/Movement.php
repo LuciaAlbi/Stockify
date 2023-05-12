@@ -14,4 +14,20 @@ class Movement extends Connection
             return false;
         }
     }
+    // crear una funcion para ver ref, cant, id_almacen
+
+    public function verMovement2()
+    {
+        $sql = "SELECT ref, cant, id_almacen FROM mueve";
+        $result = $this->conn->query($sql);
+        if ($result->num_rows > 0) {
+            $row = array();
+            while ($rows = $result->fetch_assoc()) {
+                $row[] = $rows;
+            }
+            return $row;
+        } else {
+            return false;
+        }
+    }
 }
