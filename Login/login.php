@@ -1,7 +1,7 @@
 <?php
-/*require_once "/vendor/autoloader.php";
+require_once "vendor/autoloader.php";
 $security = new Security();
-$loginMessage = $security->doLogin();*/
+$loginMessage = $security->doLogin();
 ?>
 <!DOCTYPE html>
 

@@ -1,6 +1,6 @@
 <?php
 function cargador($clase){
-    $fichero = $_SERVER['DOCUMENT_ROOT']."/clases/{$clase}.php";
+    $fichero = __DIR__."/clases/{$clase}.php";
     if(file_exists($fichero)){
         require_once($fichero);
     }else{
