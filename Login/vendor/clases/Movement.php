@@ -9,7 +9,7 @@ class Movement extends Connection
         $sql = "SELECT idProducto, fecha, cant, id_almacen FROM mueve";
         $result = $this->conn->query($sql);
         if ($result->num_rows > 0) {
-            return $result->fetch_assoc();
+            return $result->fetch_all();
         } else {
             return false;
         }

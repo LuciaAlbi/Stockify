@@ -48,7 +48,7 @@ $unmovement = $movement->verMovementAlmacen();
                         <form id="inci">
                             <div class="form-group">
                                 <label for="titulo">Ref. Producto/Fecha/Cantidad/Codigo prov</label>
-                                <input type="text" class="form-control" id="titulo" placeholder="" readonly>
+                                <input type="text" class="form-control" id="titulo" placeholder="<?php echo $unmovement['idProducto']."/".$unmovement['fecha']."/".$unmovement['cant']."/".$unmovement['id_almacen']?>" readonly>
                             </div>
                         </form>
                     </div>

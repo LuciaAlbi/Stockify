@@ -33,7 +33,7 @@ $product->verProductTienda();
                             Incidencia/Entrada/Saldia
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Incidence.php">Incidencia</a></li>
+                            <li><a class="dropdown-item" href="warehouseIncidence.php">Incidencia</a></li>
                             <li><a class="dropdown-item" href="entrance.php">Entrada productos</a></li>
                             <li><a class="dropdown-item" href="sending.php">Salida productos</a></li>
                         </ul>
