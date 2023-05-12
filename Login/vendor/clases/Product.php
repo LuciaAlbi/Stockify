@@ -1,10 +1,8 @@
 <?php
 
-// ver listado de todos los productos desde base de datos
-
 class Product extends Connection
 {
-    public function verProduct()
+    public function verProduct() // ver listado de todos los productos desde base de datos
     {
         $sql = "SELECT * FROM productos";
         $result = $this->conn->query($sql);
