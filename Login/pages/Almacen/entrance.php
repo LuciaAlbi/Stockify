@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<header>
+    <header>
         <div class="container-fluid">
             <div class="row">
                 <nav class="navbar navbar-expand-sm navbar-dark">
@@ -23,7 +23,7 @@
                     <h2 class="col-8 offset-1 text-center">La casa del electrodomestico</h2>
                     <div class="dropdown col-1">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                        <span>Crear entrada/Incidencia/Salida</span>
+                            <span>Crear entrada/Incidencia/Salida</span>
                         </button>
                         <ul class=" dropdown-menu">
                             <li><a class="dropdown-item" href="createEntrance.php">Crear entrada</a></li>
@@ -35,17 +35,18 @@
             </div>
         </div>
     </header>
-	<footer>
-		<div class="container-fluid">
-			<div class="row align-item-center">
-				<div class="col-6 offset-5">
-					<p> Derechos reservados &copy; 2023
-                        <a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad</p></a>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <footer>
+        <div class="container-fluid">
+            <div class="row align-item-center">
+                <div class="col-6 offset-5">
+                    <p> Derechos reservados &copy; 2023
+                        <a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad
+                    </p></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>

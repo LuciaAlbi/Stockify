@@ -1,6 +1,7 @@
 <?php
 require_once "../../vendor/autoloader.php";
-
+$incidencia = new Inci();
+$unaIncidencia = $incidencia->mostInci(1);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,11 +49,11 @@ require_once "../../vendor/autoloader.php";
                         <form id="inci">
                             <div class="form-group">
                                 <label for="titulo">Fecha</label>
-                                <input type="text" class="form-control" id="titulo" placeholder="Aqui va la fecha" readonly>
+                                <input type="text" class="form-control" id="titulo" placeholder="<?= $unaIncidencia["fecha_hora"] ?>" readonly>
                             </div>
                             <div class="form-group">
                                 <label for="descripcion">Descripción</label>
-                                <textarea class="form-control" id="descripcion" rows="3" placeholder="Aqui va la descripcion" readonly></textarea>
+                                <textarea class="form-control" id="descripcion" rows="3" placeholder="<?= $unaIncidencia["descripcion"] ?>" readonly></textarea>
                             </div>
                         </form>
                     </div>
