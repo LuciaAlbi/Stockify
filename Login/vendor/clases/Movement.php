@@ -4,7 +4,7 @@
 
 class Movement extends Connection
 {
-    public function verMovement()
+    public function verMovementAlmacen()
     {
         $sql = "SELECT idProducto, fecha, cant, id_almacen FROM mueve";
         $result = $this->conn->query($sql);
@@ -16,7 +16,7 @@ class Movement extends Connection
     }
     // crear una funcion para ver ref, cant, id_almacen
 
-    public function verMovement2()
+    public function verMovementTienda()
     {
         $sql = "SELECT ref, cant, id_almacen FROM mueve";
         $result = $this->conn->query($sql);

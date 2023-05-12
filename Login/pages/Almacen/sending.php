@@ -1,7 +1,7 @@
 <?php
 require_once "../../vendor/autoloader.php";
 $movement = new Movement();
-$unmovement = $movement->verMovement();
+$unmovement = $movement->verMovementAlmacen();
 ?>
 <!DOCTYPE html>
 <html lang="en">
