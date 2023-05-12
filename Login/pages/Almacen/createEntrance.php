@@ -35,7 +35,8 @@
                     <div class="col-3"><input type="text" class="form-control" id="titulo" placeholder="Codigo proveedor"></div>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Realizar</button>
+            <button style="margin-bottom:10px" type="submit" class="btn btn-primary">Anadir producto</button><br>
+            <button type="submit" class="btn btn-primary">Confirmar salida</button>
         </form>
     </div>
     <footer>

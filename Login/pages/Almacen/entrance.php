@@ -1,3 +1,7 @@
+<?php
+require_once "../../vendor/autoloader.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#4D6E9B">
-    <title>Entrada</title>
+    <title>Salida</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="icon" href="../../assets/img/image-removebg-preview.png" type="imagen/png">
     <link href="../../assets/css/style.css" rel="stylesheet">
@@ -23,10 +27,10 @@
                     <h2 class="col-8 offset-1 text-center">La casa del electrodomestico</h2>
                     <div class="dropdown col-1">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                            <span>Crear entrada/Incidencia/Salida</span>
+                            <span>Crear salida/Incidencia/Salida</span>
                         </button>
                         <ul class=" dropdown-menu">
-                            <li><a class="dropdown-item" href="createEntrance.php">Crear entrada</a></li>
+                            <li><a class="dropdown-item" href="createSending.php">Crear salida</a></li>
                             <li><a class="dropdown-item" href="Incidence.php">Incidencia</a></li>
                             <li><a class="dropdown-item" href="sending.php">Salida</a></li>
                         </ul>
@@ -35,6 +39,22 @@
             </div>
         </div>
     </header>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="prueba col-4 align-self-center">
+                <div class="row justify-content-center"><!-- Se tiene que copiar desde aqui -->
+                    <div class=" prueba1 col-4 align-self-center">
+                        <form id="inci">
+                            <div class="form-group">
+                                <label for="titulo">Ref. Producto/Fecha/Cantidad/Codigo prov</label>
+                                <input type="text" class="form-control" id="titulo" placeholder="" readonly>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- Hasta aqui para mostrar otra incidencia -->
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="container-fluid">
             <div class="row align-item-center">
