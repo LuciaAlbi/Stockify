@@ -14,9 +14,9 @@ nombre VARCHAR(30)
 CREATE TABLE Ubicacion (
 Id_ubi INT PRIMARY KEY auto_increment, 
 zona VARCHAR(10),
-pasillo VARCHAR(3),
-estanteria VARCHAR(3),
-altura VARCHAR(1),
+pasillo int,
+estanteria int,
+altura int,
 id_almacen INT,
 FOREIGN KEY (id_almacen) references almacen(id_almacen),
 Unique (zona, pasillo, estanteria, altura,id_almacen)
