@@ -23,11 +23,11 @@ require_once "../../vendor/autoloader.php";
 		<div class="container-fluid">
 			<div class="row">
 				<nav class="navbar navbar-expand-sm navbar-dark">
-					<a class="navbar-brand col-1" href="landing.php">
+					<a class="navbar-brand col-0" href="landing.php">
 						<img src="../../assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
 					</a>
-					<h2 class="col-8 offset-1 text-center">La casa del electrodomestico</h2>
-					<div class="dropdown col-1">
+					<h2 class="col-7 text-end">La casa del electrodomestico</h2>
+					<div class="dropdown col-1 offset-2">
 						<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
 							Incidencia/Entrada/Saldia
 						</button>
@@ -37,6 +37,9 @@ require_once "../../vendor/autoloader.php";
 							<li><a class="dropdown-item" href="sending.php">Salida productos</a></li>
 						</ul>
 					</div>
+					<a class="navbar-brand col-2 text-center" href="landing.php">
+						<img src="../../assets/img/perfil_blanco.png" alt="Avatar Logo" style="width:50px;">
+					</a>
 				</nav>
 			</div>
 		</div>

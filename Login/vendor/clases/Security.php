@@ -2,7 +2,7 @@
 class Security extends Connection
 {
     private $loginPage = "login.php";
-    private $homePage = "index.php";
+    private $homePage = "pages/almacen/landing.php";
     public function __construct()
     {
         parent::__construct();
@@ -15,12 +15,18 @@ class Security extends Connection
             header("Location: " . $this->loginPage);
         }
     }
-
+    public function close_session()
+    {
+        if (isset($_SESSION["loggedIn"]) || $_SESSION["loggedIn"]) {
+            header("Location: " . $this->loginPage);
+            unset($_SESSION['loggedIn']);
+        }
+    }
     public function doLogin()
     {
         if (count($_POST) > 0) {
             $user = $this->getUser($_POST["userName"]);
-            $_SESSION["loggedIn"] = $this->checkUser($user, $_POST["userPassword"]) ? $user["userName"] : false;
+            $_SESSION["loggedIn"] = $this->checkUser($user, $_POST["userPassword"]) ? $user["nombre"] : false;
             if ($_SESSION["loggedIn"]) {
                 header("Location: " . $this->homePage);
             } else {
@@ -41,7 +47,7 @@ class Security extends Connection
     {
         if ($user) {
             //return $this->checkPassword($user["userPassword"], $userPassword);
-            return $this->checkPassword($user["securePassword"], $userPassword);
+            return $this->checkPassword($user["securePwd"], $userPassword);
         } else {
             return false;
         }
