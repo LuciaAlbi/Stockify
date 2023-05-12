@@ -79,7 +79,7 @@ $loginMessage = $security->doLogin();*/
 		<div class="container-fluid">
 			<div class="row align-item-center">
 				<div class="col-6 offset-5">
-					Derechos reservados &copy; 2023 <a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad</a>
+					Derechos reservados &copy; 2023 <a href="assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad</a>
 				</div>
 			</div>
 		</div>
