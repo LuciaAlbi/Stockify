@@ -1,7 +1,7 @@
 <?php
 require_once "../../vendor/autoloader.php";
-$incidencia = new Inci();
-$unaIncidencia = $incidencia->mostInci(1);
+$incidencia=new Inci();
+$unaIncidencia=$incidencia->mostInci(1);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,29 +49,13 @@ $unaIncidencia = $incidencia->mostInci(1);
                         <form id="inci">
                             <div class="form-group">
                                 <label for="titulo">Fecha</label>
-                                <input type="text" class="form-control" id="titulo" placeholder="<?= $unaIncidencia["fecha_hora"] ?>" readonly>
+                                <input type="text" class="form-control" id="titulo" placeholder="<?=$unaIncidencia["fecha_hora"]?>" readonly>
                             </div>
                             <div class="form-group">
                                 <label for="descripcion">Descripción</label>
-                                <textarea class="form-control" id="descripcion" rows="3" placeholder="<?= $unaIncidencia["descripcion"] ?>" readonly></textarea>
+                                <textarea class="form-control" id="descripcion" rows="3" placeholder="<?=$unaIncidencia["descripcion"]?>" readonly></textarea>
                             </div>
                         </form>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="row">
-                                            <h1 class="titulo">Fecha y hora</h1>
-                                            <div class="mostrar"><?= $unaIncidencia["fecha_hora"] ?></div>
-                                        </div>
-                                        <div class="row">
-                                            <h1 class="titulo">Descripcion</h1>
-                                            <div class="mostrar"><?= $unaIncidencia["descripcion"] ?></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
                 </div><!-- Hasta aqui para mostrar otra incidencia -->
             </div>
