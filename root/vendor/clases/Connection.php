@@ -7,7 +7,7 @@ class Connection
     private $password;
     private $db;
     protected $conn;
-    protected $configFile = "../../conf.csv";
+    protected $configFile = "conf.csv";
 
     public function __construct()
     {
@@ -28,7 +28,7 @@ class Connection
             $this->userName = $connData[1];
             $this->password = $connData[2];
             $this->db = $connData[3];
-            $this->conn = new mysqli($this->host, $this->userName, $this->password, $this->db);
+            $this->conn = new mysqli($this->host,$this->userName,$this->password,$this->db,);
             if ($this->conn->connect_error) {
                 die("Connection failed: " . $this->conn->connect_error);
             }
