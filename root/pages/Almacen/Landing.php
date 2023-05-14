@@ -23,36 +23,42 @@ require_once "../../vendor/autoloader.php";
 		<div class="container-fluid">
 			<div class="row">
 				<nav class="navbar navbar-expand-sm navbar-dark">
-					<a class="navbar-brand col-0" href="landing.php">
+					<a class="navbar-brand col-1" href="landing.php">
 						<img src="../../assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
 					</a>
-					<h2 class="col-7 text-end">La casa del electrodomestico</h2>
-					<div class="dropdown col-1 offset-2">
-						<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-							Incidencia/Entrada/Saldia
+					<h2 class="col-lg-6 col-md-7 col-sm-6 text-center">La casa del electrodomestico</h2>
+					<div class="navbar-brand col-1 offset-1">
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
 						</button>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="Incidence.php">Incidencia</a></li>
-							<li><a class="dropdown-item" href="entrance.php">Entrada productos</a></li>
-							<li><a class="dropdown-item" href="sending.php">Salida productos</a></li>
-						</ul>
+						<div class="collapse navbar-collapse" id="navbarNavDropdown">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="Incidence.php">Incidencia</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="entrance.php">Entrada productos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="sending.php">Salida productos</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<a class="navbar-brand col-2 text-center" href="landing.php">
-						<img src="../../assets/img/perfil_blanco.png" alt="Avatar Logo" style="width:50px;">
-					</a>
 				</nav>
 			</div>
 		</div>
+
 	</header>
 	<div class="container">
-		<div class="row">
-			<div class="card offset-2 col-4" style="width:400px; margin-top:100px;">
+		<div class="row justify-content-center">
+			<div class="card col-lg-4 offset-lg-0 col-md-4 col-sm-12 offset-sm-2" style="width:400px; margin-top:50px;margin-bottom:50px">
 				<a href="product.php"><img class="card-img-top" src="../../assets/img/image.png" alt="card image"></a>
 				<div class="card-body">
 					<h4 class="card-title text-center">PRODUCTOS</h4>
 				</div>
 			</div>
-			<div class="card offset-1 col-2" style="width:400px; margin-top:100px;">
+			<div class="card offset-lg-2 col-lg-4 col-md-4 col-sm-12" style="width:400px; margin-top:50px;margin-bottom:50px">
 				<a href="newOrder.php"><img class="card-img-top" src="../../assets/img/product.png" alt="card image"></a>
 				<div class="card-body">
 					<h4 class="card-title text-center">PEDIDOS</h4>
@@ -62,8 +68,8 @@ require_once "../../vendor/autoloader.php";
 	</div>
 	<footer>
 		<div class="container-fluid">
-			<div class="row align-item-center">
-				<div class="col-6 offset-5">
+			<div class="row">
+				<div class="col-12 text-center">
 					Derechos reservados &copy; 2023 <a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad</a>
 				</div>
 			</div>
