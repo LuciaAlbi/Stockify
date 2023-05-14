@@ -48,7 +48,7 @@ $loginMessage = $security->doLogin();
 							</div>
 						</li>
 						<li class="buttons">
-							<input id="saveForm" class="btn btn-outline-light btn-lg rounded-pill" type="submit" name="submit" value="Log In" style="width:100px"/>
+							<input id="saveForm" class="btn btn-outline-light btn-lg rounded-pill" type="submit" name="submit" value="Enviar" style="width:100px"/>
 						</li>
 					</ul>
 				</div>
