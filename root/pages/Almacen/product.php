@@ -1,6 +1,7 @@
 <?php
-
 require_once "../../vendor/autoloader.php";
+$product=new Product();
+$juan=$product->verProductAlmacen();
 ?>
 
 
@@ -50,6 +51,9 @@ require_once "../../vendor/autoloader.php";
                         Search<span class="fa fa-eye-slash icon"></span>
                     </button>
                 </span>
+                <?php
+                 var_dump($juan);
+                ?>
             </div>
             <footer>
                 <div class="container-fluid">
