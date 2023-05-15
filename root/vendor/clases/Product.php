@@ -16,4 +16,19 @@ class Product extends Connection
             return false;
         }
     }
+
+    public function drawProduct($product)
+    {
+        $output = "";
+        for ($i = 0; $i < count($product); $i++) {
+            $output .= "<tr>";
+            $output .= "<td>" . $product[$i]['ref'] . "</td>";
+            $output .= "<td>" . $product[$i]['precio_compra'] . "</td>";
+            $output .= "<td>" . $product[$i]['precio_venta'] . "</td>";
+            $output .= "<td>" . $product[$i]['marca'] . "</td>";
+            $output .= "<td>" . $product[$i]['modelo'] . "</td>";
+            $output .= "</tr>";
+        }
+        return $output;
+    }
 }
