@@ -2,7 +2,6 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +12,6 @@
     <link rel="icon" href="../../assets/img/image-removebg-preview.png" type="imagen/png">
     <link href="../../assets/css/style.css" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <div class="container-fluid">
@@ -27,35 +25,52 @@
             </div>
         </div>
     </header>
-
     <div class="container">
-        <form>
-            <div class="form-group">
-                <label for="titulo">Título</label>
-                <input type="text" class="form-control" id="titulo" placeholder="Ingrese un título para la incidencia">
-            </div>
-            <div class="form-group">
-                <label for="descripcion">Descripción</label>
-                <textarea class="form-control" id="descripcion" rows="3" placeholder="Ingrese una descripción para la incidencia"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Realizar incidencia</button>
-        </form>
+  <form id="incidenceForm" action="warehouseIncidence.php" method="POST">
+    <div class="form-group">
+      <label for="titulo">Título</label>
+      <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Ingrese un título para la incidencia">
     </div>
+    <div class="form-group">
+      <label for="descripcion">Descripción</label>
+      <textarea class="form-control" id="descripcion" name="descripcion" rows="3" placeholder="Descripción para la incidencia"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" id="submitButton" disabled>Realizar incidencia</button>
+  </form>
+</div>
+<script>
+  const tituloInput = document.getElementById('titulo');
+  const descripcionInput = document.getElementById('descripcion');
+  const submitButton = document.getElementById('submitButton');
 
+  tituloInput.addEventListener('input', toggleSubmitButton);
+  descripcionInput.addEventListener('input', toggleSubmitButton);
+
+  function toggleSubmitButton() {
+    if (tituloInput.value.trim() !== '' && descripcionInput.value.trim() !== '') {
+      submitButton.disabled = false;
+    } else {
+      submitButton.disabled = true;
+    }
+  }
+
+  document.querySelector('#incidenceForm').addEventListener('submit', function(event) {
+    var titulo = document.getElementById('titulo').value;
+    var descripcion = document.getElementById('descripcion').value;
+  });
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
-
 <footer>
-    <div class="container-fluid" style="background-color: #4D6E9B; margin-top:100px;position:fixed;">
-        <div class="row">
-            <div class="navbar navbar-fixed-bottom">
+        <div class="container-fluid" style="background-color: #4D6E9B; margin-top:100px;position:fixed;">
+            <div class="row">
+                <div class="navbar navbar-fixed-bottom">
                 <div class="col-12 text-center">
-                    <p>Derechos reservados &copy; 2023</p>
-                    <p><a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad</a></p>
+                <p>Derechos reservados &copy; 2023</p>
+                <p><a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad</a></p>
+                </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-
+    </footer>
 </html>
