@@ -1,6 +1,6 @@
 USE stockify;
 INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
-VALUES ('00001', 200, 350, 'LG', 'FrigorÃ­fico A+++ No Frost', 80, 'Bajo', 600, 'ACME Inc.', 'Acero inoxidable');
+VALUES ('00001', 200, 350, 'LG', 'Frigorifico A+++ No Frost', 80, 'Bajo', 600, 'ACME Inc.', 'Acero inoxidable');
 
 INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
 VALUES ('00002', 180, 320, 'Samsung', 'Lavadora EcoBubble 8 Kg', 65, 'Bajo', 550, 'BetaCorp', 'Blanco');
@@ -21,7 +21,7 @@ INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dime
 VALUES ('00007', 70, 135, 'Taurus', 'Cafetera goteo 12 tazas', 2, 'Alto', 220, 'ACME Inc.', 'Negro');
 
 INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
-VALUES ('00008', 300, 549, 'Samsung', 'FrigorÃ­fico Side-by-Side', 100, 'Bajo', 716, 'BetaCorp', 'Negro');
+VALUES ('00008', 300, 549, 'Samsung', 'Frigorifico Side-by-Side', 100, 'Bajo', 716, 'BetaCorp', 'Negro');
 
 INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
 VALUES ('00009', 120, 199, 'Orbegozo', 'Ventilador de pie 40cm', 4, 'Medio', 430, 'Gamma Inc.', 'Negro');
@@ -33,16 +33,16 @@ INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dime
 VALUES ('00011', 80, 149, 'Taurus', 'Plancha de vapor 2200W', 1.5, 'Medio', 285, 'BetaCorp', 'Azul');
 
 INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
-VALUES ('00012', 350, 599, 'LG', 'FrigorÃ­fico French Door', 120, 'Bajo', 1790, 'Gamma Inc.', 'Inoxidable');
+VALUES ('00012', 350, 599, 'LG', 'Frigorifico French Door', 120, 'Bajo', 1790, 'Gamma Inc.', 'Inoxidable');
 
 INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
-VALUES ('00013', 25, 49, 'Orbegozo', 'Placa de cocina elÃ©ctrica', 5, 'Alto', 520, 'ACME Inc.', 'Negro');
+VALUES ('00013', 25, 49, 'Orbegozo', 'Placa de cocina electrica', 5, 'Alto', 520, 'ACME Inc.', 'Negro');
 
 INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
 VALUES ('00014', 90, 169, 'Bosch', 'Batidora de mano 800W', 1, 'Medio', 30, 'BetaCorp', 'Rojo');
 
 INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
-VALUES ('00015', 200, 399, 'Samsung', 'FrigorÃ­fico Americano', 150, 'Bajo', 1790, 'Gamma Inc.', 'Inoxidable');
+VALUES ('00015', 200, 399, 'Samsung', 'Frigorifico Americano', 150, 'Bajo', 1790, 'Gamma Inc.', 'Inoxidable');
 
 INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
 VALUES ('00016', 30, 59, 'Taurus', 'Tostador de pan 2 rebanadas', 1, 'Alto', 70, 'ACME Inc.', 'Negro');
@@ -69,10 +69,10 @@ INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dime
 VALUES ('00023', 150, 299, 'Philips', 'Plancha de vapor GC5039/30', 1.5, 'Alto', 310, 'ACME Inc.', 'Negro');
 
 INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
-VALUES ('00024', 500, 899, 'Bosch', 'Horno multifunciÃ³n Serie 4', 35, 'Medio', 595, 'BetaCorp', 'Acero inoxidable');
+VALUES ('00024', 500, 899, 'Bosch', 'Horno multifuncion Serie 4', 35, 'Medio', 595, 'BetaCorp', 'Acero inoxidable');
 
 INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
-VALUES ('00025', 80, 159, 'Orbegozo', 'Exprimidor elÃ©ctrico EP 4000', 2, 'Alto', 225, 'Gamma Inc.', 'Blanco');
+VALUES ('00025', 80, 159, 'Orbegozo', 'Exprimidor electrico EP 4000', 2, 'Alto', 225, 'Gamma Inc.', 'Blanco');
 
 INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
 VALUES ('00026', 120, 249, 'Taurus', 'Batidora amasadora Prima', 2.5, 'Bajo', 240, 'ACME Inc.', 'Blanco');
@@ -81,7 +81,7 @@ INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dime
 VALUES ('00027', 80, 169, 'Philips', 'Plancha de vapor ComfortTouch', 1.2, 'Medio', 290, 'BetaCorp', 'Azul');
 
 INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
-VALUES ('00028', 300, 549, 'Bosch', 'Horno multifunciÃ³n Serie 4', 25, 'Bajo', 595, 'Gamma Inc.', 'Negro');
+VALUES ('00028', 300, 549, 'Bosch', 'Horno multifuncion Serie 4', 25, 'Bajo', 595, 'Gamma Inc.', 'Negro');
 
 INSERT INTO productos (Ref, p_compra, p_venta, marca, modelo, peso, f_rota, dimensiones, proveedor, color)
 VALUES ('00029', 40, 79, 'Taurus', 'Sandwichera Grill', 1.5, 'Alto', 240, 'ACME Inc.', 'Negro');
