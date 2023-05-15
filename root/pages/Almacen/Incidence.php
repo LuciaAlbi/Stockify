@@ -50,11 +50,11 @@ $incidencia->drawInci($unaIncidencia);
                         <form id="inci">
                             <div class="form-group">
                                 <label for="titulo">Fecha</label>
-                                <input type="text" class="form-control" id="titulo" placeholder="<?=$unaIncidencia["fecha_hora"]?>" readonly>
+                                <input type="text" class="form-control" id="titulo" placeholder="<?=$unaIncidencia[0][0]?>" readonly>
                             </div>
                             <div class="form-group">
                                 <label for="descripcion">Descripción</label>
-                                <textarea class="form-control" id="descripcion" rows="3" placeholder="<?=$unaIncidencia["descripcion"]?>" readonly></textarea>
+                                <textarea class="form-control" id="descripcion" rows="3" placeholder="<?=$unaIncidencia[0][1]?>" readonly></textarea>
                             </div>
                         </form>
                     </div>
