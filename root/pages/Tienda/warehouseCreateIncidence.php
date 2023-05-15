@@ -62,15 +62,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 <footer>
-        <div class="container-fluid" style="background-color: #4D6E9B; margin-top:100px;position:fixed;">
-            <div class="row">
-                <div class="navbar navbar-fixed-bottom">
-                <div class="col-12 text-center">
-                <p>Derechos reservados &copy; 2023</p>
-                <p><a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad</a></p>
-                </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <div class="container-fluid">
+    <div class="row align-item-center">
+      <div class="col-6 offset-5">
+        <p> Derechos reservados &copy; 2023
+          <a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad
+        </p></a>
+      </div>
+    </div>
+  </div>
+</footer>
 </html>
