@@ -46,11 +46,17 @@ div.prueba{
   width: 600px;
   height: auto;
 }
-div.prueba1{ 
+div.prueba1{
+  border: solid #013C6A 1px; 
+  -moz-border-radius: 20px; 
+  -webkit-border-radius: 20px; 
+  border-radius: 20px;
+  height: auto;
   background-color: #013C6A;
   width: 400px;
   margin-top:20px;
   margin-bottom: 20px;
+
 }
 #inci{
   margin-top:10px;
