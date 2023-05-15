@@ -29,9 +29,20 @@
         </div>
     </header>
     <div class="container">
-    <h2>Detalles de la incidencia</h2>
-    <div id="resultado"></div>
-</div>
+        <div class="row justify-content-center">
+            <div class="prueba col-4 align-self-center">
+                <div class="row justify-content-center">
+                    <div class=" prueba1 col-4 align-self-center">
+                        <form id="inci">
+                            <div class="form-group">
+                                <div id="resultado"></div>
+                            </div>    
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 <script>
     var incidencias = [];
     function mostrarIncidencias() {
@@ -39,8 +50,8 @@
         resultado.innerHTML = '';
         for (var i = 0; i < incidencias.length; i++) {
             var div = document.createElement('div');
-            div.innerHTML =  '<p>Título: ' + incidencias[i].titulo + '</p>' +
-                             '<p>Descripción: ' + incidencias[i].descripcion + '</p>';
+            div.innerHTML =  '<label for="titulo">Fecha</label>' +'<input type="text" class="form-control" id="titulo" readonly value="' + incidencias[i].titulo + '">' + '<br>' +
+                             '<label for="descripcion">Descripción</label>' +'<textarea class="form-control" id="descripcion" rows="3" readonly>' + incidencias[i].descripcion + '</textarea>';
             resultado.appendChild(div);
         }
     }
