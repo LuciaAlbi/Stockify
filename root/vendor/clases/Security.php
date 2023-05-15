@@ -3,6 +3,7 @@ class Security extends connectionIndex
 {
     private $loginPage = "login.php";
     private $homePage = "pages/almacen/landing.php";
+    private $shops = "pages/Tienda/warehouse.php";
     public function __construct()
     {
         parent::__construct();
@@ -28,7 +29,17 @@ class Security extends connectionIndex
             $user = $this->getUser($_POST["userName"]);
             $_SESSION["loggedIn"] = $this->checkUser($user, $_POST["userPassword"]) ? $user["nombre"] : false;
             if ($_SESSION["loggedIn"]) {
-                header("Location: " . $this->homePage);
+
+                $sql = "SELECT almacen_id FROM empleado WHERE nombre ='$user'";
+                $result = $this->conn->query($sql);
+                if ($result == 1) {
+                    header("Location: " . $this->homePage);
+                
+                }else {
+                    header("Location: " . $this->$shops);
+                }
+
+                //header("Location: " . $this->homePage);
             } else {
                 return "Incorrect User Name or Password";
             }
