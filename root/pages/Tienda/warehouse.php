@@ -1,8 +1,9 @@
 <?php
-
+session_start();
 require_once "../../vendor/autoloader.php";
 $product=new Product();
 $product->verProductTienda();
+var_dump($_SESSION["loggedIn"]);
 ?>
 
 

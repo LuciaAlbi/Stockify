@@ -26,17 +26,22 @@ class Security extends connectionIndex
     public function doLogin()
     {
         if (count($_POST) > 0) {
-            $user = $this->getUser($_POST["userName"]);
-            $_SESSION["loggedIn"] = $this->checkUser($user, $_POST["userPassword"]) ? $user["nombre"] : false;
+            $userArray = $this->getUser($_POST["userName"]);
+            $user = $userArray['nombre'];
+            $_SESSION["loggedIn"] = $this->checkUser($userArray, $_POST["userPassword"]) ? $userArray: false;
             if ($_SESSION["loggedIn"]) {
 
                 $sql = "SELECT almacen_id FROM empleado WHERE nombre ='$user'";
                 $result = $this->conn->query($sql);
-                if ($result == 1) {
-                    header("Location: " . $this->homePage);
+                //debug********************************************
+                $warehouseArray = $result->fetch_assoc();
+                $warehouse = $warehouseArray['almacen_id'];
                 
+                //**************************************************************** */
+                if ($warehouse == 1) {
+                    header("Location: " . $this->homePage);
                 }else {
-                    header("Location: " . $this->$shops);
+                    header("Location: " . $this->shops);
                 }
 
                 //header("Location: " . $this->homePage);
@@ -54,11 +59,11 @@ class Security extends connectionIndex
         }
     }
 
-    private function checkUser($user, $userPassword)
+    private function checkUser($userArray, $userPassword)
     {
-        if ($user) {
+        if ($userArray) {
             //return $this->checkPassword($user["userPassword"], $userPassword);
-            return $this->checkPassword($user["securePwd"], $userPassword);
+            return $this->checkPassword($userArray["securePwd"], $userPassword);
         } else {
             return false;
         }
