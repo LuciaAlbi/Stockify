@@ -21,3 +21,5 @@ INSERT INTO esta (ref, almacen_id, id_ubi)
 VALUES ('00002',1,10);
 INSERT INTO esta (ref, almacen_id, id_ubi) 
 VALUES ('00002',1,11);
+INSERT INTO esta (ref, almacen_id, id_ubi) 
+VALUES ('00002',4,11);
