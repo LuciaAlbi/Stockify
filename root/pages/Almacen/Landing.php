@@ -1,7 +1,5 @@
 <?php
-
 require_once "../../vendor/autoloader.php";
-
 ?>
 
 <!DOCTYPE html>
@@ -26,14 +24,14 @@ require_once "../../vendor/autoloader.php";
 					<a class="navbar-brand col-1" href="landing.php">
 						<img src="../../assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
 					</a>
-					<h2 class="col-lg-6 col-md-7 col-sm-6 text-center">La casa del electrodomestico</h2>
-					<div class="navbar-brand col-1 offset-1">
+					<h2 class="col-lg-7 col-md-7 col-sm-6 text-end">La casa del electrodomestico</h2>
+					<div class="navbar-brand">
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
-						<div class="collapse navbar-collapse" id="navbarNavDropdown">
-							<ul class="navbar-nav">
-								<li class="nav-item">
+						<div class="collapse navbar-collapse col-2" id="navbarNavDropdown">
+							<ul class="navbar-nav ">
+								<li class="nav-item ">
 									<a class="nav-link" href="Incidence.php">Incidencia</a>
 								</li>
 								<li class="nav-item">

@@ -1,8 +1,8 @@
 <?php
 require_once "../../vendor/autoloader.php";
 $incidencia=new Inci();
-$unaIncidencia=$incidencia->mostInci(1);
-$incidencia->drawInci($unaIncidencia);
+$unaIncidencia=$incidencia->mostInci();
+$drawIncidencia=$incidencia->drawInci($unaIncidencia);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,20 +45,7 @@ $incidencia->drawInci($unaIncidencia);
     <div class="container">
         <div class="row justify-content-center">
             <div class="prueba col-4 align-self-center">
-                <div class="row justify-content-center"><!-- Se tiene que copiar desde aqui -->
-                    <div class=" prueba1 col-4 align-self-center">
-                        <form id="inci">
-                            <div class="form-group">
-                                <label for="titulo">Fecha</label>
-                                <input type="text" class="form-control" id="titulo" placeholder="<?=$unaIncidencia[0][0]?>" readonly>
-                            </div>
-                            <div class="form-group">
-                                <label for="descripcion">Descripción</label>
-                                <textarea class="form-control" id="descripcion" rows="3" placeholder="<?=$unaIncidencia[0][1]?>" readonly></textarea>
-                            </div>
-                        </form>
-                    </div>
-                </div><!-- Hasta aqui para mostrar otra incidencia -->
+                <?=$drawIncidencia?>
             </div>
         </div>
     </div>

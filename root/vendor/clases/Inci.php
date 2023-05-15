@@ -1,9 +1,9 @@
 <?php
 
 class Inci extends Connection{
-    public function mostInci($almacen_id)
+    public function mostInci()
     {
-            $sql = "SELECT fecha_hora,descripcion FROM incidencias WHERE almacen_id = '$almacen_id'";
+            $sql = "SELECT fecha_hora,descripcion FROM incidencias";
             $result = $this->conn->query($sql);
             if ($result->num_rows > 0) {
                 $incidencias = $result->fetch_all();
@@ -20,16 +20,17 @@ class Inci extends Connection{
             $output .= "<form id='inci'>";
             $output .= "<div class='form-group'>";
             $output .= "<label for='titulo'>Fecha</label>";
-            $output .= "<input type='text' class='form-control' id='titulo' placeholder=". $incidencias[$i][0]. " readonly>";
+            $output .= "<input type='text' class='form-control' id='titulo' placeholder='".$incidencias[$i][0]."' readonly>";
             $output .= "</div>";
             $output .= "<div class='form-group'>";
             $output .= "<label for='descripcion'>Descripción</label>";
-            $output .= "<textarea class='form-control' id='descripcion' rows='3' placeholder=".$incidencias[$i][1]." readonly></textarea>";
+            $output .= "<textarea class='form-control' id='descripcion' rows='3' placeholder='".$incidencias[$i][1]."' readonly></textarea>";
             $output .= "</div>";
             $output .= "</form>";
             $output .= "</div>";
             $output .= "</div>";
-            return $output;
+            
         }
+        return $output;
     }
 }
