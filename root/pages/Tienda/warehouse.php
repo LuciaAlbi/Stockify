@@ -1,8 +1,9 @@
 <?php
 
 require_once "../../vendor/autoloader.php";
-$product=new Shop();
-$maria=$product->verShop();
+$product = new Shop();
+$arrayProduct = $product->verShop();
+$drawProduct = $product->drawShop($arrayProduct);
 ?>
 
 
@@ -44,30 +45,59 @@ $maria=$product->verShop();
     </header>
 
     <div class="container-fluid">
-        <form class="form-inline">
-            <div class="input-group">
-                <input ID="txtPassword" type="Password" class="form-control" placeholder="Search">
-                <span class="input-group-btn">
-                    <button id="show_password" class="btn btn-primary" type="button">
-                        Search<span class="fa fa-eye-slash icon"></span>
-                    </button>
-                </span>
-                <?php
-               var_dump($maria);
-                ?>
-            </div>
-            <footer>
-                <div class="container-fluid">
-                    <div class="row align-item-center">
-                        <div class="col-6 offset-5">
-                            <p> Derechos reservados &copy; 2023
-                                <a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad
-                            </p></a>
-                        </div>
-                    </div>
+        <div class="row">
+            <form class="form-inline">
+                <div class="input-group">
+                    <input ID="txtPassword" type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button">
+                            Search<span class=""></span>
+                        </button>
+                    </span><br>
                 </div>
-            </footer>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>
+                                Referencia
+                            </th>
+                            <th>
+                                Nombre
+                            </th>
+                            <th>
+                                Categoria
+                            </th>
+                            <th>
+                                Ubicacion tienda
+                            </th>
+                            <th>
+                                Stock tienda
+                            </th>
+                            <th>
+                                Stock almacen
+                            </th>
+                            <th>
+                                Factor de rotacion
+                            </th>
+                        </tr>
+                        <?= $drawProduct ?>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row align-item-center">
+                <div class="col-6 offset-5">
+                    <p> Derechos reservados &copy; 2023
+                        <a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad
+                    </p></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>

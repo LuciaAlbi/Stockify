@@ -56,8 +56,17 @@ div.prueba1{
   width: 400px;
   margin-top:20px;
   margin-bottom: 20px;
-
 }
 #inci{
   margin-top:10px;
 }
+table{
+  width:100%;
+  border:1px solid #013C6A;  
+}
+td,th{
+  background-color: #4D6E9B;
+  border:1px solid #013C6A;
+  color:white;
+  text-align: center;  
+  }

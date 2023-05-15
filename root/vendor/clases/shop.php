@@ -18,4 +18,19 @@ class Shop extends Connection
             return false;
         }
     }
+    public function drawShop($product){
+        $output="";
+        for ($i=0; $i < count($product); $i++) {
+        $output .= "<tr>";
+        $output .= "<td>".$product[$i][0]."</td>";
+        $output .= "<td>".$product[$i][1]."</td>";
+        $output .= "<td>".$product[$i][2]."</td>";
+        $output .= "<td>".$product[$i][3]."</td>";
+        $output .= "<td>".$product[$i][4]."</td>";
+        $output .= "<td>".$product[$i][5]."</td>";
+        $output .= "<td>".$product[$i][6]."</td>";
+        $output .= "</tr>";
+        }
+        return $output;
+    }
 }
