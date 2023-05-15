@@ -7,7 +7,7 @@ class Security extends connectionIndex
     public function __construct()
     {
         parent::__construct();
-        session_start();
+        if(session_status() !== PHP_SESSION_ACTIVE) session_start();
     }
 
     public function checkLoggedIn()
