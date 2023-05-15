@@ -39,8 +39,7 @@
         resultado.innerHTML = '';
         for (var i = 0; i < incidencias.length; i++) {
             var div = document.createElement('div');
-            div.innerHTML = '<h3>Incidencia ' + (i+1) + '</h3>' +
-                             '<p>Título: ' + incidencias[i].titulo + '</p>' +
+            div.innerHTML =  '<p>Título: ' + incidencias[i].titulo + '</p>' +
                              '<p>Descripción: ' + incidencias[i].descripcion + '</p>';
             resultado.appendChild(div);
         }
