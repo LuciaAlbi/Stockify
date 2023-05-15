@@ -51,6 +51,11 @@ $juan=$product->verProductAlmacen();
                         Search<span class="fa fa-eye-slash icon"></span>
                     </button>
                 </span>
+
+                <table>
+                <br>
+                </br>
+                </table>
                 <?php
                  var_dump($juan);
                 ?>
