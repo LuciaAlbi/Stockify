@@ -1,6 +1,7 @@
 <?php
-
 require_once "../../vendor/autoloader.php";
+$product = new Product();
+$juan = $product->verProductAlmacen();
 ?>
 
 
@@ -12,7 +13,8 @@ require_once "../../vendor/autoloader.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="icon" href="../../assets/img/image-removebg-preview.png" type="imagen/png">
 </head>
@@ -50,19 +52,53 @@ require_once "../../vendor/autoloader.php";
                         Search<span class="fa fa-eye-slash icon"></span>
                     </button>
                 </span>
+
+                <table>
+                    <tr>
+                        <th>Ref</th>
+                        <th>Precio de Compra</th>
+                        <th>Precio de Venta</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Peso</th>
+                        <th>Factor de Rotación</th>
+                        <th>Dimensiones</th>
+                        <th>Proveedor</th>
+                        <th>Color</th>
+                    </tr>
+                    <tr>
+                        <td>Valor ref</td>
+                        <td>Valor p_compra</td>
+                        <td>Valor p_venta</td>
+                        <td>Valor marca</td>
+                        <td>Valor modelo</td>
+                        <td>Valor peso</td>
+                        <td>Valor factor de rotación</td>
+                        <td>Valor dimensiones</td>
+                        <td>Valor proveedor</td>
+                        <td>Valor color</td>
+                    </tr>
+                </table>
+
+                <?php
+                var_dump($juan);
+                ?>
             </div>
             <footer>
                 <div class="container-fluid">
                     <div class="row align-item-center">
                         <div class="col-6 offset-5">
                             <p> Derechos reservados &copy; 2023
-                                <a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad
+                                <a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de
+                                    privacidad
                             </p></a>
                         </div>
                     </div>
                 </div>
             </footer>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>

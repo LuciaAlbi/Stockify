@@ -29,9 +29,20 @@
         </div>
     </header>
     <div class="container">
-    <h2>Detalles de la incidencia</h2>
-    <div id="resultado"></div>
-</div>
+        <div class="row justify-content-center">
+            <div class="prueba col-4 align-self-center">
+                <div class="row justify-content-center">
+                    <div class=" prueba1 col-4 align-self-center">
+                        <form id="inci">
+                            <div class="form-group">
+                                <div id="resultado"></div>
+                            </div>    
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 <script>
     var incidencias = [];
     function mostrarIncidencias() {
@@ -39,8 +50,8 @@
         resultado.innerHTML = '';
         for (var i = 0; i < incidencias.length; i++) {
             var div = document.createElement('div');
-            div.innerHTML =  '<p>Título: ' + incidencias[i].titulo + '</p>' +
-                             '<p>Descripción: ' + incidencias[i].descripcion + '</p>';
+            div.innerHTML =  '<label for="titulo">Fecha</label>' +'<input type="text" class="form-control" id="titulo" readonly value="' + incidencias[i].titulo + '">' + '<br>' +
+                             '<label for="descripcion">Descripción</label>' +'<textarea class="form-control" id="descripcion" rows="3" readonly>' + incidencias[i].descripcion + '</textarea>';
             resultado.appendChild(div);
         }
     }
@@ -55,13 +66,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 <footer>
-    <div class="container-fluid" style="background-color: #4D6E9B; margin-top:100px;position:fixed;">
+    <div class="container-fluid">
         <div class="row">
-            <div class="navbar navbar-fixed-bottom">
-                <div class="col-12 text-center">
-                    <p>Derechos reservados &copy; 2023</p>
-                    <p><a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad</a></p>
-                </div>
+            <div class="col-12 text-center">
+                <p> Derechos reservados &copy; 2023
+                    <a href="../../assets/privacity/privacityPolitic.pdf" target="_blank">Politica de privacidad
+                </p></a>
             </div>
         </div>
     </div>
