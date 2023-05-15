@@ -1,8 +1,8 @@
 <?php
 
 require_once "../../vendor/autoloader.php";
-$product=new Product();
-$maria=$product->verProductTienda();
+$product=new Shop();
+$maria=$product->verShop();
 ?>
 
 
