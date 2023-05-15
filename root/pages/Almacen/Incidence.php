@@ -2,6 +2,7 @@
 require_once "../../vendor/autoloader.php";
 $incidencia=new Inci();
 $unaIncidencia=$incidencia->mostInci(1);
+$incidencia->drawInci($unaIncidencia);
 ?>
 <!DOCTYPE html>
 <html lang="en">
