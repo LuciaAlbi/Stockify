@@ -2,7 +2,7 @@
 
 require_once "../../vendor/autoloader.php";
 $product=new Product();
-$product->verProductTienda();
+$maria=$product->verProductTienda();
 ?>
 
 
@@ -52,6 +52,9 @@ $product->verProductTienda();
                         Search<span class="fa fa-eye-slash icon"></span>
                     </button>
                 </span>
+                <?php
+               var_dump($maria);
+                ?>
             </div>
             <footer>
                 <div class="container-fluid">
