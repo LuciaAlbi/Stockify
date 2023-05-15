@@ -27,7 +27,7 @@ CREATE TABLE empleado (
 userId INT PRIMARY KEY, 
 securePwd VARCHAR(100),
 userPwd VARCHAR(20),
-nombre VARCHAR(30),
+nombre VARCHAR(30) UNIQUE,
 almacen_id INT,
 FOREIGN KEY (almacen_id) REFERENCES almacen(id_almacen)
 );
