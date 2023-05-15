@@ -53,7 +53,7 @@ $maria=$product->verShop();
                     </button>
                 </span>
                 <?php
-               var_dump($maria);
+                 var_dump($maria);
                 ?>
             </div>
             <footer>
