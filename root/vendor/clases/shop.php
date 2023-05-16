@@ -6,7 +6,7 @@ class Shop extends Connection
 {
     public function verShop()
     {
-        echo $_SESSION['workplace'];
+        //echo $_SESSION['workplace'];
     
         //die("Debug");
         $sql = "SELECT p.ref, p.marca, p.modelo, u.zona, u.pasillo, u.estanteria, u.altura
