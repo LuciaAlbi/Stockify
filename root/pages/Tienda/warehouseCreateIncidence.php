@@ -31,18 +31,8 @@
   <div class="container">
     <form id="incidenceForm" action="insert.php" method="POST">
       <div class="form-group">
-        <label for="titulo">Título</label>
-        <input type="text" class="form-control" id="titulo" name="titulo"
-          placeholder="Ingrese un título para la incidencia">
-      </div>
-      <div class="form-group">
-        <label for="descripcion">Descripción</label>
-        <textarea class="form-control" id="descripcion" name="descripcion" rows="3"
-          placeholder="Descripción para la incidencia"></textarea>
-      </div>
-      <div class="form-group">
         <label for="fecha">Fecha y hora</label>
-        <textarea class="form-control" id="fecha" name="fecha" rows="3"
+        <textarea type="datetime" class="form-control" id="fecha" name="fecha" rows="3"
           placeholder="Fecha"></textarea>
       </div>
       <div class="form-group">
@@ -54,6 +44,11 @@
         <label for="ref">Referencia del producto</label>
         <textarea class="form-control" id="ref" name="ref" rows="3"
           placeholder="Ejem. 00000"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="descripcion">Descripción</label>
+        <textarea class="form-control" id="descripcion" name="descripcion" rows="3"
+          placeholder="Descripción para la incidencia"></textarea>
       </div>
       <button type="submit" class="btn btn-primary" id="submitButton" disabled>Realizar incidencia</button>
     </form>
