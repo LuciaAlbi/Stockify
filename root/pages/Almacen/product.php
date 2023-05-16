@@ -48,32 +48,36 @@ $juan = $product->verProductAlmacen();
     <div class="container-fluid">
         <form class="form-inline">
             <div class="input-group">
-            <input id="searchbar" onkeyup="search_object()" type="text"
-        name="search" placeholder="Search">
+                <input id="searchbar" onkeyup="searchObject()" type="text" name="search" placeholder="Search">
                 <span class="input-group-btn">
                     <button id="show_password" class="btn btn-primary" type="button">
                         Search<span class="fa fa-eye-slash icon"></span>
                     </button>
                 </span>
                 <table>
-                <ol id='list'>
-                    <tr>
-                    <li class="object"><th>Ref</th></li>
-                    <li class="object"><th>Precio de Compra</th></li>
-                    <li class="object"><th>Precio de Venta</th></li>
-                    <li class="object"><th>Marca</th></li>
-                    <li class="object"><th>Modelo</th></li>
-                    <li class="object"><th>Peso</th></li>
-                    <li class="object"><th>Factor de Rotación</th></li>
-                    <li class="object"><th>Dimensiones</th></li>
-                    <li class="object"><th>Proveedor</th></li>
-                    <li class="object"><th>Color</th></li>
-                    <li class="object"><th>Pasillo</th></li>
-                    <li class="object"><th>Estanteria</th></li>
-                    <li class="object"><th>Altura</th></li>
-                    </tr>
-                    <?php echo $product->drawProduct($juan); ?>
+                    <thead>
+                        <tr>
+                            <th>Ref</th>
+                            <th>Precio de Compra</th>
+                            <th>Precio de Venta</th>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Peso</th>
+                            <th>Factor de Rotación</th>
+                            <th>Dimensiones</th>
+                            <th>Proveedor</th>
+                            <th>Color</th>
+                            <th>Pasillo</th>
+                            <th>Estanteria</th>
+                            <th>Altura</th>
+                        </tr>
+                    </thead>
+                    <tbody id="list">
+                        <?php echo $product->drawProduct($juan); ?>
 
+                        </tr>
+                    </tbody>
+                    <script src="././assets/js/searchbar.js"></script>
                 </table>
             </div>
             <footer>
@@ -91,7 +95,7 @@ $juan = $product->verProductAlmacen();
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
                 crossorigin="anonymous"></script>
-                <script src="././assets/js/searchbar.js"></script>
+           
 </body>
 
 </html>
