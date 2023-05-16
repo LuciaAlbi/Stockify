@@ -48,7 +48,7 @@ $juan = $product->verProductAlmacen();
     <div class="container-fluid">
         <form class="form-inline">
             <div class="input-group">
-                <input ID="txtPassword" type="Password" class="form-control" placeholder="Search">
+                <input ID="SearchBar" type="text" class="form-control" placeholder="Search">
                 <span class="input-group-btn">
                     <button id="show_password" class="btn btn-primary" type="button">
                         Search<span class="fa fa-eye-slash icon"></span>
