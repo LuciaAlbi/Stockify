@@ -44,19 +44,9 @@ $sending = $movement->drawSending($unmovement);
     <div class="container">
         <div class="row justify-content-center">
             <div class="prueba col-4 align-self-center">
-                <div class="row justify-content-center"><!-- Se tiene que copiar desde aqui -->
-                    <div class=" prueba1 col-4 align-self-center">
-                        <form id="inci">
-                            <div class="form-group">
-                                <label for="titulo">Ref. Producto/Fecha/Cantidad/Codigo prov</label>
-                                <input type="text" class="form-control" id="titulo" placeholder="<?php echo $unmovement[1][0] . " / " . $unmovement[1][1] . " / " . $unmovement[0][2] . " / " . $unmovement[0][3] ?>" readonly>
-                            </div>
-                        </form>
-                    </div>
-                </div><!-- Hasta aqui para mostrar otra incidencia -->
+                <?= $sending ?>
             </div>
         </div>
-    </div><?= var_dump($unmovement) ?>
     <footer>
         <div class="container-fluid">
             <div class="row align-item-center">
