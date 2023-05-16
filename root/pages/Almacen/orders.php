@@ -48,6 +48,16 @@
                         </form>
                     </div>
                 </div><!-- Hasta aqui para mostrar otra incidencia -->
+                <div class="row justify-content-center"><!-- Se tiene que copiar desde aqui -->
+                    <div class=" prueba1 col-4 align-self-center">
+                        <form id="inci">
+                            <div class="form-group">
+                                <label for="titulo">Id/Fecha/Cantidad/id Almacen/Ref. Producto/Codigo prov</label>
+                                <input type="text" class="form-control" id="titulo" placeholder="" readonly>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- Hasta aqui para mostrar otra incidencia -->
             </div>
         </div>
     </div>
