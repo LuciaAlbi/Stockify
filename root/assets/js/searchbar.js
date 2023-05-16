@@ -1,16 +1,26 @@
 // JavaScript code
 function searchObject() {
     var input = document.getElementById('searchbar').value.toLowerCase();
-    var objects = document.getElementsByClassName('object');
+    var rows = document.querySelectorAll('#list tr');
   
-    for (var i = 0; i < objects.length; i++) {
-      var object = objects[i];
-      var text = object.textContent.toLowerCase();
+    for (var i = 0; i < rows.length; i++) {
+      var row = rows[i];
+      var cells = row.getElementsByTagName('td');
+      var match = false;
   
-      if (text.includes(input)) {
-        object.style.display = 'block';
+      for (var j = 0; j < cells.length; j++) {
+        var cell = cells[j];
+  
+        if (cell.innerText.toLowerCase().includes(input)) {
+          match = true;
+          break;
+        }
+      }
+  
+      if (match) {
+        row.style.display = 'table-row';
       } else {
-        object.style.display = 'none';
+        row.style.display = 'none';
       }
     }
   }
