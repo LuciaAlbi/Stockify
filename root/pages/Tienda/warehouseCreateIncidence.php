@@ -50,7 +50,7 @@
         <textarea class="form-control" id="descripcion" name="descripcion" rows="3"
           placeholder="Descripción para la incidencia"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary" id="submitButton" disabled>Realizar incidencia</button>
+      <button type="submit" class="btn btn-primary" id="submitButton">Realizar incidencia</button>
     </form>
   </div>
 
