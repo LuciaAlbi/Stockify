@@ -70,4 +70,8 @@ td,th{
   border:1px solid #013C6A;
   color:white;
   text-align: center;  
-  }
+}
+
+button{
+  justify-content: right;
+}

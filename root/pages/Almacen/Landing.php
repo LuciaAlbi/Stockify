@@ -25,7 +25,7 @@ require_once "../../vendor/autoloader.php";
 						<img src="../../assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
 					</a>
 					<h2 class="col-lg-7 col-md-7 col-sm-6 text-end">La casa del electrodomestico</h2>
-					<div class="navbar-brand">
+					<div class="navbar-brand justify-content-end">
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
