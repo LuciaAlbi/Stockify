@@ -10,7 +10,7 @@ class Shop extends Connection
         FROM productos p
         JOIN esta e ON p.ref = e.ref
         JOIN ubicacion u ON e.Id_ubi = u.Id_ubi
-        WHERE e.almacen_id = 1;";
+        WHERE e.almacen_id <> 1";
         $result = $this->conn->query($sql);
         if ($result->num_rows > 0) {
             return $result->fetch_all();
@@ -22,13 +22,9 @@ class Shop extends Connection
         $output="";
         for ($i=0; $i < count($product); $i++) {
         $output .= "<tr>";
-        $output .= "<td>".$product[$i][0]."</td>";
-        $output .= "<td>".$product[$i][1]."</td>";
-        $output .= "<td>".$product[$i][2]."</td>";
-        $output .= "<td>".$product[$i][3]."</td>";
-        $output .= "<td>".$product[$i][4]."</td>";
-        $output .= "<td>".$product[$i][5]."</td>";
-        $output .= "<td>".$product[$i][6]."</td>";
+        for ($j=0; $j < count($product[$i]); $j++) { 
+            $output .= "<td>".$product[$i][$j]."</td>";
+        }
         $output .= "</tr>";
         }
         return $output;
