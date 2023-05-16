@@ -58,7 +58,7 @@ FOREIGN KEY (ref) REFERENCES productos(ref)
 CREATE TABLE esta (
 	ref VARCHAR(30),
     almacen_id INT,
-    Id_ubi INT,
+    Id_ubi INT unique,
     primary key(ref,almacen_id,Id_ubi),
     FOREIGN KEY (almacen_id) references almacen(id_almacen),
 	FOREIGN KEY (ref) REFERENCES productos(ref),
