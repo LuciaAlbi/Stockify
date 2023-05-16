@@ -66,6 +66,9 @@ $juan = $product->verProductAlmacen();
                         <th>Dimensiones</th>
                         <th>Proveedor</th>
                         <th>Color</th>
+                        <th>Pasillo</th>
+                        <th>Estanteria</th>
+                        <th>Altura</th>
                     </tr>
                     <?php echo $product->drawProduct($juan); ?>
 
