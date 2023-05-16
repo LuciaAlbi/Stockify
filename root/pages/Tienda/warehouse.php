@@ -3,10 +3,7 @@ if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 require_once "../../vendor/autoloader.php";
 $security = new Security();
 $product=new Shop();
-//$product->verShop();
-$arrayShop = $product->verShop();
-$drawShop = $product->drawShop($arrayShop);
-$juan = $product->verShop();
+$product->verShop();
 //var_dump($_SESSION["loggedIn"]);
 //checkLoggedin() para mirar si está loggeado y sino al login que se va
 $security->checkLoggedIn();
@@ -86,8 +83,7 @@ $security->checkLoggedIn();
                             Factor de rotacion
                         </th>
                     </tr>
-                    <!--<?= $drawProduct ?>-->
-                    <?php echo $product->drawShop($juan); ?>
+                    <?= $drawProduct ?>
                 </tbody>
             </table>
             </form>
