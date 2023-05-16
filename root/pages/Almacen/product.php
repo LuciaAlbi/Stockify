@@ -50,7 +50,11 @@ $juan = $product->verProductAlmacen();
             <div class="input-group">
             <input id="searchbar" onkeyup="search_object()" type="text"
         name="search" placeholder="Search">
-                
+                <span class="input-group-btn">
+                    <button id="show_password" class="btn btn-primary" type="button">
+                        Search<span class="fa fa-eye-slash icon"></span>
+                    </button>
+                </span>
                 <table>
                 <ol id='list'>
                     <tr>
