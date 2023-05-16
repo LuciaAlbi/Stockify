@@ -27,6 +27,11 @@ class Product extends Connection
             $output .= "<td>" . $product[$i]['p_venta'] . "</td>";
             $output .= "<td>" . $product[$i]['marca'] . "</td>";
             $output .= "<td>" . $product[$i]['modelo'] . "</td>";
+            $output .= "<td>" . $product[$i]['peso'] . "</td>";
+            $output .= "<td>" . $product[$i]['f_rota'] . "</td>";
+            $output .= "<td>" . $product[$i]['dimensiones'] . "</td>";
+            $output .= "<td>" . $product[$i]['proveedor'] . "</td>";
+            $output .= "<td>" . $product[$i]['color'] . "</td>";
             $output .= "</tr>";
         }
         return $output;
