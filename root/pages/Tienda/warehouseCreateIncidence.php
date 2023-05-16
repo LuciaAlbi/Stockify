@@ -32,7 +32,7 @@
     <form id="incidenceForm" action="insert.php" method="POST">
       <div class="form-group">
         <label  for="fecha">Fecha y hora</label>
-        <input type="datetime" class="form-control" id="fecha" name="fecha" rows="3"
+        <input type="datetime" id="fecha" name="fecha" rows="3"
           placeholder="Fecha"></input>
       </div>
       <div class="form-group">
