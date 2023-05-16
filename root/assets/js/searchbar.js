@@ -1,15 +1,17 @@
 // JavaScript code
-function search() {
-    let input = document.getElementById('searchbar').value
-    input=input.toLowerCase();
-    let x = document.getElementsByClassName('object');
-      
-    for (i = 0; i < x.length; i++) { 
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display="none";
-        }
-        else {
-            x[i].style.display="list-item";                 
-        }
+function searchObject() {
+    var input = document.getElementById('searchbar').value.toLowerCase();
+    var objects = document.getElementsByClassName('object');
+  
+    for (var i = 0; i < objects.length; i++) {
+      var object = objects[i];
+      var text = object.textContent.toLowerCase();
+  
+      if (text.includes(input)) {
+        object.style.display = 'block';
+      } else {
+        object.style.display = 'none';
+      }
     }
-}
+  }
+  
