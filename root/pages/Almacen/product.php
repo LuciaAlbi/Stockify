@@ -54,7 +54,6 @@ $juan = $product->verProductAlmacen();
                         Search<span class="fa fa-eye-slash icon"></span>
                     </button>
                 </span>
-            </div>
                 <table>
                     <tr>
                         <th>Ref</th>
@@ -71,10 +70,6 @@ $juan = $product->verProductAlmacen();
                     <?php echo $product->drawProduct($juan); ?>
 
                 </table>
-
-                <?php
-                var_dump($juan);
-                ?>
             </div>
             <footer>
                 <div class="container-fluid">
