@@ -7,7 +7,8 @@ class ConnectionIndex
     private $password;
     private $db;
     protected $conn;
-    protected $configFile = "conf.csv";
+    protected $configFileIndex = __DIR__."/conf.csv";
+    protected $configFile = __DIR__."/../../conf.csv";
 
     public function __construct()
     {
@@ -21,9 +22,15 @@ class ConnectionIndex
 
     public function connect()
     {
-        $configFile = fopen($this->configFile, "r") or die("Unable to open file!");
-        if (!feof($configFile)) {
-            $connData = fgetcsv($configFile);
+        if (isset($configFileIndex)) {
+            $config = $this->configFileIndex;
+        }else {
+            $config = $this->configFile;
+        }
+
+        $data = fopen($config, "r")  or die("Unable to open file!");
+        if (!feof($data)) {
+            $connData = fgetcsv($data);
             $this->host = $connData[0];
             $this->userName = $connData[1];
             $this->password = $connData[2];
