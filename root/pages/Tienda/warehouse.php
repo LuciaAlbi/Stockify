@@ -6,6 +6,7 @@ $product=new Shop();
 //$product->verShop();
 $arrayShop = $product->verShop();
 $drawShop = $product->drawShop($arrayShop);
+//juan
 $juan = $product->verShop();
 //var_dump($_SESSION["loggedIn"]);
 //checkLoggedin() para mirar si está loggeado y sino al login que se va

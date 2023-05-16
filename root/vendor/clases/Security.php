@@ -28,6 +28,11 @@ class Security extends connectionIndex
         if (count($_POST) > 0) {
             $userArray = $this->getUser($_POST["userName"]);
             $user = $userArray['nombre'];
+            //var_dump($userArray);
+            $_SESSION['workplace']=$userArray ["almacen_id"];
+            echo $_SESSION['workplace'];
+            //var_dump($userArray ["almacen_id"]);
+            //die("debugeame esta");
             $_SESSION["loggedIn"] = $this->checkUser($userArray, $_POST["userPassword"]) ? $userArray: false;
             if ($_SESSION["loggedIn"]) {
 
