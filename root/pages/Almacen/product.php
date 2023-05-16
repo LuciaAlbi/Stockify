@@ -3,7 +3,7 @@ require_once "../../vendor/autoloader.php";
 $product = new Product();
 $arrayProduct = $product->verProductAlmacen();
 $drawProduct = $product->drawProduct($arrayProduct);
-//$juan = $product->verProductAlmacen();
+$juan = $product->verProductAlmacen();
 ?>
 
 
@@ -70,10 +70,6 @@ $drawProduct = $product->drawProduct($arrayProduct);
                     <?php echo $product->drawProduct($juan); ?>
 
                 </table>
-
-                <?php
-                var_dump($juan);
-                ?>
             </div>
             <footer>
                 <div class="container-fluid">
