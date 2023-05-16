@@ -31,9 +31,9 @@
   <div class="container">
     <form id="incidenceForm" action="insert.php" method="POST">
       <div class="form-group">
-        <label type="datetime" for="fecha">Fecha y hora</label>
-        <textarea  class="form-control" id="fecha" name="fecha" rows="3"
-          placeholder="Fecha"></textarea>
+        <label  for="fecha">Fecha y hora</label>
+        <input type="datetime" class="form-control" id="fecha" name="fecha" rows="3"
+          placeholder="Fecha"></input>
       </div>
       <div class="form-group">
         <label for="id">Almacen de procedencia (ID)</label>
