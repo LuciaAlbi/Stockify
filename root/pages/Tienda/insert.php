@@ -17,5 +17,5 @@ if (isset($_POST['descripcion'])&& isset($_POST['fecha_hora']) && isset($_POST['
 
 
     // Crear la consulta SQL para insertar los datos en la tabla (reemplaza 'nombre_tabla' con el nombre de tu tabla)
-    $sql = "INSERT INTO incidencias (titulo, descripcion) VALUES ('$titulo', '$descripcion','$fecha_hora', '$id_almacen', '$ref')";
+    $sql = "INSERT INTO incidencias (titulo, descripcion) VALUES ('$fecha_hora', '$descripcion', $id_almacen, '$ref')";
 }
