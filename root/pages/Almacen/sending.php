@@ -49,7 +49,7 @@ $sending = $movement->drawSending($unmovement);
                         <form id="inci">
                             <div class="form-group">
                                 <label for="titulo">Ref. Producto/Fecha/Cantidad/Codigo prov</label>
-                                <input type="text" class="form-control" id="titulo" placeholder="<?php echo $unmovement[0][0] . " / " . $unmovement[0][1] . " / " . $unmovement[0][2] . " / " . $unmovement[0][3] ?>" readonly>
+                                <input type="text" class="form-control" id="titulo" placeholder="<?php echo $unmovement[1][0] . " / " . $unmovement[1][1] . " / " . $unmovement[0][2] . " / " . $unmovement[0][3] ?>" readonly>
                             </div>
                         </form>
                     </div>
