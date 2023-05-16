@@ -43,26 +43,7 @@
             </div>
         </div>
     </div>
-<script>
-    var incidencias = [];
-    function mostrarIncidencias() {
-        var resultado = document.getElementById('resultado');
-        resultado.innerHTML = '';
-        for (var i = 0; i < incidencias.length; i++) {
-            var div = document.createElement('div');
-            div.innerHTML =  '<label for="titulo">Fecha</label>' +'<input type="text" class="form-control" id="titulo" readonly value="' + incidencias[i].titulo + '">' + '<br>' +
-                             '<label for="descripcion">Descripción</label>' +'<textarea class="form-control" id="descripcion" rows="3" readonly>' + incidencias[i].descripcion + '</textarea>';
-            resultado.appendChild(div);
-        }
-    }
-    function agregarIncidencia() {
-        var titulo = "<?php echo $_POST['titulo']; ?>";
-        var descripcion = "<?php echo $_POST['descripcion']; ?>";
-        incidencias.push({titulo: titulo, descripcion: descripcion});
-        mostrarIncidencias();
-    }
-    agregarIncidencia();
-</script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 <footer>
