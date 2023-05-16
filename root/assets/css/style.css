@@ -62,7 +62,8 @@ div.prueba1{
 }
 table{
   width:100%;
-  border:1px solid #013C6A;  
+  border:1px solid #013C6A;
+  margin-top:10px;
 }
 td,th{
   background-color: #4D6E9B;

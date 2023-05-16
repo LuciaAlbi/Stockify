@@ -1,7 +1,9 @@
 <?php
 require_once "../../vendor/autoloader.php";
 $product = new Product();
-$juan = $product->verProductAlmacen();
+$arrayProduct = $product->verProductAlmacen();
+$drawProduct = $product->drawProduct($arrayProduct);
+//$juan = $product->verProductAlmacen();
 ?>
 
 
@@ -65,18 +67,8 @@ $juan = $product->verProductAlmacen();
                         <th>Proveedor</th>
                         <th>Color</th>
                     </tr>
-                    <tr>
-                        <td>Valor ref</td>
-                        <td>Valor p_compra</td>
-                        <td>Valor p_venta</td>
-                        <td>Valor marca</td>
-                        <td>Valor modelo</td>
-                        <td>Valor peso</td>
-                        <td>Valor factor de rotación</td>
-                        <td>Valor dimensiones</td>
-                        <td>Valor proveedor</td>
-                        <td>Valor color</td>
-                    </tr>
+                    <?php echo $product->drawProduct($juan); ?>
+
                 </table>
 
                 <?php

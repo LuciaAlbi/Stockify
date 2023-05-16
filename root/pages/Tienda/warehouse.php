@@ -5,8 +5,6 @@ $product = new Shop();
 $arrayProduct = $product->verShop();
 $drawProduct = $product->drawShop($arrayProduct);
 ?>
-
-
 <!DOCTYPE html>
 <html>
 
@@ -53,36 +51,36 @@ $drawProduct = $product->drawShop($arrayProduct);
                         <button class="btn btn-primary" type="button">
                             Search<span class=""></span>
                         </button>
-                    </span><br>
+                    </span>
                 </div>
                 <table>
-                    <tbody>
-                        <tr>
-                            <th>
-                                Referencia
-                            </th>
-                            <th>
-                                Nombre
-                            </th>
-                            <th>
-                                Categoria
-                            </th>
-                            <th>
-                                Ubicacion tienda
-                            </th>
-                            <th>
-                                Stock tienda
-                            </th>
-                            <th>
-                                Stock almacen
-                            </th>
-                            <th>
-                                Factor de rotacion
-                            </th>
-                        </tr>
-                        <?= $drawProduct ?>
-                    </tbody>
-                </table>
+                <tbody>
+                    <tr>
+                        <th>
+                            Referencia
+                        </th>
+                        <th>
+                            Nombre
+                        </th>
+                        <th>
+                            Categoria
+                        </th>
+                        <th>
+                            Ubicacion tienda
+                        </th>
+                        <th>
+                            Stock tienda
+                        </th>
+                        <th>
+                            Stock almacen
+                        </th>
+                        <th>
+                            Factor de rotacion
+                        </th>
+                    </tr>
+                    <?= $drawProduct ?>
+                </tbody>
+            </table>
             </form>
         </div>
     </div>
