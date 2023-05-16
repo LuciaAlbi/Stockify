@@ -28,6 +28,9 @@ class Security extends connectionIndex
         if (count($_POST) > 0) {
             $userArray = $this->getUser($_POST["userName"]);
             $user = $userArray['nombre'];
+            // Aquí estoy creando una variable de sesion que llamo workplace para saber en qué local trabajan
+            //esto se mantiene de un script a otro. Va a servir para imprimir lo que toque
+
             //var_dump($userArray);
             $_SESSION['workplace']=$userArray ["almacen_id"];
             echo $_SESSION['workplace'];

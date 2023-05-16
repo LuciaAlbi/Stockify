@@ -6,15 +6,24 @@ class Shop extends Connection
 {
     public function verShop()
     {
+        echo $_SESSION['workplace'];
+    
+        //die("Debug");
         $sql = "SELECT p.ref, p.marca, p.modelo, u.zona, u.pasillo, u.estanteria, u.altura
         FROM productos p
         JOIN esta e ON p.ref = e.ref
         JOIN ubicacion u ON e.Id_ubi = u.Id_ubi
-        WHERE e.almacen_id <> 1";
+        WHERE e.almacen_id =" . $_SESSION['workplace'];
         $result = $this->conn->query($sql);
+       /*  echo "****************************************************************\n";
+        echo "tengo query";
+        echo "****************************************************************\n"; */
         if ($result->num_rows > 0) {
             return $result->fetch_all();
-        } else {    
+            //var_dump($result);
+            //die("Debug");
+        } else { 
+            //echo "cagaste, mi rey";   
             return false;
         }
     }
