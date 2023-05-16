@@ -56,7 +56,7 @@ require_once "../../vendor/autoloader.php";
 				</div>
 			</div>
 			<div class="card offset-lg-2 col-lg-4 col-md-4 col-sm-12" style="width:400px; margin-top:50px;margin-bottom:50px">
-				<a href="newOrder.php"><img class="card-img-top" src="../../assets/img/product.png" alt="card image"></a>
+				<a href="orders.php"><img class="card-img-top" src="../../assets/img/product.png" alt="card image"></a>
 				<div class="card-body">
 					<h4 class="card-title text-center">PEDIDOS</h4>
 				</div>
