@@ -1,4 +1,3 @@
-// JavaScript code
 function searchObject() {
     var input = document.getElementById('searchbar').value.toLowerCase();
     var rows = document.querySelectorAll('#list tr');
