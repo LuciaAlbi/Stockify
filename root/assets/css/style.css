@@ -10,32 +10,67 @@ h2,p{
 nav{
     background-color:#013C6A;
 }
+.navbar-nav{
+  width:100px;
+}
 #form_container{
   background-color:#013C6A;
   margin-top:150px;
   border-style: groove;
   border:1px solid black;
 }
+form{
+  margin-top:50px;
+}
+.form-group{
+  margin: 10px;
+}
+.form-inline{
+ margin-top:10px
+}
+.form{
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+label{
+  color:white;
+  width: 100%;
+}
+table{
+  width:100%;
+  border:1px solid #013C6A;
+  margin-top:10px;
+}
+td,th{
+  background-color: #4D6E9B;
+  border:1px solid #013C6A;
+  color:white;
+  text-align: center;  
+}
+.card {
+margin-top:100px;
+width:400px;
+}
 footer{
   width:100%; 
   position:absolute; 
   bottom:0;
   background-color: #4D6E9B;
- 
 }
-form{
-  margin-top:50px;
+#inci{
+  margin-top:10px;
 }
-.form-group{
-  margin-bottom: 10px;
-}
-.form-inline{
- margin-top:10px
-}
-
-label{
-  color:white;
+.crearIncidencia{
+  border: solid #013C6A 1px; 
+  -moz-border-radius: 20px; 
+  -webkit-border-radius: 20px; 
+  border-radius: 20px; 
+  background-color: #4D6E9B;
+  margin-top:150px;
+  margin-bottom:10px;
   width: 100%;
+  height: auto;
 }
 div.prueba{
   border: solid #013C6A 1px; 
@@ -58,17 +93,7 @@ div.prueba1{
   margin-top:20px;
   margin-bottom: 20px;
 }
-#inci{
-  margin-top:10px;
-}
-table{
-  width:100%;
-  border:1px solid #013C6A;
-  margin-top:10px;
-}
-td,th{
-  background-color: #4D6E9B;
-  border:1px solid #013C6A;
-  color:white;
-  text-align: center;  
+a{
+ color:#013C6A;
+ text-decoration:none;
 }
