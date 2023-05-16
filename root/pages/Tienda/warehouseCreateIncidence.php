@@ -38,7 +38,7 @@
       <div class="form-group">
         <label for="id">Almacen de procedencia (ID)</label>
         <textarea class="form-control" id="id" name="id" rows="3"
-          placeholder="almacen_Id"></textarea>
+          placeholder="almacen_id"></textarea>
       </div>
       <div class="form-group">
         <label for="ref">Referencia del producto</label>
