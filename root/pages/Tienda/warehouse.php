@@ -74,7 +74,7 @@ $security->checkLoggedIn();
                             Categoria
                         </th>
                         <th>
-                            Ubicacion tienda
+                            Zona
                         </th>
                         <th>
                             Stock tienda
