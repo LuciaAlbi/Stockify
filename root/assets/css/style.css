@@ -35,6 +35,7 @@ form{
 
 label{
   color:white;
+  width: 100%;
 }
 div.prueba{
   border: solid #013C6A 1px; 
@@ -53,7 +54,7 @@ div.prueba1{
   border-radius: 20px;
   height: auto;
   background-color: #013C6A;
-  width: 400px;
+  width: 500px;
   margin-top:20px;
   margin-bottom: 20px;
 }
