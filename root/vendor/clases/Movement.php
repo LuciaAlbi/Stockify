@@ -30,4 +30,19 @@ class Movement extends Connection
             return false;
         }
     }
+    public function drawSending($sending)
+    {
+        var_dump($sending);
+        $sql = "SELECT ref, cant, id_almacen FROM mueve";
+        $result = $this->conn->query($sql);
+        if ($result->num_rows > 0) {
+            $row = array();
+            while ($rows = $result->fetch_assoc()) {
+                $row[] = $rows;
+            }
+            return $row;
+        } else {
+            return false;
+        }
+    }
 }

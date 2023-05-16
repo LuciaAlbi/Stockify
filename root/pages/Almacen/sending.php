@@ -2,6 +2,7 @@
 require_once "../../vendor/autoloader.php";
 $movement = new Movement();
 $unmovement = $movement->verMovementAlmacen();
+$sending = $movement->drawSending($unmovement);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,14 +49,14 @@ $unmovement = $movement->verMovementAlmacen();
                         <form id="inci">
                             <div class="form-group">
                                 <label for="titulo">Ref. Producto/Fecha/Cantidad/Codigo prov</label>
-                                <input type="text" class="form-control" id="titulo" placeholder="<?php echo $unmovement[0][0]." / ".$unmovement[0][1]." / ".$unmovement[0][2]." / ".$unmovement[0][3]?>" readonly>
+                                <input type="text" class="form-control" id="titulo" placeholder="<?php echo $unmovement[0][0] . " / " . $unmovement[0][1] . " / " . $unmovement[0][2] . " / " . $unmovement[0][3] ?>" readonly>
                             </div>
                         </form>
                     </div>
                 </div><!-- Hasta aqui para mostrar otra incidencia -->
             </div>
         </div>
-    </div><?= var_dump($unmovement)?>
+    </div><?= var_dump($unmovement) ?>
     <footer>
         <div class="container-fluid">
             <div class="row align-item-center">

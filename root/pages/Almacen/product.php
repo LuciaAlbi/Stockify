@@ -3,7 +3,7 @@ require_once "../../vendor/autoloader.php";
 $product = new Product();
 $arrayProduct = $product->verProductAlmacen();
 $drawProduct = $product->drawProduct($arrayProduct);
-//$juan = $product->verProductAlmacen();
+$juan = $product->verProductAlmacen();
 ?>
 
 
