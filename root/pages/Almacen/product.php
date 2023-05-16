@@ -52,7 +52,6 @@ $juan = $product->verProductAlmacen();
                         Search<span class="fa fa-eye-slash icon"></span>
                     </button>
                 </span>
-
                 <table>
                     <tr>
                         <th>Ref</th>
