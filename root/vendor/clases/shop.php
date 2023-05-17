@@ -4,7 +4,7 @@
 
 class Shop extends Connection
 {
-    public function verShop()
+    public function verTodoShop()
     {
         //echo $_SESSION['workplace'];
     
@@ -27,6 +27,30 @@ class Shop extends Connection
             return false;
         }
     }
+
+    public function verShop()
+    {
+        //echo $_SESSION['workplace'];
+    
+        //die("Debug");
+        $sql = "SELECT p.ref, p.marca, p.modelo, p.f_rota
+        FROM productos p
+        JOIN esta e ON p.ref = e.ref
+        WHERE e.almacen_id =" . $_SESSION['workplace'] . "GROUP BY p.ref";
+        $result = $this->conn->query($sql);
+       /*  echo "****************************************************************\n";
+        echo "tengo query";
+        echo "****************************************************************\n"; */
+        if ($result->num_rows > 0) {
+            return $result->fetch_all();
+            //var_dump($result);
+            //die("Debug");
+        } else { 
+            //echo "cagaste, mi rey";   
+            return false;
+        }
+    }
+
     public function drawShop($product){
         $output="";
         for ($i=0; $i < count($product); $i++) {
