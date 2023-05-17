@@ -1,6 +1,68 @@
 <?php
 
 class Inci extends Connection{
+    
+    private $fecha_hora;
+    private $descripcion;
+    private $almacen_id;
+    private $ref;
+
+    public function __construct($fecha_hora, $descripcion, $almacen_id, $ref)
+    {
+        $this->fecha_hora = $fecha_hora;
+        $this->descripcion = $descripcion;
+        $this->almacen_id = $almacen_id;
+        $this->ref = $ref;
+    }
+
+    public function getFecha_hora()
+    {
+        return $this->fecha_hora;
+    }
+
+    public function setFecha_hora($fecha_hora)
+    {
+        $this->fecha_hora = $fecha_hora;
+
+        return $this;
+    }
+
+    public function getDescripcion()
+    {
+        return $this->descripcion;
+    }
+
+    public function setDescripcion($descripcion)
+    {
+        $this->descripcion = $descripcion;
+
+        return $this;
+    }
+
+    public function getAlmacen_id()
+    {
+        return $this->almacen_id;
+    }
+
+    public function setAlmacen_id($almacen_id)
+    {
+        $this->almacen_id = $almacen_id;
+
+        return $this;
+    }
+
+    public function getRef()
+    {
+        return $this->ref;
+    }
+
+    public function setRef($ref)
+    {
+        $this->ref = $ref;
+
+        return $this;
+    }
+
     public function mostInci()
     {
             $sql = "SELECT fecha_hora, almacen_id, ref, descripcion FROM incidencias";
@@ -41,4 +103,21 @@ class Inci extends Connection{
         }
         return $output;
     }
+
+    public function insertInci()
+    {
+        var_dump($_POST);
+        echo "seguro que es esta mierda";
+        echo $_POST['fecha_hora'];
+        $sql = "INSERT INTO incidencias (fecha_hora, descripcion, almacen_id, ref) VALUES (?, ?, ?,?)";
+        var_dump($this->conn);
+        //PREPARE QUE EXPLOTA
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bindParam(1, $_POST['fecha_hora'], PDO::PARAM_STR);
+        $stmt->bindParam(2, $_POST['almacen_id'], PDO::PARAM_STR);
+        $stmt->bindParam(3, $_POST['ref'], PDO::PARAM_INT);
+        $stmt->bindParam(4, $_POST['descripcion'], PDO::PARAM_STR);
+        return $stmt->execute();
+    }
+
 }
