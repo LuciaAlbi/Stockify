@@ -99,7 +99,7 @@ class Inci extends Connection{
     {
         $sql = "INSERT INTO incidencias (fecha_hora, descripcion, almacen_id, ref) VALUES (?, ?, ?, ?)";
         $stmt = $this->conn->prepare($sql);
-        $stmt->bindParam(1, $this->fecha_hora, PDO::PARAM_INT);
+        $stmt->bindParam(1, $this->fecha_hora, PDO::PARAM_STR);
         $stmt->bindParam(2, $this->descripcion, PDO::PARAM_STR);
         $stmt->bindParam(3, $this->almacen_id, PDO::PARAM_INT);
         $stmt->bindParam(4, $this->ref, PDO::PARAM_STR);
