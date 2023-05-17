@@ -75,13 +75,16 @@ $security->checkLoggedIn();
                             Modelo
                         </th>
                         <th>
+                            Factor rotacion
+                        </th>
+                        <th>
                             Zona
                         </th>
                         <th>
-                            Stock tienda
+                            Pasillo
                         </th>
                         <th>
-                            Stock almacen
+                            Estanteria
                         </th>
                         <th>
                             Altura

@@ -9,7 +9,7 @@ class Shop extends Connection
         //echo $_SESSION['workplace'];
     
         //die("Debug");
-        $sql = "SELECT p.ref, p.marca, p.modelo, u.zona, u.pasillo, u.estanteria, u.altura
+        $sql = "SELECT p.ref, p.marca, p.modelo, p.f_rota, u.zona, u.pasillo, u.estanteria, u.altura
         FROM productos p
         JOIN esta e ON p.ref = e.ref
         JOIN ubicacion u ON e.Id_ubi = u.Id_ubi
