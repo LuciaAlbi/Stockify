@@ -7,7 +7,7 @@ $repository = new Inci(
     $_POST['ref']
  );
 try {
-    $repository->insertInci($insert);
+    $repository->insertInci();
     header('Location: /warehouseIncidence.php');
 } catch (\Throwable $th) {
     print($th);
