@@ -77,7 +77,26 @@ $juan = $product->verProductAlmacen();
 
                         </tr>
                     </tbody>
-                    <script src="././assets/js/searchbar.js"></script>
+                    <script>
+                        function searchObject() {
+                            // Obtener el valor de búsqueda ingresado por el usuario
+                            var searchValue = document.getElementById('searchbar').value.toLowerCase();
+
+                            // Obtener todos los elementos de productos
+                            var products = document.querySelectorAll('.product');
+
+                            // Iterar sobre cada producto y ocultar/mostrar según el valor de búsqueda
+                            for (var i = 0; i < products.length; i++) {
+                                var productName = products[i].querySelector('h3').innerText.toLowerCase();
+
+                                if (productName.includes(searchValue)) {
+                                    products[i].style.display = 'block';
+                                } else {
+                                    products[i].style.display = 'none';
+                                }
+                            }
+                        }
+                    </script>
                 </table>
             </div>
             <footer>
@@ -95,7 +114,7 @@ $juan = $product->verProductAlmacen();
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
                 crossorigin="anonymous"></script>
-           
+
 </body>
 
 </html>
