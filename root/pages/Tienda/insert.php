@@ -6,6 +6,7 @@ $repository = new Inci($_POST['fecha_hora'],
     $_POST['ref']
  );
 try {
+    var_dump($_POST);
     $repository->insertInci();
     header('Location: /warehouseIncidence.php');
 } catch (\Throwable $th) {

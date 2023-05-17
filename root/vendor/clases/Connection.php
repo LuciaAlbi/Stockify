@@ -14,11 +14,7 @@ class Connection
         $this->connect();
     }
 
-    public function __destruct()
-    {
-        $this->conn->close();
-    }
-
+   
     public function connect()
     {
         $configFile = fopen($this->configFile, "r") or die("Unable to open file!");
