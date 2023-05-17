@@ -11,7 +11,7 @@ tlf VARCHAR(20),
 nombre VARCHAR(30)
 );
 
-CREATE TABLE Ubicacion (
+CREATE TABLE ubicacion (
 Id_ubi INT PRIMARY KEY auto_increment, 
 zona VARCHAR(10),
 pasillo int,

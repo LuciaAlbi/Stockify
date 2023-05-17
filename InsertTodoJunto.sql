@@ -1,11 +1,11 @@
 USE stockify;
 /*Insert Almacen*/
-INSERT INTO Almacen (nombre, cp, tlf, capacidad, direccion) VALUES ('Almacen central', '46009', '963661177', '500', 'C/Ejemplo, numero 36');
-INSERT INTO Almacen (nombre, cp, tlf, capacidad, direccion) VALUES ('Tienda Paterna', '46980', '963762178', '50', 'C/Falsa, numero 3');
-INSERT INTO Almacen (nombre, cp, tlf, capacidad, direccion) VALUES ('Tienda Catarroja', '46470', '963661177', '25', 'Av/Ejemplo, numero 6');
-INSERT INTO Almacen (nombre, cp, tlf, capacidad, direccion) VALUES ('Tienda Puçol', '46530', '963661177', '50', 'Av/Falsa, numero 100');
+INSERT INTO almacen (nombre, cp, tlf, capacidad, direccion) VALUES ('Almacen central', '46009', '963661177', '500', 'C/Ejemplo, numero 36');
+INSERT INTO almacen (nombre, cp, tlf, capacidad, direccion) VALUES ('Tienda Paterna', '46980', '963762178', '50', 'C/Falsa, numero 3');
+INSERT INTO almacen (nombre, cp, tlf, capacidad, direccion) VALUES ('Tienda Catarroja', '46470', '963661177', '25', 'Av/Ejemplo, numero 6');
+INSERT INTO almacen (nombre, cp, tlf, capacidad, direccion) VALUES ('Tienda Puçol', '46530', '963661177', '50', 'Av/Falsa, numero 100');
 /*Insert Ubicacion*/
-INSERT INTO Ubicacion (zona, pasillo, estanteria, altura, id_almacen) VALUES ('A', '001', '001', '1', '1');
+INSERT INTO ubicacion (zona, pasillo, estanteria, altura, id_almacen) VALUES ('A', '001', '001', '1', '1');
 INSERT INTO Ubicacion (zona, pasillo, estanteria, altura, id_almacen) VALUES ('A', '001', '001', '2', '1');
 INSERT INTO Ubicacion (zona, pasillo, estanteria, altura, id_almacen) VALUES ('A', '001', '001', '3', '1');
 
