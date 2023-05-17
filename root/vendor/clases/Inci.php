@@ -1,6 +1,7 @@
 <?php
 
 class Inci extends Connection{
+    
     private $fecha_hora;
     private $descripcion;
     private $almacen_id;

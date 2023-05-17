@@ -1,4 +1,5 @@
-<?php require_once "../../vendor/autoloader.php";
+<?php 
+require_once "../../vendor/autoloader.php";
 
 $repository = new Inci($_POST['fecha_hora'],
     $_POST['descripcion'],

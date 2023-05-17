@@ -3,10 +3,11 @@ if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 require_once "../../vendor/autoloader.php";
 $security = new Security();
 $product=new Shop();
-$product->verShop();
+$unProduct=$product->verShop();
+$drawProduct=$product->drawShop($unProduct);
 //var_dump($_SESSION["loggedIn"]);
 //checkLoggedin() para mirar si está loggeado y sino al login que se va
-$security->checkLoggedIn();
+//$security->checkLoggedIn();
 //checkJob() para ver si está en su pagina y sino lo mando warehouse/Landing
  
 ?>

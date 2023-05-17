@@ -14,7 +14,10 @@ class Connection
         $this->connect();
     }
 
-
+    public function __destruct()
+    {
+        $this->conn->close();
+    }
 
     public function connect()
     {
