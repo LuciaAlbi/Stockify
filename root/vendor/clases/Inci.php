@@ -103,39 +103,7 @@ class Inci extends Connection{
         $stmt->bindParam(2, $insert[1], PDO::PARAM_STR);
         $stmt->bindParam(3, $insert[2], PDO::PARAM_INT);
         $stmt->bindParam(4, $insert[3], PDO::PARAM_STR);
-        $stmt->execute(
-            array(
-                $insert->getFecha_hora(),
-                $insert->getDescripcion(),
-                $insert->getAlmacen_id(),
-                $insert->getRef()
-            )
-        );
+        return $stmt->execute();
     }
-
-    public function deleteBrewery($delete): int|bool
-{
-    $consulta = $this->conn->prepare("DELETE FROM breweries WHERE id=?");
-    $consulta->bindParam(1, $delete, PDO::PARAM_INT);
-    return $consulta->execute();
-}
-
-public function insertBrewery($insert)
-    {
-        $consulta = $this->conn->query("SELECT MAX(ID) AS A FROM breweries"); //no preparada->query(no necesita variables) //preparada->prepare(le pasas varibles)
-        $row = $consulta->fetch(PDO::FETCH_ASSOC);
-        $id = $row['A'] + 1;
-        $stmt = $this->conn->prepare("INSERT INTO breweries (id, name, city, state) VALUES (?,?,?,?)");
-
-        $stmt->execute(
-            array(
-                $id,
-                $insert->getName(),
-                $insert->getCity(),
-                $insert->getState()
-            )
-        );
-    
-}
 
 }
