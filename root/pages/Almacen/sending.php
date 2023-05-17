@@ -19,23 +19,31 @@ $sending = $movement->drawSending($unmovement);
 </head>
 
 <body>
-    <header>
+<header>
         <div class="container-fluid">
             <div class="row">
                 <nav class="navbar navbar-expand-sm navbar-dark">
                     <a class="navbar-brand col-1" href="landing.php">
                         <img src="../../assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
                     </a>
-                    <h2 class="col-8 offset-1 text-center">La casa del electrodomestico</h2>
-                    <div class="dropdown col-1">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                            <span>Crear salida/Incidencia/Entrada</span>
+                    <h2 class="col-lg-4 offset-lg-3 col-md-7 col-sm-6">La casa del electrodomestico</h2>
+                    <div class="navbar-brand col-2 offset-1">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
                         </button>
-                        <ul class=" dropdown-menu">
-                            <li><a class="dropdown-item" href="createSending.php">Crear salida</a></li>
-                            <li><a class="dropdown-item" href="Incidence.php">Incidencia</a></li>
-                            <li><a class="dropdown-item" href="entrance.php">Entrada</a></li>
-                        </ul>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="createSending.php">Crear salida</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="entrance.php">Entradas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Incidence.php">Incidencia</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
             </div>
