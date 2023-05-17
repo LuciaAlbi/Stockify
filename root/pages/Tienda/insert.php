@@ -1,6 +1,5 @@
-<?php require_once __DIR__. "../../vendor/autoloader.php";
+<?php require_once  "../../vendor/autoloader.php";
 
-require_once __DIR__ . "./vendor/autoloader.php";
 $repository = new Inci;
 try {
     $repository->insertInci($insert);
