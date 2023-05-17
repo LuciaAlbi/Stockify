@@ -2,6 +2,7 @@
 require_once "vendor/autoloader.php";
 $security = new Security();
 $loginMessage = $security->doLogin();
+
 ?>
 <!DOCTYPE html>
 
