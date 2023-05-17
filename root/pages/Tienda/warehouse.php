@@ -69,10 +69,10 @@ $security->checkLoggedIn();
                             Referencia
                         </th>
                         <th>
-                            Nombre
+                            Marca
                         </th>
                         <th>
-                            Categoria
+                            Modelo
                         </th>
                         <th>
                             Zona
