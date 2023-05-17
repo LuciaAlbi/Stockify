@@ -4,7 +4,7 @@ class Product extends Connection
 {
     public function verProductAlmacen() // ver listado de todos los productos desde base de datos
     {
-        $sql = "SELECT p.ref,p.p_compra,p.p_venta, p.marca, p.modelo, p.dimensiones,p.proveedor,p.color,u.altura, u.zona, u.pasillo, u.estanteria, u.altura
+        $sql = "SELECT p.ref,p.p_compra,p.p_venta, p.marca, p.modelo, p.dimensiones, p.f_rota, p.proveedor, p.color, u.zona, u.pasillo, u.estanteria, u.altura
         FROM productos p
         JOIN esta e ON p.ref = e.ref
         JOIN ubicacion u ON e.Id_ubi = u.Id_ubi

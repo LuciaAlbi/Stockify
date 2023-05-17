@@ -72,9 +72,9 @@ $juan = $product->verProductAlmacen();
                             <th>Modelo</th>
                             <th>Peso</th>
                             <th>Factor de Rotación</th>
-                            <th>Dimensiones</th>
                             <th>Proveedor</th>
                             <th>Color</th>
+                            <th>Zona</th>
                             <th>Pasillo</th>
                             <th>Estanteria</th>
                             <th>Altura</th>
