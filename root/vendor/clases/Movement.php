@@ -4,6 +4,7 @@
 
 class Movement extends Connection
 {
+    
     public function verMovementAlmacen()
     {
         $sql = "SELECT idProducto, fecha, cant, id_almacen FROM mueve";
