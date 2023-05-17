@@ -84,7 +84,7 @@ $security->checkLoggedIn();
                             Stock almacen
                         </th>
                         <th>
-                            Factor de rotacion
+                            Altura
                         </th>
                     </tr>
                     <!--<?= $drawProduct ?>-->
