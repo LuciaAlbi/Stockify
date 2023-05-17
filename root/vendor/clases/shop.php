@@ -40,13 +40,17 @@ class Shop extends Connection
         WHERE e.almacen_id = ". $workplace . " GROUP BY p.ref";
         
         $result = $this->conn->query($sql);
-       /*  echo "****************************************************************\n";
-        echo "tengo query";
-        echo "****************************************************************\n"; */
+
         if ($result->num_rows > 0) {
-            return $result->fetch_all();
             //var_dump($result);
-            //die("Debug");
+            //echo "\n";
+            /* $test = $result->fetch_all(); 
+            var_dump($test);
+            die("Debug"); */
+            $arrayShop = $result->fetch_all(); 
+            $this->getShopProdAmount($arrayShop, $workplace);
+            //var_dump($arrayShop);
+            return $arrayShop; 
         } else { 
             //echo "cagaste, mi rey";   
             return false;
@@ -63,5 +67,16 @@ class Shop extends Connection
         $output .= "</tr>";
         }
         return $output;
+    }
+
+    public function getShopProdAmount($result, $workplace): array{
+        for ($i=0; $i < count($result); $i++) { 
+            $test = $result[$i];
+            //var_dump($test);
+            $arrayRefs[]=$test[0];
+
+        }
+        //var_dump($arrayRefs);
+        return $arrayRefs;
     }
 }
