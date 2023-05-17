@@ -44,25 +44,25 @@ $juan = $product->verProductAlmacen();
             </div>
         </div>
         <script>
-                        function searchObject() {
-                            // Obtener el valor de búsqueda ingresado por el usuario
-                            var searchValue = document.getElementById('searchbar').value.toLowerCase();
+    function searchObject() {
+        // Obtener el valor de búsqueda ingresado por el usuario
+        var searchValue = document.getElementById('searchbar').value.toLowerCase();
 
-                            // Obtener todos los elementos de productos
-                            var products = document.querySelectorAll('.product');
+        // Obtener todos los elementos de productos
+        var products = document.querySelectorAll('.product');
 
-                            // Iterar sobre cada producto y ocultar/mostrar según el valor de búsqueda
-                            for (var i = 0; i < products.length; i++) {
-                                var productName = products[i].querySelector('h3').innerText.toLowerCase();
+        // Iterar sobre cada producto y ocultar/mostrar según la referencia
+        for (var i = 0; i < products.length; i++) {
+            var productRef = products[i].querySelector('.ref').innerText.toLowerCase();
 
-                                if (productName.includes(searchValue)) {
-                                    products[i].style.display = 'block';
-                                } else {
-                                    products[i].style.display = 'none';
-                                }
-                            }
-                        }
-                    </script>
+            if (productRef.includes(searchValue)) {
+                products[i].style.display = 'block';
+            } else {
+                products[i].style.display = 'none';
+            }
+        }
+    }
+</script>
     </header>
 
     <div class="container-fluid">
@@ -97,7 +97,6 @@ $juan = $product->verProductAlmacen();
 
                         </tr>
                     </tbody>
-                    
                 </table>
             </div>
             <footer>
