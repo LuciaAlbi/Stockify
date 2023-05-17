@@ -1,6 +1,67 @@
 <?php
 
 class Inci extends Connection{
+    private $fecha_hora;
+    private $descripcion;
+    private $almacen_id;
+    private $ref;
+
+    public function __construct($fecha_hora, $descripcion, $almacen_id, $ref)
+    {
+        $this->fecha_hora = $fecha_hora;
+        $this->descripcion = $descripcion;
+        $this->almacen_id = $almacen_id;
+        $this->ref = $ref;
+    }
+
+    public function getFecha_hora()
+    {
+        return $this->fecha_hora;
+    }
+
+    public function setFecha_hora($fecha_hora)
+    {
+        $this->fecha_hora = $fecha_hora;
+
+        return $this;
+    }
+
+    public function getDescripcion()
+    {
+        return $this->descripcion;
+    }
+
+    public function setDescripcion($descripcion)
+    {
+        $this->descripcion = $descripcion;
+
+        return $this;
+    }
+
+    public function getAlmacen_id()
+    {
+        return $this->almacen_id;
+    }
+
+    public function setAlmacen_id($almacen_id)
+    {
+        $this->almacen_id = $almacen_id;
+
+        return $this;
+    }
+
+    public function getRef()
+    {
+        return $this->ref;
+    }
+
+    public function setRef($ref)
+    {
+        $this->ref = $ref;
+
+        return $this;
+    }
+
     public function mostInci()
     {
             $sql = "SELECT fecha_hora,descripcion FROM incidencias";
@@ -37,12 +98,16 @@ class Inci extends Connection{
     public function insertInci($insert)
     {
         $sql = "INSERT INTO incidencias (fecha_hora, descripcion, almacen_id, ref) VALUES (?, ?, ?, ?)";
-        $result = $this->conn->query($sql);
-        if ($result) {
-            return true;
-        } else {
-            return false;
-        }
+        $stmt = $this->conn->fetch(PDO::FETCH_ASSOC);
+
+        $stmt->execute(
+            array(
+                $insert->getFecha_hora(),
+                $insert->getDescripcion(),
+                $insert->getAlmacen_id(),
+                $insert->getRef()
+            )
+        );
     }
 
     public function deleteBrewery($delete): int|bool
