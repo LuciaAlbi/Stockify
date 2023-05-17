@@ -13,15 +13,19 @@
 </head>
 
 <body>
-<header>
+    <header>
         <div class="container-fluid">
             <div class="row">
                 <nav class="navbar navbar-expand-sm navbar-dark">
                     <a class="navbar-brand col-1" href="landing.php">
                         <img src="../../assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
                     </a>
-                    <h2 class="col-lg-4 offset-lg-3 col-md-7 col-sm-6">La casa del electrodomestico</h2>
-                    <div class="navbar-brand col-2 offset-1">
+                    <h2 class="col-lg-11 offset-lg-3 col-md-7 col-sm-6">La casa del electrodomestico</h2>
+                </nav>
+            </div>
+            <div class="row">
+                <nav>
+                    <div class="navbar-brand">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -46,16 +50,6 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="prueba col-4 align-self-center">
-                <div class="row justify-content-center"><!-- Se tiene que copiar desde aqui -->
-                    <div class=" prueba1 col-4 align-self-center">
-                        <form id="inci">
-                            <div class="form-group">
-                                <label for="titulo">Ref. Producto/Fecha/Cantidad/Codigo prov</label>
-                                <input type="text" class="form-control" id="titulo" placeholder="" readonly>
-                            </div>
-                        </form>
-                    </div>
-                </div><!-- Hasta aqui para mostrar otra incidencia -->
                 <div class="row justify-content-center"><!-- Se tiene que copiar desde aqui -->
                     <div class=" prueba1 col-4 align-self-center">
                         <form id="inci">
