@@ -31,12 +31,14 @@ class Shop extends Connection
     public function verShop()
     {
         //echo $_SESSION['workplace'];
-    
+        //$_SESSION['workplace']
         //die("Debug");
+        $workplace = $_SESSION['workplace'];
         $sql = "SELECT p.ref, p.marca, p.modelo, p.f_rota
         FROM productos p
         JOIN esta e ON p.ref = e.ref
-        WHERE e.almacen_id =" . $_SESSION['workplace'] . "GROUP BY p.ref";
+        WHERE e.almacen_id = ". $workplace . " GROUP BY p.ref";
+        
         $result = $this->conn->query($sql);
        /*  echo "****************************************************************\n";
         echo "tengo query";
