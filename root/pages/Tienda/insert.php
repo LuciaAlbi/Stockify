@@ -1,4 +1,4 @@
-<?php require_once  "../../vendor/autoloader.php";
+<?php require_once "../../vendor/autoloader.php";
 
 $repository = new Inci;
 try {
