@@ -48,8 +48,12 @@ class Shop extends Connection
             var_dump($test);
             die("Debug"); */
             $arrayShop = $result->fetch_all(); 
-            $this->getShopProdAmount($arrayShop, $workplace);
+            $testArray = $this->getShopProdArray($arrayShop);
             //var_dump($arrayShop);
+            $testArrayRefs=$this->getShopRefs($testArray);
+            $_SESSION['test'] = $testArrayRefs;
+            //var_dump($testArrayRefs);
+            //var_dump($_SESSION['test']);
             return $arrayShop; 
         } else { 
             //echo "cagaste, mi rey";   
@@ -62,21 +66,67 @@ class Shop extends Connection
         for ($i=0; $i < count($product); $i++) {
         $output .= "<tr>";
         for ($j=0; $j < count($product[$i]); $j++) { 
-            $output .= "<td>".$product[$i][$j]."</td>";
+            $output .= "<td>".$product[$i][$j]."</td>";      
         }
+            //var_dump($_SESSION['test'][$i]);
+            //eso es la ref de los productos coincidiendo con $i
+            //echo "ENTRO";
+            if ($i < count($_SESSION['test'])) {
+                $ref = $_SESSION['test'][$i];
+                $amount = $this-> getRefAmounts($ref, $_SESSION['workplace']);
+                //echo "$amount";
+                $output .= "<td>". $amount ."</td>";
+            }
+           
         $output .= "</tr>";
         }
         return $output;
     }
 
-    public function getShopProdAmount($result, $workplace): array{
+    public function getShopProdArray($result): array{
         for ($i=0; $i < count($result); $i++) { 
             $test = $result[$i];
             //var_dump($test);
             $arrayRefs[]=$test[0];
-
         }
         //var_dump($arrayRefs);
         return $arrayRefs;
     }
+
+    public function getShopRefs($refs){
+        for ($i=0; $i < count($refs); $i++) { 
+            $ref = $refs[$i];
+            //var_dump($test);
+            $arrayRefs[]=$ref;
+        }
+        //var_dump($test);
+        //este array ($test) contiene las referencias
+        return $arrayRefs;
+    }
+
+    public function getRefAmounts($ref, $workplace) {
+
+            $sql = "SELECT count(*)
+
+            FROM productos p
+            
+            JOIN esta e ON p.ref = e.ref
+            
+            JOIN ubicacion u ON e.Id_ubi = u.Id_ubi
+            
+            WHERE e.almacen_id = ". $workplace . " AND p.ref = '". $ref . "'";
+
+            //echo $sql;
+
+            $result = $this->conn->query($sql);
+            $arrayTestAmpunts = $result->fetch_all(); 
+            //var_dump($arrayTestAmpunts);
+            $amount = $arrayTestAmpunts[0][0];
+            //echo "$amount";
+            //die();
+            return $amount;
+        }
+        
+    
+        
 }

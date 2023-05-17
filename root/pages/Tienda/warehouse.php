@@ -80,17 +80,12 @@ $manolo = $product->verShop();
                             Factor rotacion
                         </th>
                         <th>
-                            Zona
+                            Stock en tienda
                         </th>
                         <th>
-                            Pasillo
+                            Stock en almacen
                         </th>
-                        <th>
-                            Estanteria
-                        </th>
-                        <th>
-                            Altura
-                        </th>
+    
                     </tr>
                     <!--<?= $drawProduct ?>-->
                     <?php echo $product->drawShop($manolo); ?>
