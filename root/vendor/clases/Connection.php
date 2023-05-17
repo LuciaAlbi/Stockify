@@ -14,7 +14,8 @@ class Connection
         $this->connect();
     }
 
-   
+
+
     public function connect()
     {
         $configFile = fopen($this->configFile, "r") or die("Unable to open file!");
