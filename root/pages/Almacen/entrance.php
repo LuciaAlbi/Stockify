@@ -38,7 +38,7 @@ require_once "../../vendor/autoloader.php";
                                     <a class="nav-link" href="sending.php">Salida</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="Incidence.php">Incidencia</a>
+                                    <p><a class="nav-link" href="Incidence.php">Incidencia</a></p>
                                 </li>
                             </ul>
                         </div>
