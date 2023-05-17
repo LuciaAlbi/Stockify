@@ -98,6 +98,7 @@ class Inci extends Connection{
     public function insertInci()
     {
         var_dump($_POST);
+        echo "seguro que es esta mierda";
         $sql = "INSERT INTO incidencias (fecha_hora, descripcion, almacen_id, ref) VALUES ('?', '?', ?,'?')";
         $stmt = $this->conn->prepare($sql);
         $stmt->bindParam(1, $this->fecha_hora, PDO::PARAM_STR);
