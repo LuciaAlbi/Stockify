@@ -18,8 +18,8 @@ class Shop extends Connection
        /*  echo "****************************************************************\n";
         echo "tengo query";
         echo "****************************************************************\n"; */
-        if ($result->num_rows > 0) {
-            return $result->fetch_all();
+        if ($result->fetchColumn() >= 0) {
+            return $result->fetchAll(PDO::FETCH_ASSOC);
             //var_dump($result);
             //die("Debug");
         } else { 
@@ -31,9 +31,13 @@ class Shop extends Connection
         $output="";
         for ($i=0; $i < count($product); $i++) {
         $output .= "<tr>";
-        for ($j=0; $j < count($product[$i]); $j++) { 
-            $output .= "<td>".$product[$i][$j]."</td>";
-        }
+            $output .= "<td>".$product[$i]['ref']."</td>";
+            $output .= "<td>".$product[$i]['modelo']."</td>";
+            $output .= "<td>".$product[$i]['marca']."</td>";
+            $output .= "<td>".$product[$i]['zona']."</td>";
+            $output .= "<td>".$product[$i]['stock tienda']."</td>";
+            $output .= "<td>".$product[$i]['stock almacen']."</td>";
+            $output .= "<td>".$product[$i]['factor_rotazion']."</td>";
         $output .= "</tr>";
         }
         return $output;

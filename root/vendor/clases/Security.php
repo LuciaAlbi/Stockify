@@ -1,5 +1,5 @@
 <?php
-class Security extends connectionIndex
+class Security extends ConnectionIndex
 {
     private $loginPage = "login.php";
     private $homePage = "pages/almacen/landing.php";
@@ -27,7 +27,9 @@ class Security extends connectionIndex
     {
         if (count($_POST) > 0) {
             $userArray = $this->getUser($_POST["userName"]);
+            var_dump($userArray);
             $user = $userArray['nombre'];
+            var_dump($user);
             // Aquí estoy creando una variable de sesion que llamo workplace para saber en qué local trabajan
             //esto se mantiene de un script a otro. Va a servir para imprimir lo que toque
 
@@ -42,7 +44,7 @@ class Security extends connectionIndex
                 $sql = "SELECT almacen_id FROM empleado WHERE nombre ='$user'";
                 $result = $this->conn->query($sql);
                 //debug********************************************
-                $warehouseArray = $result->fetch_assoc();
+                $warehouseArray = $result->fetch(PDO::FETCH_ASSOC);
                 $warehouse = $warehouseArray['almacen_id'];
                 
                 //**************************************************************** */
@@ -87,10 +89,6 @@ class Security extends connectionIndex
     {
         $sql = "SELECT * FROM empleado WHERE nombre = '$userName'";
         $result = $this->conn->query($sql);
-        if ($result->num_rows > 0) {
-            return $result->fetch_assoc();
-        } else {
-            return false;
+            return $result->fetchAll(PDO::FETCH_ASSOC);
         }
-    }
 }

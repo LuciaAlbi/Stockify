@@ -10,8 +10,8 @@ class Product extends Connection
         JOIN ubicacion u ON e.Id_ubi = u.Id_ubi
         WHERE e.almacen_id = 1;";
         $result = $this->conn->query($sql);
-        if ($result->num_rows > 0) {
-            return $result->fetch_all();
+        if ($result->fetchColumn() > 0) {
+            return $result->fetchAll(PDO::FETCH_ASSOC);
         } else {    
             return false;
         }
