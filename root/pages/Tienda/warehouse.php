@@ -5,7 +5,7 @@ $security = new Security();
 $product=new Shop();
 //$product->verShop();
 $arrayShop = $product->verTodoShop();
-$drawShop = $product->drawShop($arrayShop);
+//$drawShop = $product->drawShop($arrayShop);
 //juan
 $juan = $product->verTodoShop();
 //Manolo

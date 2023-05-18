@@ -34,6 +34,8 @@ class Shop extends Connection
         //$_SESSION['workplace']
         //die("Debug");
         $workplace = $_SESSION['workplace'];
+        echo "Entro en verShop";
+        die("Debug");
         $sql = "SELECT p.ref, p.marca, p.modelo, p.f_rota
         FROM productos p
         JOIN esta e ON p.ref = e.ref
@@ -47,10 +49,13 @@ class Shop extends Connection
             /* $test = $result->fetch_all(); 
             var_dump($test);
             die("Debug"); */
+            
             $arrayShop = $result->fetch_all(); 
             $testArray = $this->getShopProdArray($arrayShop);
             //var_dump($arrayShop);
+            echo "*******HOLA HOLA HOLA************\n";
             $testArrayRefs=$this->getShopRefs($testArray);
+            echo "*******HOLA HOLA HOLA************\n";
             $_SESSION['test'] = $testArrayRefs;
             //var_dump($testArrayRefs);
             //var_dump($_SESSION['test']);
