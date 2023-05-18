@@ -7,7 +7,7 @@ class Movement extends Connection
 
     public function verMovementAlmacen()
     {
-        $sql = "SELECT * FROM mueve";
+        $sql = "SELECT * FROM mueve m WHERE m.id_almacen =" . $_SESSION['workplace'];
         $result = $this->conn->query($sql);
         if ($result->num_rows > 0) {
             $row = array();
@@ -22,7 +22,7 @@ class Movement extends Connection
 
     public function drawMovement($product)
     {
-        $output="";
+        $output = "";
         for ($i = 0; $i < count($product); $i++) {
             $output .= "<tr>";
             $output .= $product[$i]["idMOv"] . " / " . $product[$i]["fecha"] . " / " . $product[$i]["cant"] . " / " . $product[$i]["id_almacen"] . " / " . $product[$i]["idProducto"] . " / " . $product[$i]["realizado"] . "</td>";
@@ -33,7 +33,7 @@ class Movement extends Connection
 
     public function verMovementTienda()
     {
-        $sql = "SELECT * FROM mueve";
+        $sql = "SELECT * FROM mueve m WHERE m.id_almacen =" . $_SESSION['workplace'];
         $result = $this->conn->query($sql);
         if ($result->num_rows > 0) {
             $row = array();
@@ -54,8 +54,8 @@ class Movement extends Connection
             $output .= "<div class='prueba1 col-4 align-self-center'>";
             $output .= "<form id='inci'>";
             $output .= "<div class='form-group'>";
-            $output .= "<label for='titulo'>Idmovimiento / Fecha / Cantidad / IdAlmacen / IdProducto / Realizado </label>";
-            $output .= "<input type='text' class='form-control' id='titulo' placeholder='" . $sending[$i]["idMOv"] . " / " . $sending[$i]["fecha"] . " / " . $sending[$i]["cant"] . " / " . $sending[$i]["id_almacen"] . " / " . $sending[$i]["idProducto"] . " / " . $sending[$i]["realizado"] . "' readonly>";
+            $output .= "<label for='titulo'>Movimiento/ Fecha/ Cantidad/ Almacen/ IdProducto/ Realizado </label>";
+            $output .= "<input type='text' style='text-align:center' class='form-control' id='titulo' placeholder='" . $sending[$i]["idMOv"] . " / " . $sending[$i]["fecha"] . " / " . $sending[$i]["cant"] . " / " . $sending[$i]["id_almacen"] . " / " . $sending[$i]["idProducto"] . " / " . $sending[$i]["realizado"] . "' readonly>";
             $output .= "</div>";
             $output .= "</form>";
             $output .= "</div>";
