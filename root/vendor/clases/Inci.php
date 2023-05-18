@@ -7,14 +7,6 @@ class Inci extends Connection{
     private $almacen_id;
     private $ref;
 
-    public function __construct($fecha_hora, $descripcion, $almacen_id, $ref)
-    {
-        $this->fecha_hora = $fecha_hora;
-        $this->descripcion = $descripcion;
-        $this->almacen_id = $almacen_id;
-        $this->ref = $ref;
-    }
-
     public function getFecha_hora()
     {
         return $this->fecha_hora;
