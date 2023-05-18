@@ -126,7 +126,6 @@ class Shop extends Connection
             //die();
             return $amount;
         }
-        
-    
+        //
         
 }
