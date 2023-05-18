@@ -101,7 +101,7 @@ class Shop extends Connection
         $output .= "<tr>";
         for ($j=0; $j < count($product[$i]); $j++) { 
             if ($j==0) {
-                $href = __DIR__."../../../pages/Tienda/warehouseLocations.php?id=".$product[$i][$j];
+                $href = "http://localhost:8080/pages/tienda/warehouseLocations.php?id=".$product[$i][$j];
                 $output .= "<td><a href='".$href." '>".$product[$i][$j]."</a></td>";
             } else {
                 $output .= "<td>".$product[$i][$j]."</td>";
