@@ -7,7 +7,7 @@ class Movement extends Connection
 
     public function verMovementAlmacen()
     {
-        $sql = "SELECT * FROM mueve m WHERE m.id_almacen =" . $_SESSION['workplace'];
+        $sql = "SELECT * FROM mueve";
         $result = $this->conn->query($sql);
         if ($result->num_rows > 0) {
             $row = array();
