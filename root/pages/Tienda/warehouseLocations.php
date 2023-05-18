@@ -10,10 +10,6 @@ $arrayShop = $product->verTodoShop();
 $juan = $product->verTodoShop();
 //Manolo
 $manolo = $product->verShop();
-//var_dump($_SESSION["loggedIn"]);
-//checkLoggedin() para mirar si está loggeado y sino al login que se va
-//$security->checkLoggedIn();
-//checkJob() para ver si está en su pagina y sino lo mando warehouse/Landing
  
 ?>
 <!DOCTYPE html>
@@ -80,15 +76,21 @@ $manolo = $product->verShop();
                             Factor rotacion
                         </th>
                         <th>
-                            Stock en tienda
+                            Zona
                         </th>
                         <th>
-                            Stock en almacen
+                            Pasillo
                         </th>
-    
+                        <th>
+                            Estanteria
+                        </th>
+                        <th>
+                            Altura
+                        </th>
                     </tr>
                     <!--<?= $drawProduct ?>-->
-                    <?php echo $product->drawShop($manolo); ?>
+                    <?php echo $product->drawShopLocation($juan); ?>
+
                 </tbody>
             </table>
             </form>
