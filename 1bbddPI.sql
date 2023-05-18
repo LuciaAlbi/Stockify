@@ -66,7 +66,7 @@ CREATE TABLE esta (
 );
 
 CREATE TABLE mueve(
-    idMOv INT auto_increment PRIMARY KEY,
+    idMov INT auto_increment PRIMARY KEY,
     fecha DATE,
     cant INT,
     id_almacen INT,
