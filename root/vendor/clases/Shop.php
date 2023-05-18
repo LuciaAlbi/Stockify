@@ -34,8 +34,8 @@ class Shop extends Connection
         //$_SESSION['workplace']
         //die("Debug");
         $workplace = $_SESSION['workplace'];
-        echo "Entro en verShop";
-        die("Debug");
+        //echo "Entro en verShop";
+       // die("Debug");
         $sql = "SELECT p.ref, p.marca, p.modelo, p.f_rota
         FROM productos p
         JOIN esta e ON p.ref = e.ref
@@ -53,10 +53,8 @@ class Shop extends Connection
             $arrayShop = $result->fetch_all(); 
             $testArray = $this->getShopProdArray($arrayShop);
             //var_dump($arrayShop);
-            echo "*******HOLA HOLA HOLA************\n";
             $testArrayRefs=$this->getShopRefs($testArray);
-            echo "*******HOLA HOLA HOLA************\n";
-            $_SESSION['test'] = $testArrayRefs;
+            $_SESSION['arrayRefs'] = $testArrayRefs;
             //var_dump($testArrayRefs);
             //var_dump($_SESSION['test']);
             return $arrayShop; 
@@ -76,11 +74,14 @@ class Shop extends Connection
             //var_dump($_SESSION['test'][$i]);
             //eso es la ref de los productos coincidiendo con $i
             //echo "ENTRO";
-            if ($i < count($_SESSION['test'])) {
-                $ref = $_SESSION['test'][$i];
+            if ($i < count($_SESSION['arrayRefs'])) {
+                //var_dump($_SESSION['test']);
+                $ref = $_SESSION['arrayRefs'][$i];
                 $amount = $this-> getRefAmounts($ref, $_SESSION['workplace']);
+                $amountWarehouse = $this-> getRefAmounts($ref, 1);
                 //echo "$amount";
                 $output .= "<td>". $amount ."</td>";
+                $output .= "<td>". $amountWarehouse ."</td>";
             }
            
         $output .= "</tr>";
