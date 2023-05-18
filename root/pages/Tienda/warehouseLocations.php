@@ -7,7 +7,7 @@ $product=new Shop();
 $arrayShop = $product->verTodoShop();
 //$drawShop = $product->drawShop($arrayShop);
 //juan
-$juan = $product->verTodoShop();
+$juan = $product->verUbiShop();
 //Manolo
 $manolo = $product->verShop();
  

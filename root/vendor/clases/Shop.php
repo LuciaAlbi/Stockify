@@ -38,8 +38,9 @@ class Shop extends Connection
         FROM productos p
         JOIN esta e ON p.ref = e.ref
         JOIN ubicacion u ON e.Id_ubi = u.Id_ubi
-        WHERE e.almacen_id =" . $_SESSION['workplace'];
+        WHERE e.almacen_id = 3 AND p.ref = '00001'";
         $result = $this->conn->query($sql);
+        var_dump($_SESSION);
        /*  echo "****************************************************************\n";
         echo "tengo query";
         echo "****************************************************************\n"; */
