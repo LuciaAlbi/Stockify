@@ -6,27 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#4D6E9B">
-    <title>Salida</title>
+    <title>Oredenes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="icon" href="../../assets/img/image-removebg-preview.png" type="imagen/png">
     <link href="../../assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+<header>
         <div class="container-fluid">
             <div class="row">
                 <nav class="navbar navbar-expand-sm navbar-dark">
                     <a class="navbar-brand col-1" href="landing.php">
                         <img src="../../assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
                     </a>
-                    <h2 class="col-lg-7 offset-lg-3 col-md-7 col-sm-6">La casa del electrodomestico</h2>
-                </nav>
-            </div>
-            <div class="row">
-                <nav>
-                    <div class="navbar-brand">
-                        
+                    <h2 class="col-lg-4 offset-lg-3 col-md-7 col-sm-6">La casa del electrodomestico</h2>
+                    <div class="navbar-brand col-2 offset-1">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
@@ -41,16 +39,16 @@
                             </ul>
                         </div>
                     </div>
-                    
                 </nav>
             </div>
         </div>
     </header>
+    <section>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="prueba col-4 align-self-center">
+            <div class="prueba col-5 align-self-center">
                 <div class="row justify-content-center"><!-- Se tiene que copiar desde aqui -->
-                    <div class=" prueba1 col-4 align-self-center">
+                    <div class=" prueba1 col-6 align-self-center">
                         <form id="inci">
                             <div class="form-group">
                                 <label for="titulo">Id/Fecha/Cantidad/id Almacen/Ref. Producto/Codigo prov</label>

@@ -1,20 +1,73 @@
 <?php
 
 class Inci extends Connection{
-    public function __construct()
+    
+    private $fecha_hora;
+    private $descripcion;
+    private $almacen_id;
+    private $ref;
+public function __construct()
+{
+    $this->fecha_hora;
+    $this->descripcion;
+    $this->almacen_id;
+    $this->ref;
+    $this->connect();
+}
+    public function getFecha_hora()
     {
-        parent::__construct();
-        if(session_status() !== PHP_SESSION_ACTIVE) session_start();
+        return $this->fecha_hora;
     }
+
+    public function setFecha_hora($fecha_hora)
+    {
+        $this->fecha_hora = $fecha_hora;
+
+        return $this;
+    }
+
+    public function getDescripcion()
+    {
+        return $this->descripcion;
+    }
+
+    public function setDescripcion($descripcion)
+    {
+        $this->descripcion = $descripcion;
+
+        return $this;
+    }
+
+    public function getAlmacen_id()
+    {
+        return $this->almacen_id;
+    }
+
+    public function setAlmacen_id($almacen_id)
+    {
+        $this->almacen_id = $almacen_id;
+
+        return $this;
+    }
+
+    public function getRef()
+    {
+        return $this->ref;
+    }
+
+    public function setRef($ref)
+    {
+        $this->ref = $ref;
+
+        return $this;
+    }
+
     public function mostInci()
     {
-            $sql = "SELECT * FROM incidencias";
+            $sql = "SELECT fecha_hora, almacen_id, ref, descripcion FROM incidencias";
             $result = $this->conn->query($sql);
-            var_dump($result);
-            if ($result->fetchColumn() > 0) {
-                $incidencias = $result->fetchAll(PDO::FETCH_ASSOC);
-                var_dump($incidencias);
-                die("caca");
+            if ($result->num_rows > 0) {
+                $incidencias = $result->fetch_all();
                 return $incidencias;
             } else {
                 return false;
@@ -22,41 +75,44 @@ class Inci extends Connection{
     }
     public function drawInci($incidencias){
         $output= "";
-        var_dump($incidencias);
         for ($i=0; $i < count($incidencias); $i++) { 
             $output .= "<div class='row justify-content-center'>";
             $output .= "<div class='prueba1 col-4 align-self-center'>";
             $output .= "<form id='inci'>";
             $output .= "<div class='form-group'>";
             $output .= "<label for='titulo'>Fecha</label>";
-            $output .= "<input type='text' class='form-control' id='titulo' placeholder='".$incidencias[$i]['fecha_hora']."' readonly>";
+            $output .= "<input type='text' class='form-control' id='titulo' placeholder='".$incidencias[$i][0]."' readonly>";
             $output .= "</div>";
             $output .= "<div class='form-group'>";
             $output .= "<label for='titulo'>Almacen</label>";
-            $output .= "<input type='text' class='form-control' id='titulo' placeholder='".$incidencias[$i]['almacen_id']."' readonly>";
+            $output .= "<input type='text' class='form-control' id='titulo' placeholder='".$incidencias[$i][1]."' readonly>";
             $output .= "</div>";
             $output .= "<div class='form-group'>";
             $output .= "<label for='titulo'>Producto</label>";
-            $output .= "<input type='text' class='form-control' id='titulo' placeholder='".$incidencias[$i]['ref']."' readonly>";
+            $output .= "<input type='text' class='form-control' id='titulo' placeholder='".$incidencias[$i][2]."' readonly>";
             $output .= "</div>";
             $output .= "<div class='form-group'>";
             $output .= "<label for='descripcion'>Descripción</label>";
-            $output .= "<textarea class='form-control' id='descripcion' rows='3' placeholder='".$incidencias[$i]['descripcion']."' readonly></textarea>";
+            $output .= "<textarea class='form-control' id='descripcion' rows='3' placeholder='".$incidencias[$i][3]."' readonly></textarea>";
             $output .= "</div>";
             $output .= "</form>";
             $output .= "</div>";
             $output .= "</div>";
+            
         }
         return $output;
     }
-    public function insertInci($data)
+
+    public function insertInci()
     {
-        $sql = "INSERT INTO incidencias ('fecha_hora', almacen_id, 'ref', 'descripcion') VALUES ('?', ?, '?', '?')";
-        $stmt = $this->conn->prepare($sql);
-        $stmt->bindParam(1, $data['f_h'], PDO::PARAM_STR);
-        $stmt->bindParam(2, $data['a_id'], PDO::PARAM_INT);
-        $stmt->bindParam(3, $data['ref'], PDO::PARAM_STR);
-        $stmt->bindParam(4, $data['desc'], PDO::PARAM_STR);
-        return $stmt->execute();
+        /* var_dump($_POST);
+        echo "seguro que es esta mierda";
+        echo $_POST['fecha_hora'];
+        var_dump($this->conn); */
+        //PREPARE QUE EXPLOTA
+        $stmt = mysqli_prepare($this->conn, "INSERT INTO incidencias (fecha_hora, almacen_id, ref, descripcion) VALUES ('?',?,'?','?')");
+        mysqli_stmt_bind_param($stmt ,$this->fecha_hora, $this->almacen_id,$this->ref,$this->descripcion);
+        return mysqli_stmt_execute($stmt);
     }
+
 }

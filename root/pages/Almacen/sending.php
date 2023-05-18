@@ -19,7 +19,7 @@ $sending = $movement->drawSending($unmovement);
 </head>
 
 <body>
-<header>
+    <header>
         <div class="container-fluid">
             <div class="row">
                 <nav class="navbar navbar-expand-sm navbar-dark">
@@ -49,12 +49,15 @@ $sending = $movement->drawSending($unmovement);
             </div>
         </div>
     </header>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="prueba col-4 align-self-center">
-                <?= $sending ?>
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="prueba col-4 align-self-center">
+                    <?= $sending ?>
+                </div>
             </div>
         </div>
+    </section>
     <footer>
         <div class="container-fluid">
             <div class="row align-item-center">

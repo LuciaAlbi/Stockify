@@ -9,7 +9,7 @@ if(count($_POST)>0){
         'a_id'=>$_POST['almacen_id'],
         'ref'=>$_POST['ref'],
       ];
-      $r=$incidencia->insertInci($creatInci);
+      $incidencia->insertInci($creatInci);
       header('location:warehouseIncidence.php');
   } catch (PDOException $e) {
       header('location:warehouseIncidence.php');
@@ -45,7 +45,7 @@ if(count($_POST)>0){
     </div>
   </header>
   <div class="container">
-    <form id="incidenceForm" action="" method="POST">
+    <form id="incidenceForm" action="insert.php" method="POST">
       <div class="form-group">
         <label  for="fecha_hora">Fecha y hora</label>
         <input type="datetime" class="form-control" id="fecha_hora" name="fecha_hora" rows="3"

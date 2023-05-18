@@ -51,8 +51,28 @@ $juan = $product->verProductAlmacen();
                 </nav>
             </div>
         </div>
-    </header>
+        <script>
+    function searchObject() {
+        // Obtener el valor de búsqueda ingresado por el usuario
+        var searchValue = document.getElementById('searchbar').value.toLowerCase();
 
+        // Obtener todos los elementos de productos
+        var products = document.querySelectorAll('.product');
+
+        // Iterar sobre cada producto y ocultar/mostrar según la referencia
+        for (var i = 0; i < products.length; i++) {
+            var productRef = products[i].querySelector('.ref').innerText.toLowerCase();
+
+            if (productRef.includes(searchValue)) {
+                products[i].style.display = 'block';
+            } else {
+                products[i].style.display = 'none';
+            }
+        }
+    }
+</script>
+    </header>
+    <section>
     <div class="container-fluid">
         <form class="form-inline">
             <div class="input-group">
@@ -72,9 +92,9 @@ $juan = $product->verProductAlmacen();
                             <th>Modelo</th>
                             <th>Peso</th>
                             <th>Factor de Rotación</th>
-                            <th>Dimensiones</th>
                             <th>Proveedor</th>
                             <th>Color</th>
+                            <th>Zona</th>
                             <th>Pasillo</th>
                             <th>Estanteria</th>
                             <th>Altura</th>
@@ -85,9 +105,12 @@ $juan = $product->verProductAlmacen();
 
                         </tr>
                     </tbody>
-                    <script src="././assets/js/searchbar.js"></script>
                 </table>
             </div>
+        </form>
+    </div>
+    </section>
+    
             <footer>
                 <div class="container-fluid">
                     <div class="row align-item-center">
@@ -103,7 +126,7 @@ $juan = $product->verProductAlmacen();
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
                 crossorigin="anonymous"></script>
-           
+
 </body>
 
 </html>
