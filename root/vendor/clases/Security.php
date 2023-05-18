@@ -1,5 +1,5 @@
 <?php
-class Security extends connectionIndex
+class Security extends Connection
 {
     private $loginPage = "login.php";
     private $homePage = "pages/almacen/landing.php";

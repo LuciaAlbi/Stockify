@@ -1,14 +1,13 @@
 <?php
 
-class ConnectionIndex
+class Connection
 {
     private $host;
     private $userName;
     private $password;
     private $db;
     protected $conn;
-    protected $configFileIndex = __DIR__."/conf.csv";
-    protected $configFile = __DIR__."/../../conf.csv";
+    protected $config = __DIR__."/../../conf.csv";
 
     public function __construct()
     {
@@ -22,12 +21,12 @@ class ConnectionIndex
 
     public function connect()
     {
-        if (isset($configFileIndex)) {
+/*         if (isset($configFileIndex)) {
             $config = $this->configFileIndex;
         }else {
             $config = $this->configFile;
-        }
-
+        } */
+        $config = $this->config;
         $data = fopen($config, "r")  or die("Unable to open file!");
         if (!feof($data)) {
             $connData = fgetcsv($data);
@@ -35,7 +34,7 @@ class ConnectionIndex
             $this->userName = $connData[1];
             $this->password = $connData[2];
             $this->db = $connData[3];
-            $this->conn = new mysqli($this->host, $this->userName, $this->password, $this->db,);
+            $this->conn = new mysqli($this->host, $this->userName, $this->password, $this->db);
             if ($this->conn->connect_error) {
                 die("Connection failed: " . $this->conn->connect_error);
             }

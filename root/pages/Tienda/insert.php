@@ -1,5 +1,5 @@
 <?php
-require_once "../../vendor/autoloader.php";
+/* require_once "../../vendor/autoloader.php";
 
 $repository = new Inci(
     $_POST['fecha_hora'],
@@ -9,7 +9,7 @@ $repository = new Inci(
 );
 try {
     $repository->insertInci();
-    header('Location: /warehouseIncidence.php');
+    header('Location:../tienda/warehouseIncidence.php');
 } catch (\Throwable $th) {
     print($th);
-}
+} */
