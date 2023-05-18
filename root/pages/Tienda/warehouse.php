@@ -44,7 +44,7 @@ $manolo = $product->verShop();
                         </button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="warehouseIncidence.php">Incidencia</a></li>
-                            <li><a class="dropdown-item" href="warehouseNewOrder.php">Pedir</a></li>
+                            <li><a class="dropdown-item" href="warehouseViewOrder.php">Pedir</a></li>
                             <li><a class="dropdown-item" href="warehouseTiendaConcreta.php">Pedidos</a></li>
                         </ul>
                     </div>
