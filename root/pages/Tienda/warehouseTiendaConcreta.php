@@ -2,6 +2,7 @@
 require_once "../../vendor/autoloader.php";
 $movement = new Movement();
 $unmovement = $movement->verMovementAlmacen();
+$product = $movement->drawMovement($unmovement);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,7 +44,8 @@ $unmovement = $movement->verMovementAlmacen();
     <div class="container">
         <div class="row justify-content-center">
             <div class="prueba col-4 align-self-center">
-                <div class="row justify-content-center"><!-- Se tiene que copiar desde aqui -->
+                <?= $product ?>
+                <!--<div class="row justify-content-center">
                     <div class=" prueba1 col-4 align-self-center">
                         <form id="inci">
                             <div class="form-group">
@@ -52,10 +54,10 @@ $unmovement = $movement->verMovementAlmacen();
                             </div>
                         </form>
                     </div>
-                </div><!-- Hasta aqui para mostrar otra incidencia -->
+                </div>--><!-- Hasta aqui para mostrar otra incidencia -->
             </div>
         </div>
-    </div><?= var_dump($unmovement)?>
+    </div><!--<?= var_dump($unmovement)?>-->
     <footer>
         <div class="container-fluid">
             <div class="row align-item-center">
