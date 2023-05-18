@@ -137,15 +137,6 @@ class Shop extends Connection
             //var_dump($_SESSION['test'][$i]);
             //eso es la ref de los productos coincidiendo con $i
             //echo "ENTRO";
-            if ($i < count($_SESSION['arrayRefs'])) {
-                //var_dump($_SESSION['test']);
-                //$ref = $_SESSION['arrayRefs'][$i];
-                //$amount = $this-> getRefAmounts($ref, $_SESSION['workplace']);
-                //$amountWarehouse = $this-> getRefAmounts($ref, 1);
-                //echo "$amount";
-               // $output .= "<td>". $amount ."</td>";
-               // $output .= "<td>". $amountWarehouse ."</td>";
-            }
            
         $output .= "</tr>";
         }
