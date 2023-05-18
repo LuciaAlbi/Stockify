@@ -34,11 +34,16 @@ class Shop extends Connection
         //echo $_SESSION['workplace'];
     
         //die("Debug");
+        /* $sql = "SELECT p.ref, p.marca, p.modelo, p.f_rota, u.zona, u.pasillo, u.estanteria, u.altura
+        FROM productos p
+        JOIN esta e ON p.ref = e.ref
+        JOIN ubicacion u ON e.Id_ubi = u.Id_ubi
+        WHERE e.almacen_id = " . $_SESSION['workplace'] . " AND p.ref = '00001'"; */
         $sql = "SELECT p.ref, p.marca, p.modelo, p.f_rota, u.zona, u.pasillo, u.estanteria, u.altura
         FROM productos p
         JOIN esta e ON p.ref = e.ref
         JOIN ubicacion u ON e.Id_ubi = u.Id_ubi
-        WHERE e.almacen_id = 3 AND p.ref = '00001'";
+        WHERE e.almacen_id = 3 AND p.ref ='".$_GET['tu_variable']."'";
         $result = $this->conn->query($sql);
         var_dump($_SESSION);
        /*  echo "****************************************************************\n";
@@ -95,7 +100,14 @@ class Shop extends Connection
         for ($i=0; $i < count($product); $i++) {
         $output .= "<tr>";
         for ($j=0; $j < count($product[$i]); $j++) { 
-            $output .= "<td>".$product[$i][$j]."</td>";      
+            if ($j==0) {
+                $href = __DIR__."../../../pages/Tienda/warehouseLocations.php?id=".$product[$i][$j];
+                $output .= "<td><a href='".$href." '>".$product[$i][$j]."</a></td>";
+            } else {
+                $output .= "<td>".$product[$i][$j]."</td>";
+            }
+            
+                  
         }
             //var_dump($_SESSION['test'][$i]);
             //eso es la ref de los productos coincidiendo con $i
