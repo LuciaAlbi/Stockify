@@ -1,8 +1,7 @@
 <?php
-if (session_status() !== PHP_SESSION_ACTIVE)
-    session_start();
+if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 require_once "../../vendor/autoloader.php";
-/* $security = new Security(); */
+$security = new Security();
 $product = new Movement();
 $carmen = $product->verMovementAlmacen();
 $drawProduct = $product->drawMovement($carmen);

@@ -1,5 +1,8 @@
 <?php
+if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 require_once "../../vendor/autoloader.php";
+$security = new Security();
+
 if(count($_POST)>0){
   try {
     $incidencia= new Inci();  

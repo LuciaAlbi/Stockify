@@ -1,19 +1,14 @@
 <?php
-if (session_status() !== PHP_SESSION_ACTIVE)
-    session_start();
+if (session_status() !== PHP_SESSION_ACTIVE)session_start();
 require_once "../../vendor/autoloader.php";
-/* $security = new Security(); */
+$security = new Security();
 $product = new Movement();
 $silvia = $product->verMovementTienda();
 $drawProduct = $product->drawMovement($silvia);
 //silvia
-
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
