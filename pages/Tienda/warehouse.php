@@ -1,8 +1,8 @@
 <?php
-if(session_status() !== PHP_SESSION_ACTIVE) session_start();
+if (session_status() !== PHP_SESSION_ACTIVE) session_start();
 require_once "../../vendor/autoloader.php";
 $security = new Security();
-$product=new Shop();
+$product = new Shop();
 //$product->verShop();
 $arrayShop = $product->verTodoShop();
 //$drawShop = $product->drawShop($arrayShop);
@@ -14,7 +14,7 @@ $manolo = $product->verShop();
 //checkLoggedin() para mirar si está loggeado y sino al login que se va
 //$security->checkLoggedIn();
 //checkJob() para ver si está en su pagina y sino lo mando warehouse/Landing
- 
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,73 +31,73 @@ $manolo = $product->verShop();
 
 <body>
     <header>
-		<div class="container-fluid">
-			<div class="row">
-				<nav class="navbar navbar-expand-sm navbar-dark">
-					<a class="navbar-brand col-1" href="warehouse.php">
-						<img src="../../assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
-					</a>
-					<h2 class="col-lg-4 offset-lg-3 col-md-7 col-sm-6">La casa del electrodomestico</h2>
-					<div class="navbar-brand col-3">
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarNavDropdown">
-							<ul class="navbar-nav">
-								<li class="nav-item">
-									<a class="nav-link" href="warehouseIncidence.php">Incidencia</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Pedir</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="warehouseViewOrder.php">Pedidos</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</nav>
-			</div>
-		</div>
-	</header>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-sm navbar-dark">
+                    <a class="navbar-brand col-1" href="warehouse.php">
+                        <img src="../../assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
+                    </a>
+                    <h2 class="col-lg-4 offset-lg-3 col-md-7 col-sm-6">La casa del electrodomestico</h2>
+                    <div class="navbar-brand col-3">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="warehouseIncidence.php">Incidencia</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pedir</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="warehouseViewOrder.php">Pedidos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
     <div class="container-fluid">
         <div class="row">
             <form class="form-inline">
                 <div class="input-group">
                     <input ID="txtPassword" type="text" class="form-control" placeholder="Search">
                     <span class="input-group-btn">
-                        <button class="btn btn-primary" type="button">
-                            Search<span class=""></span>
+                        <button id="show_password" class="btn btn-info" type="button" placeholder="">
+                            Buscar<span class="fa fa-eye-slash icon"></span>
                         </button>
                     </span>
                 </div>
                 <table>
-                <tbody>
-                    <tr>
-                        <th>
-                            Referencia
-                        </th>
-                        <th>
-                            Marca
-                        </th>
-                        <th>
-                            Modelo
-                        </th>
-                        <th>
-                            Factor rotacion
-                        </th>
-                        <th>
-                            Stock en tienda
-                        </th>
-                        <th>
-                            Stock en almacen
-                        </th>
-    
-                    </tr>
-                    <!--<?= $drawProduct ?>-->
-                    <?php echo $product->drawShop($manolo); ?>
-                </tbody>
-            </table>
+                    <tbody>
+                        <tr>
+                            <th>
+                                Referencia
+                            </th>
+                            <th>
+                                Marca
+                            </th>
+                            <th>
+                                Modelo
+                            </th>
+                            <th>
+                                Factor rotacion
+                            </th>
+                            <th>
+                                Stock en tienda
+                            </th>
+                            <th>
+                                Stock en almacen
+                            </th>
+
+                        </tr>
+                        <!--<?= $drawProduct ?>-->
+                        <?php echo $product->drawShop($manolo); ?>
+                    </tbody>
+                </table>
             </form>
         </div>
     </div>
