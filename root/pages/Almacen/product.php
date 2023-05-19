@@ -40,10 +40,7 @@ $juan = $product->verProductAlmacen();
                                     <a class="nav-link" href="Incidence.php">Incidencia</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="entrance.php">Entrada</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="sending.php">Salida</a>
+                                    <a class="nav-link" href="orders.php">Movimientos</a>
                                 </li>
                             </ul>
                         </div>
@@ -57,12 +54,12 @@ $juan = $product->verProductAlmacen();
         var searchValue = document.getElementById('searchbar').value.toLowerCase();
 
         // Obtener todos los elementos de productos
-        var products = document.querySelectorAll('.product');
-
+        var products = document.getElementsByClassName('ref');
+        console.log(products.length);
         // Iterar sobre cada producto y ocultar/mostrar según la referencia
         for (var i = 0; i < products.length; i++) {
-            var productRef = products[i].querySelector('.ref').innerText.toLowerCase();
-
+            var productRef = products[i].innerText.toLowerCase();
+            console.log(productRef);
             if (productRef.includes(searchValue)) {
                 products[i].style.display = 'block';
             } else {
@@ -78,7 +75,7 @@ $juan = $product->verProductAlmacen();
             <div class="input-group">
                 <input id="searchbar" onkeyup="searchObject()" type="text" name="search" placeholder="Search">
                 <span class="input-group-btn">
-                    <button id="show_password" class="btn btn-primary" type="button">
+                    <button id="show_password" class="btn btn-primary" type="button" onclick="searchObject()">
                         Search<span class="fa fa-eye-slash icon"></span>
                     </button>
                 </span>

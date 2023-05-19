@@ -102,3 +102,8 @@ a.white-link {
   color:white;
   text-decoration:none;
 }
+
+a.white-link:hover {
+  color: yellow;
+  text-decoration: none;
+}
