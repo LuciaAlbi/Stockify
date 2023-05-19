@@ -4,7 +4,7 @@ if (session_status() !== PHP_SESSION_ACTIVE)
 require_once "../../vendor/autoloader.php";
 /* $security = new Security(); */
 $product = new Movement();
-$silvia = $product->verMovements();
+$silvia = $product->verMovementsPending();
 $drawProduct = $product->drawMovement($silvia);
 //silvia
 

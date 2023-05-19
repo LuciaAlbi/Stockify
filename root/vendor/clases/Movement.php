@@ -7,7 +7,22 @@ class Movement extends Connection
 
     public function verMovementAlmacen()
     {
-        $sql = "SELECT * FROM mueve";
+        $sql = "SELECT * FROM mueve where realizado = 1";
+        $result = $this->conn->query($sql);
+        if ($result->num_rows > 0) {
+            $row = array();
+            while ($rows = $result->fetch_assoc()) {
+                $row[] = $rows;
+            }
+            return $row;
+        } else {
+            return false;
+        }
+    }
+
+    public function verMovementsPending()
+    {
+        $sql = "SELECT * FROM mueve where realizado = 0";
         $result = $this->conn->query($sql);
         if ($result->num_rows > 0) {
             $row = array();
