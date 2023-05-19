@@ -37,9 +37,6 @@ $sending = $movement->drawSending($unmovement);
                                     <a class="nav-link" href="createSending.php">Crear salida</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="entrance.php">Entradas</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="Incidence.php">Incidencia</a>
                                 </li>
                             </ul>
