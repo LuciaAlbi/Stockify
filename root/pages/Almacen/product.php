@@ -40,10 +40,7 @@ $juan = $product->verProductAlmacen();
                                     <a class="nav-link" href="Incidence.php">Incidencia</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="entrance.php">Entrada</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="sending.php">Salida</a>
+                                    <a class="nav-link" href="orders.php">Movimientos</a>
                                 </li>
                             </ul>
                         </div>
