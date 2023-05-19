@@ -95,7 +95,7 @@ class Movement extends Connection
             $output .= "<form id='inci'>";
             $output .= "<div class='form-group'>";
             $output .= "<label for='titulo'>Movimiento / Fecha / Cantidad / Almacen / IdProducto / Realizado </label>";
-            $output .= "<input type='text' style='text-align:center' class='form-control' id='titulo' placeholder='" . $sending[$i]["idMOv"] . " / " . $sending[$i]["fecha"] . " / " . $sending[$i]["cant"] . " / " . $sending[$i]["id_almacen"] . " / " . $sending[$i]["idProducto"] . " / " . $sending[$i]["realizado"] . "' readonly>";
+            $output .= "<input type='text' style='text-align:center' class='form-control' id='titulo' placeholder='" . $sending[$i]["idMov"] . " / " . $sending[$i]["fecha"] . " / " . $sending[$i]["cant"] . " / " . $sending[$i]["id_almacen"] . " / " . $sending[$i]["idProducto"] . " / " . $sending[$i]["realizado"] . "' readonly>";
             $output .= "</div>";
             $output .= "</form>";
             $output .= "</div>";
