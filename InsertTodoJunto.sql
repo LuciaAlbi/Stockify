@@ -347,3 +347,11 @@ INSERT INTO mueve (fecha, id_almacen, idProducto,cant,  realizado)
 VALUES ('2023-02-27',1,'00009',10,0);
 INSERT INTO mueve (fecha, id_almacen, idProducto,cant,  realizado) 
 VALUES ('2023-01-20',1,'00010',8,0);
+INSERT INTO mueve (fecha, id_almacen, idProducto,cant, realizado) 
+VALUES ('2023-05-12',1,'00002',10,1);
+INSERT INTO mueve (fecha, id_almacen, idProducto,cant, realizado) 
+VALUES ('2023-05-14',2,'00003',10,1);
+INSERT INTO mueve (fecha, id_almacen, idProducto,cant, realizado) 
+VALUES ('2023-05-13',2,'00002',10,1);
+INSERT INTO mueve (fecha, id_almacen, idProducto,cant, realizado) 
+VALUES ('2023-05-12',3,'00003',10,1);
