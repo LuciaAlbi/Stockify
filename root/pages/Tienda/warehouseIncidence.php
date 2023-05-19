@@ -23,21 +23,29 @@ $drawIncidencia=$incidencia->drawInci($unaIncidencia);
 
 <body>
     <header>
-        <div class="container-fluid">
-            <div class="row">
-                <nav class="navbar navbar-expand-sm navbar-dark">
-                    <a class="navbar-brand col-1" href="warehouse.php">
-                        <img src="../../assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
-                    </a>
-                    <h2 class="col-8 offset-1 text-center">La casa del electrodomestico</h2>
-                    <div class="dropdown col-1">
-                        <a href="warehouseCreateIncidence.php" class="btn btn-primary" role="button">Crear incidencia</a>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="navbar navbar-expand-sm navbar-dark">
+					<a class="navbar-brand col-1" href="landing.php">
+						<img src="../../assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
+					</a>
+					<h2 class="col-lg-4 offset-lg-3 col-md-7 col-sm-6">La casa del electrodomestico</h2>
+					<div class="navbar-brand col-3">
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNavDropdown">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="warehouseCreateIncidence.php">Crear Incidencia</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
     <div class="container">
         <div class="row justify-content-center">
             <div class="prueba col-4 align-self-center">
