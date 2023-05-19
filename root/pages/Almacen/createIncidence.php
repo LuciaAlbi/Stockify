@@ -1,7 +1,22 @@
 <?php
-if(session_status() !== PHP_SESSION_ACTIVE) session_start();
+if (session_status() !== PHP_SESSION_ACTIVE) session_start();
 require_once "../../vendor/autoloader.php";
 $security = new Security();
+if(count($_POST)>0){
+  try {
+    $incidencia= new Inci();  
+      $creatInci=[
+        'f_h'=>$_POST['fecha_hora'],
+        'desc'=>$_POST['descripcion'],
+        'a_id'=>$_POST['almacen_id'],
+        'ref'=>$_POST['ref'],
+      ];
+      $incidencia->insertInci($creatInci);
+      header('location:../tienda/warehouseIncidence.php');
+  } catch (PDOException $e) {
+      header('location:../tienda/warehouseIncidence.php');
+  }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,20 +45,33 @@ $security = new Security();
       </div>
     </div>
   </header>
-
-  <div class="container">
-    <form>
-      <div class="form-group">
-        <label for="titulo">Título</label>
-        <input type="text" class="form-control" id="titulo" placeholder="Ingrese un título para la incidencia">
+  <section>
+    <div class="container">
+      <div class="row">
+        <form id="incidenceForm" action="" method="POST">
+          <div class='crearcion col-6 offset-3'>
+            <div class='form-group'>
+              <label for='titulo'>Fecha</label>
+              <input type="datetime" class="form-control" id="fecha_hora" name="fecha_hora" rows="3" placeholder="aaaa-mm-dd"></input>
+            </div>
+            <div class='form-group'>
+              <label for='titulo'>Almacen</label>
+              <textarea class="form-control" id="almace_id" name="almacen_id" rows="3" placeholder="almacen_id"></textarea>
+            </div>
+            <div class='form-group'>
+              <label for='titulo'>Producto</label>
+              <textarea class="form-control" id="ref" name="ref" rows="3" placeholder="Ejem. 00000"></textarea>
+            </div>
+            <div class='form-group'>
+              <label for='descripcion'>Descripción</label>
+              <textarea class="form-control" id="descripcion" name="descripcion" rows="3" placeholder="Descripción para la incidencia"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitButton">Realizar incidencia</button>
+          </div>
+        </form>
       </div>
-      <div class="form-group">
-        <label for="descripcion">Descripción</label>
-        <textarea class="form-control" id="descripcion" rows="3" placeholder="Ingrese una descripción para la incidencia"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Realizar incidencia</button>
-    </form>
-  </div>
+    </div>
+  </section>
   <footer>
     <div class="container-fluid">
       <div class="row align-item-center">

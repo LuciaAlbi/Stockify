@@ -1,10 +1,10 @@
 <?php
-if(session_status() !== PHP_SESSION_ACTIVE) session_start();
+if (session_status() !== PHP_SESSION_ACTIVE) session_start();
 require_once "../../vendor/autoloader.php";
 $security = new Security();
-$incidencia=new Inci();
-$unaIncidencia=$incidencia->mostInci();
-$drawIncidencia=$incidencia->drawInci($unaIncidencia);
+$incidencia = new Inci();
+$unaIncidencia = $incidencia->mostInci();
+$drawIncidencia = $incidencia->drawInci($unaIncidencia);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +21,7 @@ $drawIncidencia=$incidencia->drawInci($unaIncidencia);
 </head>
 
 <body>
-<header>
+    <header>
         <div class="container-fluid">
             <div class="row">
                 <nav class="navbar navbar-expand-sm navbar-dark">
@@ -49,7 +49,7 @@ $drawIncidencia=$incidencia->drawInci($unaIncidencia);
     <div class="container">
         <div class="row justify-content-center">
             <div class="prueba col-4 align-self-center">
-                <?=$drawIncidencia?>
+                <?= $drawIncidencia ?>
             </div>
         </div>
     </div>

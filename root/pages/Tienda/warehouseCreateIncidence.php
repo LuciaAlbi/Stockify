@@ -47,31 +47,33 @@ if(count($_POST)>0){
       </div>
     </div>
   </header>
-  <div class="container">
-    <form id="incidenceForm" action="" method="POST">
-      <div class="form-group">
-        <label  for="fecha_hora">Fecha y hora</label>
-        <input type="datetime" class="form-control" id="fecha_hora" name="fecha_hora" rows="3"
-          placeholder="aaaa-mm-dd"></input>
+  <section>
+    <div class="container">
+      <div class="row">
+        <form id="incidenceForm" action="" method="POST">
+          <div class='crearcion col-6 offset-3'>
+            <div class='form-group'>
+              <label for='titulo'>Fecha</label>
+              <input type="datetime" class="form-control" id="fecha_hora" name="fecha_hora" rows="3" placeholder="aaaa-mm-dd"></input>
+            </div>
+            <div class='form-group'>
+              <label for='titulo'>Almacen</label>
+              <textarea class="form-control" id="almace_id" name="almacen_id" rows="3" placeholder="almacen_id"></textarea>
+            </div>
+            <div class='form-group'>
+              <label for='titulo'>Producto</label>
+              <textarea class="form-control" id="ref" name="ref" rows="3" placeholder="Ejem. 00000"></textarea>
+            </div>
+            <div class='form-group'>
+              <label for='descripcion'>Descripción</label>
+              <textarea class="form-control" id="descripcion" name="descripcion" rows="3" placeholder="Descripción para la incidencia"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitButton">Realizar incidencia</button>
+          </div>
+        </form>
       </div>
-      <div class="form-group">
-        <label for="alamcen_id">Almacen de procedencia (ID)</label>
-        <textarea class="form-control" id="almace_id" name="almacen_id" rows="3"
-          placeholder="almacen_id"></textarea>
-      </div>
-      <div class="form-group">
-        <label for="ref">Referencia del producto</label>
-        <textarea class="form-control" id="ref" name="ref" rows="3"
-          placeholder="Ejem. 00000"></textarea>
-      </div>
-      <div class="form-group">
-        <label for="descripcion">Descripción</label>
-        <textarea class="form-control" id="descripcion" name="descripcion" rows="3"
-          placeholder="Descripción para la incidencia"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary" id="submitButton">Realizar incidencia</button>
-    </form>
-  </div>
+    </div>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

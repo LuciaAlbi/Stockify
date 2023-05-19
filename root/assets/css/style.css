@@ -72,6 +72,16 @@ footer{
   width: 100%;
   height: auto;
 }
+div.crearcion{
+  border: solid #013C6A 1px; 
+  -moz-border-radius: 20px; 
+  -webkit-border-radius: 20px; 
+  border-radius: 20px;
+  background-color: #013C6A;
+  width: 650px;
+  margin-top:50px;
+  margin-bottom: 20px;
+}
 div.prueba{
   border: solid #013C6A 1px; 
   -moz-border-radius: 20px; 
@@ -93,16 +103,17 @@ div.prueba1{
   margin-top:20px;
   margin-bottom: 20px;
 }
+.btn-primary{
+  margin:10px;
+}
 a{
  color:#013C6A;
  text-decoration:none;
 }
-
 a.white-link {
   color:white;
   text-decoration:none;
 }
-
 a.white-link:hover {
   color: yellow;
   text-decoration: none;
