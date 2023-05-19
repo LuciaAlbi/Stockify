@@ -1,5 +1,7 @@
 <?php
+if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 require_once "../../vendor/autoloader.php";
+$security = new Security();
 $incidencia=new Inci();
 $unaIncidencia=$incidencia->mostInci();
 $drawIncidencia=$incidencia->drawInci($unaIncidencia);

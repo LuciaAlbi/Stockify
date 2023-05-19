@@ -3,7 +3,7 @@ class Inci extends Connection
 {
     public function mostInci()
     {
-        $sql = "SELECT fecha_hora, almacen_id, ref, descripcion FROM incidencias";
+        $sql = "SELECT fecha_hora, almacen_id, ref, descripcion FROM incidencias WHERE almacen_id =" . $_SESSION['workplace'];
         $result = $this->conn->query($sql);
         if ($result->num_rows > 0) {
             $incidencias = $result->fetch_all();

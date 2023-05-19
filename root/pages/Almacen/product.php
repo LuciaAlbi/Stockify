@@ -1,5 +1,7 @@
 <?php
+if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 require_once "../../vendor/autoloader.php";
+$security = new Security();
 $product = new Product();
 $arrayProduct = $product->verProductAlmacen();
 $drawProduct = $product->drawProduct($arrayProduct);
@@ -48,37 +50,19 @@ $juan = $product->verProductAlmacen();
                 </nav>
             </div>
         </div>
-        <script>
-    function searchObject() {
-        // Obtener el valor de búsqueda ingresado por el usuario
-        var searchValue = document.getElementById('searchbar').value.toLowerCase();
-
-        // Obtener todos los elementos de productos
-        var products = document.getElementsByClassName('ref');
-        console.log(products.length);
-        // Iterar sobre cada producto y ocultar/mostrar según la referencia
-        for (var i = 0; i < products.length; i++) {
-            var productRef = products[i].innerText.toLowerCase();
-            console.log(productRef);
-            if (productRef.includes(searchValue)) {
-                products[i].style.display = 'block';
-            } else {
-                products[i].style.display = 'none';
-            }
-        }
-    }
-</script>
     </header>
     <section>
     <div class="container-fluid">
-        <form class="form-inline">
-            <div class="input-group">
-                <input id="searchbar" onkeyup="searchObject()" type="text" name="search" placeholder="Search">
-                <span class="input-group-btn">
-                    <button id="show_password" class="btn btn-primary" type="button" onclick="searchObject()">
-                        Search<span class="fa fa-eye-slash icon"></span>
-                    </button>
-                </span>
+    <div class="row">
+            <form class="form-inline">
+                <div class="input-group">
+                    <input ID="txtPassword" type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button">
+                            Search<span class=""></span>
+                        </button>
+                    </span>
+                </div>
                 <table>
                     <thead>
                         <tr>

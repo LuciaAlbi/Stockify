@@ -1,3 +1,8 @@
+<?php
+if(session_status() !== PHP_SESSION_ACTIVE) session_start();
+require_once "../../vendor/autoloader.php";
+$security = new Security();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
