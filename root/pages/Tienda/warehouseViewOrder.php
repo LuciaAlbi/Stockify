@@ -35,14 +35,7 @@ $drawProduct = $product->drawMovement($silvia);
         </div>
     </header>
     </div>
-    <table>
-        <tbody>
-            </tr>
-            <?php echo $product->drawSending($silvia); ?>
-            </tr>
-        </tbody>
-    </table>
-    </form>
+        <?= $drawProduct ?>
     </div>
     <footer>
         <div class="container-fluid">
