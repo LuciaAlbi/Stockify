@@ -34,9 +34,6 @@ $sending = $movement->drawSending($unmovement);
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="createSending.php">Crear salida</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="Incidence.php">Incidencia</a>
                                 </li>
                             </ul>
