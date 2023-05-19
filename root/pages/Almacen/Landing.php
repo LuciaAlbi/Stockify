@@ -49,13 +49,13 @@ require_once "../../vendor/autoloader.php";
 	</header>
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="card col-lg-4 offset-lg-0 col-md-4 col-sm-12 offset-sm-2" style="width:400px; margin-top:50px;margin-bottom:50px">
+			<div class="card col-lg-4 offset-lg-0 col-md-4 col-sm-12 offset-sm-2">
 				<a href="product.php"><img class="card-img-top" src="../../assets/img/image.png" alt="card image"></a>
 				<div class="card-body">
 					<h4 class="card-title text-center">PRODUCTOS</h4>
 				</div>
 			</div>
-			<div class="card offset-lg-2 col-lg-4 col-md-4 col-sm-12" style="width:400px; margin-top:50px;margin-bottom:50px">
+			<div class="card offset-lg-2 col-lg-4 col-md-4 col-sm-12">
 				<a href="orders.php"><img class="card-img-top" src="../../assets/img/product.png" alt="card image"></a>
 				<div class="card-body">
 					<h4 class="card-title text-center">PEDIDOS</h4>

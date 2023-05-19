@@ -1,4 +1,20 @@
 <?php
+require_once "../../vendor/autoloader.php";
+if(count($_POST)>0){
+  try {
+    $incidencia= new Inci();  
+      $creatInci=[
+        'f_h'=>$_POST['fecha_hora'],
+        'desc'=>$_POST['descripcion'],
+        'a_id'=>$_POST['almacen_id'],
+        'ref'=>$_POST['ref'],
+      ];
+      $incidencia->insertInci($creatInci);
+      header('location:../tienda/warehouseIncidence.php');
+  } catch (PDOException $e) {
+      header('location:../tienda/warehouseIncidence.php');
+  }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +45,7 @@
     </div>
   </header>
   <div class="container">
-    <form id="incidenceForm" action="insert.php" method="POST">
+    <form id="incidenceForm" action="" method="POST">
       <div class="form-group">
         <label  for="fecha_hora">Fecha y hora</label>
         <input type="datetime" class="form-control" id="fecha_hora" name="fecha_hora" rows="3"
