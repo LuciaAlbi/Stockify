@@ -49,7 +49,7 @@ if(count($_POST)>0){
     <div class="container">
       <div class="row">
         <form id="incidenceForm" action="" method="POST">
-          <div class='crearcion col-6 offset-3'>
+          <div class='crearcion col-lg-6 offset-lg-3'>
             <div class='form-group'>
               <label for='titulo'>Fecha</label>
               <input type="datetime" class="form-control" id="fecha_hora" name="fecha_hora" rows="3" placeholder="aaaa-mm-dd"></input>

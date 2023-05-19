@@ -48,7 +48,7 @@ $sending = $movement->drawSending($unmovement);
     <section>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="prueba col-4 align-self-center">
+                <div class="prueba col-4">
                     <?= $sending ?>
                 </div>
             </div>
