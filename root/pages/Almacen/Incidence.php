@@ -37,9 +37,6 @@ $drawIncidencia=$incidencia->drawInci($unaIncidencia);
                                     <a class="nav-link" href="createIncidence.php">Crear incidencia</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="entrance.php">Entrada</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="sending.php">Salida</a>
                                 </li>
                             </ul>
