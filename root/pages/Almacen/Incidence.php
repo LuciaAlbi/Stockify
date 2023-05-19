@@ -34,9 +34,6 @@ $drawIncidencia=$incidencia->drawInci($unaIncidencia);
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="createIncidence.php">Crear incidencia</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="sending.php">Salida</a>
                                 </li>
                             </ul>
