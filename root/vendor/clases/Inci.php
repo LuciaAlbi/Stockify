@@ -2,63 +2,6 @@
 
 class Inci extends Connection
 {
-
-    private $fecha_hora;
-    private $descripcion;
-    private $almacen_id;
-    private $ref;
-    public function __construct()
-    {
-        $this->connect();
-    }
-    public function getFecha_hora()
-    {
-        return $this->fecha_hora;
-    }
-
-    public function setFecha_hora($fecha_hora)
-    {
-        $this->fecha_hora = $fecha_hora;
-
-        return $this;
-    }
-
-    public function getDescripcion()
-    {
-        return $this->descripcion;
-    }
-
-    public function setDescripcion($descripcion)
-    {
-        $this->descripcion = $descripcion;
-
-        return $this;
-    }
-
-    public function getAlmacen_id()
-    {
-        return $this->almacen_id;
-    }
-
-    public function setAlmacen_id($almacen_id)
-    {
-        $this->almacen_id = $almacen_id;
-
-        return $this;
-    }
-
-    public function getRef()
-    {
-        return $this->ref;
-    }
-
-    public function setRef($ref)
-    {
-        $this->ref = $ref;
-
-        return $this;
-    }
-
     public function mostInci()
     {
         $sql = "SELECT fecha_hora, almacen_id, ref, descripcion FROM incidencias";
@@ -102,27 +45,8 @@ class Inci extends Connection
 
     public function insertInci($data)
     {
-        /* var_dump($_POST);
-        echo "seguro que es esta mierda";
-        echo $_POST['fecha_hora'];
-        var_dump($this->conn); */
-        //PREPARE QUE EXPLOTA
-        /*  $stmt = mysqli_prepare($this->conn, "INSERT INTO incidencias (fecha_hora, almacen_id, ref, descripcion) VALUES ('$this->fecha_hora','$this->almacen_id','$this->ref','$this->descripcion')");
-        var_dump($stmt);
-        return $stmt; */
-
         $stmt = mysqli_prepare($this->conn, "INSERT INTO incidencias (fecha_hora, almacen_id, ref, descripcion) VALUES (?, ?, ?, ?)");
-        if ($stmt) {
             mysqli_stmt_bind_param($stmt, 'siss', $data['f_h'], $data['a_id'], $data['ref'], $data['desc']);
-            mysqli_stmt_execute($stmt);
-
-            $affectedRows = mysqli_stmt_affected_rows($stmt);
-            mysqli_stmt_close($stmt);
-
-            return $affectedRows;
-        } else {
-            // Manejo de errores
-            return false;
-        }
+            return mysqli_stmt_execute($stmt);
     }
 }

@@ -24,7 +24,7 @@ $drawIncidencia=$incidencia->drawInci($unaIncidencia);
         <div class="container-fluid">
             <div class="row">
                 <nav class="navbar navbar-expand-sm navbar-dark">
-                    <a class="navbar-brand col-1" href="landing.php">
+                    <a class="navbar-brand col-1" href="warehouse.php">
                         <img src="../../assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
                     </a>
                     <h2 class="col-8 offset-1 text-center">La casa del electrodomestico</h2>
