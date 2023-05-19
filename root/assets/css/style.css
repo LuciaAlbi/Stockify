@@ -97,3 +97,8 @@ a{
  color:#013C6A;
  text-decoration:none;
 }
+
+a.white-link {
+  color:white;
+  text-decoration:none;
+}
