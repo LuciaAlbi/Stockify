@@ -28,15 +28,15 @@ $drawIncidencia = $incidencia->drawInci($unaIncidencia);
                     <a class="navbar-brand col-1" href="landing.php">
                         <img src="../../assets/img/image-removebg-preview.png" alt="Avatar Logo" style="width:50px;">
                     </a>
-                    <h2 class="col-lg-4 offset-lg-3 col-md-7 col-sm-6">La casa del electrodomestico</h2>
-                    <div class="navbar-brand col-2 offset-1">
+                    <h2 class="col-lg-6 offset-lg-2 col-md-7 col-sm-6 text-center">La casa del electrodomestico</h2>
+                    <div class="navbar-brand col-2">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="sending.php">Salida</a>
+                                    <a class="nav-link" href="createIncidence.php">Crear Incidencia</a>
                                 </li>
                             </ul>
                         </div>

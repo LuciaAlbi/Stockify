@@ -91,7 +91,7 @@ class Movement extends Connection
         $output = "";
         for ($i = 0; $i < count($sending); $i++) {
             $output .= "<div class='row justify-content-center'>";
-            $output .= "<div class='prueba1 col-4 align-self-center'>";
+            $output .= "<div class='prueba1 col-4'>";
             $output .= "<form id='inci'>";
             $output .= "<div class='form-group'>";
             $output .= "<label for='titulo'>Movimiento / Fecha / Cantidad / Almacen / IdProducto / Realizado </label>";
