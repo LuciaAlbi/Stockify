@@ -35,10 +35,10 @@ require_once "../../vendor/autoloader.php";
 									<a class="nav-link" href="Incidence.php">Incidencia</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="sending.php">Salidas pendientes</a>
+									<a class="nav-link" href="orders.php">Salidas pendientes</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="orders.php">Salidas realizadas</a>
+									<a class="nav-link" href="sending.php">Salidas realizadas</a>
 								</li>
 							</ul>
 						</div>
