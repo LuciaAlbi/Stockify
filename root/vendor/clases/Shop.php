@@ -43,7 +43,7 @@ class Shop extends Connection
         FROM productos p
         JOIN esta e ON p.ref = e.ref
         JOIN ubicacion u ON e.Id_ubi = u.Id_ubi
-        WHERE e.almacen_id = ". $_SESSION['workplace'] ."AND p.ref ='".$_GET['id']."'";
+        WHERE e.almacen_id = 3 AND p.ref ='".$_GET['id']."'";
         $result = $this->conn->query($sql);
         //var_dump($_SESSION);
        /*  echo "****************************************************************\n";
@@ -102,7 +102,7 @@ class Shop extends Connection
         for ($j=0; $j < count($product[$i]); $j++) { 
             if ($j==0) {
                 $href = "http://localhost:8080/pages/tienda/warehouseLocations.php?id=".$product[$i][$j];
-                $output .= "<td><a href='".$href." '>".$product[$i][$j]."</a></td>";
+                $output .= "<td><a href='".$href."' class='white-link'>".$product[$i][$j]."</a></td>";
             } else {
                 $output .= "<td>".$product[$i][$j]."</td>";
             }
