@@ -26,7 +26,7 @@ class Connection
         if (!feof($data)) {
             $connData = fgetcsv($data);
             var_dump($connData);
-            die("tengo conf");
+            //die("tengo conf");
             $this->host = $connData[0];
             $this->userName = $connData[1];
             $this->password = $connData[2];
