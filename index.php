@@ -1,7 +1,7 @@
 <?php
-//require_once __DIR__."/vendor/autoloader.php";
-//$security = new Security();
-//$loginMessage = $security->doLogin();
+require_once __DIR__."/vendor/autoloader.php";
+$security = new Security();
+$loginMessage = $security->doLogin();
 
 ?>
 <!DOCTYPE html>
