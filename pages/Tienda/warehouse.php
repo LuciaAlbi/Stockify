@@ -66,7 +66,7 @@ $manolo = $product->verShop();
                 <div class="input-group">
                     <input ID="txtPassword" type="text" class="form-control" placeholder="Search">
                     <span class="input-group-btn">
-                        <button id="show_password" class="btn btn-info" type="button" placeholder="">
+                        <button id="show_password" class="btn btn-primary" type="button" placeholder="">
                             Buscar<span class="fa fa-eye-slash icon"></span>
                         </button>
                     </span>

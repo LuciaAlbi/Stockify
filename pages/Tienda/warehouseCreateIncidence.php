@@ -68,7 +68,7 @@ if(count($_POST)>0){
               <label for='descripcion'>Descripción</label>
               <textarea class="form-control" id="descripcion" name="descripcion" rows="3" placeholder="Descripción para la incidencia"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" id="submitButton">Realizar incidencia</button>
+            <button type="submit" class="btn btn-dark" id="submitButton">Realizar incidencia</button>
           </div>
         </form>
       </div>

@@ -103,8 +103,18 @@ div.prueba1{
   margin-top:20px;
   margin-bottom: 20px;
 }
-.btn-primary{
+.btn-dark {
   margin:10px;
+  color: #f6f9fe;
+  background-color: #4D6E9B;
+  border-color: #4D6E9B;
+}
+
+/* line 25, src/assets/scss/mixins/_buttons.scss */
+.btn-dark:hover {
+  color: #f6f9fe;
+  background-color: #013C6A;
+  border-color: #4D6E9B;
 }
 a{
  color:#013C6A;
