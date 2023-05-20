@@ -35,7 +35,7 @@ $drawProduct = $product->drawMovement($silvia);
         </div>
     </header>
     <section>
-        <div>
+        <div class="container">
             <?= $drawProduct ?>
         </div>
     </section>
