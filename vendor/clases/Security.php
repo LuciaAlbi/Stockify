@@ -2,7 +2,7 @@
 class Security extends Connection
 {
     private $loginPage = "login.php";
-    private $homePage = "pages/Almacen/landing.php";
+    private $homePage = "pages/Almacen/Landing.php";
     private $shops = "pages/Tienda/warehouse.php";
     public function __construct()
     {
