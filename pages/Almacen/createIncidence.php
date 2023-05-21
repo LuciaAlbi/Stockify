@@ -12,9 +12,15 @@ if(count($_POST)>0){
         'ref'=>$_POST['ref'],
       ];
       $incidencia->insertInci($creatInci);
+<<<<<<< HEAD
       header('Location:Incidence.php');
   } catch (PDOException $e) {
       header('Location:Incidence.php');
+=======
+      header('location:../tienda/warehouseIncidence.php');
+  } catch (PDOException $e) {
+      header('location:../tienda/warehouseIncidence.php');
+>>>>>>> parent of 52da321 (asdasd)
   }
 }
 ?>
