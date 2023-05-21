@@ -75,12 +75,3 @@ CREATE TABLE mueve(
     FOREIGN KEY (id_almacen) REFERENCES almacen (id_almacen),
     FOREIGN KEY (idProducto) REFERENCES productos (ref)
 );
-
-CREATE TABLE tiene (
-  cant int,
-  almacen_id INT,
-  ref VARCHAR(30),
-  PRIMARY KEY (almacen_id, ref),
-  FOREIGN KEY (almacen_id) REFERENCES almacen(id_almacen),
-  FOREIGN KEY (ref) REFERENCES productos(ref)
-);
