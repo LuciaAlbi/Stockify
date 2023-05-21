@@ -17,9 +17,9 @@ if(count($_POST)>0){
   } catch (PDOException $e) {
       header('Location:Incidence.php');
 =======
-      header('location:../tienda/warehouseIncidence.php');
+      header('location:../Almacen/Incidence.php');
   } catch (PDOException $e) {
-      header('location:../tienda/warehouseIncidence.php');
+      header('location:../Almacen/Incidence.php');
 >>>>>>> parent of 52da321 (asdasd)
   }
 }
