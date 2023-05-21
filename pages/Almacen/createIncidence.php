@@ -12,9 +12,9 @@ if(count($_POST)>0){
         'ref'=>$_POST['ref'],
       ];
       $incidencia->insertInci($creatInci);
-      header('location:../tienda/warehouseIncidence.php');
+      header('location:../Tienda/warehouseIncidence.php');
   } catch (PDOException $e) {
-      header('location:../tienda/warehouseIncidence.php');
+      header('location:../Tienda/warehouseIncidence.php');
   }
 }
 ?>
