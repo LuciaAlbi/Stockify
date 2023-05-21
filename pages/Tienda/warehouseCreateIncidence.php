@@ -2,23 +2,7 @@
 if (session_status() !== PHP_SESSION_ACTIVE) session_start();
 require_once "../../vendor/autoloader.php";
 $security = new Security();
-<<<<<<< HEAD
 
-if(count($_POST)>0){
-  try {
-    $incidencia= new Inci();  
-      $creatInci=[
-        'f_h'=>$_POST['fecha_hora'],
-        'desc'=>$_POST['descripcion'],
-        'a_id'=>$_POST['almacen_id'],
-        'ref'=>$_POST['ref'],
-      ];
-      $incidencia->insertInci($creatInci);
-      header('Location:../Tienda/warehouseIncidence.php');
-  } catch (PDOException $e) {
-      header('Location:../Tienda/warehouseIncidence.php');
-  }
-=======
 if (count($_POST) > 0) {
   $incidencia = new Inci();
   $creatInci = [
@@ -31,7 +15,6 @@ if (count($_POST) > 0) {
   header('location:../Tienda/warehouseIncidence.php');
 } else {
   header('location:../Tienda/warehouseIncidence.php');
->>>>>>> origin
 }
 ?>
 <!DOCTYPE html>
