@@ -11,8 +11,8 @@ if(count($_POST)>0){
         'a_id'=>$_POST['almacen_id'],
         'ref'=>$_POST['ref'],
       ];
-      /* $incidencia->insertInci($creatInci); */
-      header('location:Incidence.php');
+      $incidencia->insertInci($creatInci);
+      /* header('location:Incidence.php'); */
   } catch (PDOException $e) {
       header('location:Incidence.php');
   }
