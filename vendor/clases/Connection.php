@@ -25,7 +25,7 @@ class Connection
         $data = fopen($config, "r")  or die("Unable to open file!");
         if (!feof($data)) {
             $connData = fgetcsv($data);
-            //var_dump($connData);
+            var_dump($connData);
             //die("tengo conf");
             $this->host = $connData[0];
             $this->userName = $connData[1];
