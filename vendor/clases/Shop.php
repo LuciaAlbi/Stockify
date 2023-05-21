@@ -104,7 +104,7 @@ class Shop extends Connection
             if (!feof($data)) {
                 $connData = fgetcsv($data);
                 $host = $connData[0];
-                die($host);
+                //die($host);
             }
             if ($j==0) {
                 $href = "http://".$host."/Stockify/pages/Tienda/warehouseLocations.php?id=".$product[$i][$j];
