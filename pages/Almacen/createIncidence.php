@@ -4,7 +4,8 @@ require_once "../../vendor/autoloader.php";
 $security = new Security();
 if(count($_POST)>0){
   try {
-    $incidencia= new Inci();  
+    $incidencia= new Inci();
+    die;
       $creatInci=[
         'f_h'=>$_POST['fecha_hora'],
         'desc'=>$_POST['descripcion'],
@@ -12,7 +13,7 @@ if(count($_POST)>0){
         'ref'=>$_POST['ref'],
       ];
       $incidencia->insertInci($creatInci);
-      /* header('location:Incidence.php'); */
+      header('location:Incidence.php');
   } catch (PDOException $e) {
       header('location:Incidence.php');
   }
