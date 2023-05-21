@@ -325,7 +325,6 @@ INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00002', 3, 86);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00006', 3, 87);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00007', 3, 88);
 
-
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 4, 89);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00006', 4, 90);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00002', 4, 91);
