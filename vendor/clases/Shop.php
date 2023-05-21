@@ -104,7 +104,7 @@ class Shop extends Connection
             if (!feof($data)) {
                 $connData = fgetcsv($data);
                 $host = $connData[0];
-                echo $host;
+                var_dump($host);
                 die($host);
             }
             if ($j==0) {
