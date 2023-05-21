@@ -100,15 +100,9 @@ class Shop extends Connection
         for ($i=0; $i < count($product); $i++) {
         $output .= "<tr>";
         for ($j=0; $j < count($product[$i]); $j++) { 
-            $data = "../../conf.csv";
-            if (!feof($data)) {
-                $connData = fgetcsv($data);
-                $host = $connData[0];
-                var_dump($host);
-                //die($host);
-            }
+           
             if ($j==0) {
-                $href = "http://".$host."/Stockify/pages/Tienda/warehouseLocations.php?id=".$product[$i][$j];
+                $href = "http://http://18.208.191.120//Stockify/pages/Tienda/warehouseLocations.php?id=".$product[$i][$j];
                 $output .= "<td><a href='".$href."' class='white-link'>".$product[$i][$j]."</a></td>";
             } else {
                 $output .= "<td>".$product[$i][$j]."</td>";
