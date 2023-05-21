@@ -44,7 +44,6 @@ class Inci extends Connection
 
     public function insertInci($data)
     {
-        die("Hola");
         $stmt = mysqli_prepare($this->conn, "INSERT INTO incidencias (fecha_hora, almacen_id, ref, descripcion) VALUES (?, ?, ?, ?)");
             mysqli_stmt_bind_param($stmt, 'siss', $data['f_h'], $data['a_id'], $data['ref'], $data['desc']);
             return mysqli_stmt_execute($stmt);
