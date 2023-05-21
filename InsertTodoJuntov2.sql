@@ -123,9 +123,12 @@ INSERT INTO ubicacion (zona, pasillo, estanteria, altura, id_almacen) VALUES ('A
 
 INSERT INTO ubicacion (zona, pasillo, estanteria, altura, id_almacen) VALUES ('A', '001', '014', '1', '3');
 
-INSERT INTO ubicacion (zona, pasillo, estanteria, altura, id_almacen) VALUES ('C', '001', '001', '1', '1');
-INSERT INTO ubicacion (zona, pasillo, estanteria, altura, id_almacen) VALUES ('B', '001', '001', '2', '1');
-INSERT INTO ubicacion (zona, pasillo, estanteria, altura, id_almacen) VALUES ('A', '001', '001', '3', '1');
+INSERT INTO ubicacion (zona, pasillo, estanteria, altura, id_almacen) VALUES ('C', '001', '001', '1', '4');
+INSERT INTO ubicacion (zona, pasillo, estanteria, altura, id_almacen) VALUES ('B', '001', '001', '2', '4');
+INSERT INTO ubicacion (zona, pasillo, estanteria, altura, id_almacen) VALUES ('A', '001', '001', '3', '4');
+INSERT INTO ubicacion (zona, pasillo, estanteria, altura, id_almacen) VALUES ('C', '002', '001', '1', '4');
+INSERT INTO ubicacion (zona, pasillo, estanteria, altura, id_almacen) VALUES ('B', '002', '001', '2', '4');
+INSERT INTO ubicacion (zona, pasillo, estanteria, altura, id_almacen) VALUES ('A', '002', '001', '3', '4');
 /*Insert empleados*/
 INSERT INTO empleado (userId, userPwd, securePwd, nombre, almacen_id)
 VALUES (001, '1234', '$2y$10$hHcBvCH5nC2.S3pVECuJre5bftuengicz7LFAGn/KO/shHzasvNQy', 'Fulgencio', 1);
@@ -273,13 +276,13 @@ INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 1, 39);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 1, 40);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 1, 41);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 1, 42);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 1, 43);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 1, 44);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 1, 45);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 1, 46);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00001', 1, 47);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00001', 1, 48);
 
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 2, 43);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 2, 44);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 2, 45);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 2, 46);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00001', 2, 47);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00001', 2, 48);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00001', 2, 49);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00002', 2, 50);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00002', 2, 51);
@@ -294,13 +297,13 @@ INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00011', 2, 59);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00011', 2, 60);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00011', 2, 61);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00011', 2, 62);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 2, 63);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 2, 64);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 2, 65);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 2, 66);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 2, 67);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00004', 2, 68);
 
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 3, 63);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 3, 64);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 3, 65);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 3, 66);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 3, 67);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00004', 3, 68);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00004', 3, 69);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00004', 3, 70);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00001', 3, 71);
@@ -315,29 +318,20 @@ INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00002', 3, 79);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00002', 3, 80);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00006', 3, 81);
 INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00007', 3, 82);
-
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 4, 63);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00006', 4, 64);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00002', 4, 65);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00005', 4, 66);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00004', 4, 67);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00001', 4, 68);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00008', 4, 69);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00007', 4, 70);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00009', 4, 71);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00002', 4, 72);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00005', 4, 73);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 4, 74);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00001', 4, 75);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00007', 4, 76);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00006', 4, 77);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00008', 4, 78);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00009', 4, 79);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00004', 4, 80);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00001', 4, 81);
-INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 4, 82);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00020', 3, 83);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00020', 3, 84);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00002', 3, 85);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00002', 3, 86);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00006', 3, 87);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00007', 3, 88);
 
 
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00003', 4, 89);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00006', 4, 90);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00002', 4, 91);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00005', 4, 92);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00004', 4, 93);
+INSERT INTO esta (ref, almacen_id, id_ubi) VALUES ('00001', 4, 94);
 
 /*Insert Incidencias*/
 INSERT INTO incidencias (fecha_hora, descripcion, almacen_id, ref) 
@@ -348,17 +342,7 @@ INSERT INTO incidencias (fecha_hora, descripcion, almacen_id, ref)
 VALUES ('2023-05-11 11:00:00','El Manolo ha atropellado a Guillermo. Es la quinta vez este mes y encima han roto una nevera',3,'00003');
 INSERT INTO incidencias (fecha_hora, descripcion, almacen_id, ref) 
 VALUES ('2023-05-11 12:30:00','El Manolo ha atropellado a Guillermo. Es la sexta vez este mes y encima han roto una nevera',4,'00004');
-/*Insert tiene*/
-INSERT INTO tiene (cant, almacen_id, ref) 
-VALUES (10,1,'00010');
-INSERT INTO tiene (cant, almacen_id, ref) 
-VALUES (2,1,'00004');
-INSERT INTO tiene (cant, almacen_id, ref) 
-VALUES (34,2,'00003');
-INSERT INTO tiene (cant, almacen_id, ref) 
-VALUES (2,3,'00004');
-INSERT INTO tiene (cant, almacen_id, ref) 
-VALUES (2,4,'00005');
+
 /*Insert mueve*/
 INSERT INTO mueve (fecha, id_almacen, idProducto,cant, realizado) 
 VALUES ('2023-05-11',1,'00002',10,0);
