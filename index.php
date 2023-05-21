@@ -5,7 +5,6 @@ error_reporting(E_ALL);
 require_once __DIR__."/vendor/autoloader.php";
 $security = new Security();
 $loginMessage = $security->doLogin();
-
 ?>
 <!DOCTYPE html>
 

@@ -4,7 +4,7 @@ require_once "../../vendor/autoloader.php";
 $security = new Security();
 if(count($_POST)>0){
   try {
-    $incidencia= new Inci();  
+    $incidencia= new Inci();
       $creatInci=[
         'f_h'=>$_POST['fecha_hora'],
         'desc'=>$_POST['descripcion'],
@@ -12,9 +12,15 @@ if(count($_POST)>0){
         'ref'=>$_POST['ref'],
       ];
       $incidencia->insertInci($creatInci);
-      header('location:../Tienda/warehouseIncidence.php');
+<<<<<<< HEAD
+      header('Location:Incidence.php');
   } catch (PDOException $e) {
-      header('location:../Tienda/warehouseIncidence.php');
+      header('Location:Incidence.php');
+=======
+      header('location:../Almacen/Incidence.php');
+  } catch (PDOException $e) {
+      header('location:../Almacen/Incidence.php');
+>>>>>>> parent of 52da321 (asdasd)
   }
 }
 ?>
