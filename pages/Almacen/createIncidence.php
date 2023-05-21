@@ -1,11 +1,11 @@
 <?php
-if (session_status() !== PHP_SESSION_ACTIVE) session_start();
+/* if (session_status() !== PHP_SESSION_ACTIVE) session_start(); */
 require_once "../../vendor/autoloader.php";
-$security = new Security();
+/* $security = new Security(); */
 if(count($_POST)>0){
+  die("Hola");
   try {
     $incidencia= new Inci();
-    die;
       $creatInci=[
         'f_h'=>$_POST['fecha_hora'],
         'desc'=>$_POST['descripcion'],
